@@ -16,7 +16,7 @@ async function buildIndex(): Promise<SearchIndex> {
 
   // Build term frequencies
   const docFreq = new Map<string, number>(); // term -> count of docs containing it
-  const termFreqs: Map<string, Map<string, number>>[] = [];
+  const termFreqs: Map<string, number>[] = [];
 
   reports.forEach((report, _) => {
     const text = [
