@@ -83,7 +83,7 @@ export async function renderMap(): Promise<void> {
     loadLeafletJS(),
   ]);
 
-  const points: MapPoint[] = mod.default;
+  const points = mod.default as MapPoint[];
 
   // Compute year range from data
   const years = points.map(p => p.year);

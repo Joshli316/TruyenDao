@@ -20,7 +20,7 @@ export async function renderGaps(): Promise<void> {
   app.innerHTML = `<div class="section" style="padding-top: calc(64px + var(--space-2xl));"><div class="skeleton" style="height: 400px;"></div></div>`;
 
   const mod = await import('../../data/gaps.json');
-  const gaps: Gap[] = mod.default;
+  const gaps = mod.default as Gap[];
 
   const categories = ['all', 'chronological', 'geographic', 'ethnic', 'thematic', 'comparative'];
   const catLabels: Record<string, { en: string; vi: string }> = {

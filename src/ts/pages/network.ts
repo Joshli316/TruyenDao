@@ -107,7 +107,7 @@ export async function renderNetwork(): Promise<void> {
     import('../../data/network.json'),
   ]);
 
-  const data: NetworkData = dataMod.default;
+  const data = dataMod.default as NetworkData;
 
   // Count links per node for radius calculation
   const linkCounts: Record<string, number> = {};
