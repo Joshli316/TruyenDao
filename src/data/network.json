@@ -1,0 +1,564 @@
+{
+  "nodes": [
+    {
+      "id": "rhodes",
+      "name": { "en": "Alexandre de Rhodes", "vi": "Alexandre de Rhodes" },
+      "type": "missionary",
+      "era": "jesuit",
+      "dates": "1591-1660"
+    },
+    {
+      "id": "pina",
+      "name": { "en": "Francisco de Pina", "vi": "Francisco de Pina" },
+      "type": "missionary",
+      "era": "jesuit",
+      "dates": "1585-1625"
+    },
+    {
+      "id": "borri",
+      "name": { "en": "Cristoforo Borri", "vi": "Cristoforo Borri" },
+      "type": "missionary",
+      "era": "jesuit",
+      "dates": "1583-1632"
+    },
+    {
+      "id": "pigneau",
+      "name": { "en": "Pigneau de Behaine", "vi": "Bi Nhu" },
+      "type": "missionary",
+      "era": "mep",
+      "dates": "1741-1799"
+    },
+    {
+      "id": "retord",
+      "name": { "en": "Pierre Retord", "vi": "Pierre Retord" },
+      "type": "missionary",
+      "era": "mep",
+      "dates": "1803-1858"
+    },
+    {
+      "id": "puginier",
+      "name": { "en": "Paul-Francois Puginier", "vi": "Paul-Francois Puginier" },
+      "type": "missionary",
+      "era": "colonial",
+      "dates": "1835-1892"
+    },
+    {
+      "id": "jaffray",
+      "name": { "en": "Robert Jaffray", "vi": "Robert Jaffray" },
+      "type": "missionary",
+      "era": "colonial",
+      "dates": "1873-1945"
+    },
+    {
+      "id": "irwin",
+      "name": { "en": "E.F. Irwin", "vi": "E.F. Irwin" },
+      "type": "missionary",
+      "era": "colonial",
+      "dates": "1880-1960"
+    },
+    {
+      "id": "smith",
+      "name": { "en": "Grace Hazenberg Smith", "vi": "Grace Hazenberg Smith" },
+      "type": "missionary",
+      "era": "colonial",
+      "dates": "1890-1975"
+    },
+    {
+      "id": "andrew",
+      "name": { "en": "Andrew of Phu Yen", "vi": "Anre Phu Yen" },
+      "type": "vietnamese",
+      "era": "jesuit",
+      "dates": "1625-1644",
+      "note": { "en": "First Vietnamese martyr", "vi": "Vi tu dao Viet Nam dau tien" }
+    },
+    {
+      "id": "thuan",
+      "name": { "en": "Nguyen Van Thuan", "vi": "Nguyen Van Thuan" },
+      "type": "vietnamese",
+      "era": "modern",
+      "dates": "1928-2002",
+      "note": { "en": "Cardinal, 13 years imprisoned", "vi": "Hong y, bi giam 13 nam" }
+    },
+    {
+      "id": "tranluc",
+      "name": { "en": "Tran Luc", "vi": "Tran Luc" },
+      "type": "vietnamese",
+      "era": "colonial",
+      "dates": "1825-1899",
+      "note": { "en": "Phat Diem Cathedral builder", "vi": "Nguoi xay nha tho Phat Diem" }
+    },
+    {
+      "id": "diem",
+      "name": { "en": "Ngo Dinh Diem", "vi": "Ngo Dinh Diem" },
+      "type": "vietnamese",
+      "era": "partition",
+      "dates": "1901-1963",
+      "note": { "en": "Catholic president of South Vietnam", "vi": "Tong thong Cong giao mien Nam" }
+    },
+    {
+      "id": "le_huu",
+      "name": { "en": "Le Huu Tu", "vi": "Le Huu Tu" },
+      "type": "vietnamese",
+      "era": "partition",
+      "dates": "1896-1967",
+      "note": { "en": "Bishop, nationalist", "vi": "Giam muc, nha yeu nuoc" }
+    },
+    {
+      "id": "hoang_quynh",
+      "name": { "en": "Hoang Quynh", "vi": "Hoang Quynh" },
+      "type": "vietnamese",
+      "era": "communist",
+      "dates": "1911-1999",
+      "note": { "en": "Underground church leader", "vi": "Lanh dao giao hoi ngam" }
+    },
+    {
+      "id": "nguyen_anh",
+      "name": { "en": "Nguyen Anh (Gia Long)", "vi": "Nguyen Anh (Gia Long)" },
+      "type": "vietnamese",
+      "era": "mep",
+      "dates": "1762-1820",
+      "note": { "en": "Emperor, allied with Pigneau", "vi": "Hoang de, dong minh voi Bi Nhu" }
+    },
+    {
+      "id": "sej",
+      "name": { "en": "Society of Jesus (Jesuits)", "vi": "Dong Ten (Jesuits)" },
+      "type": "organization",
+      "era": "jesuit"
+    },
+    {
+      "id": "mep",
+      "name": { "en": "Missions Etrangeres de Paris", "vi": "Hoi Thua Sai Paris" },
+      "type": "organization",
+      "era": "mep"
+    },
+    {
+      "id": "propaganda",
+      "name": { "en": "Propaganda Fide (Vatican)", "vi": "Bo Truyen Giao (Vatican)" },
+      "type": "organization",
+      "era": "mep"
+    },
+    {
+      "id": "cma",
+      "name": { "en": "Christian and Missionary Alliance", "vi": "Hoi Truyen Giao CMA" },
+      "type": "organization",
+      "era": "colonial"
+    },
+    {
+      "id": "cbcv",
+      "name": { "en": "Catholic Bishops' Conference of Vietnam", "vi": "Hoi Dong Giam Muc Viet Nam" },
+      "type": "organization",
+      "era": "modern"
+    },
+    {
+      "id": "ecvn",
+      "name": { "en": "Evangelical Church of Vietnam", "vi": "Hoi Thanh Tin Lanh Viet Nam" },
+      "type": "organization",
+      "era": "modern"
+    },
+    {
+      "id": "hoian",
+      "name": { "en": "Hoi An", "vi": "Hoi An" },
+      "type": "place",
+      "era": "jesuit"
+    },
+    {
+      "id": "danang",
+      "name": { "en": "Da Nang", "vi": "Da Nang" },
+      "type": "place",
+      "era": "jesuit"
+    },
+    {
+      "id": "hanoi",
+      "name": { "en": "Hanoi", "vi": "Ha Noi" },
+      "type": "place",
+      "era": "jesuit"
+    },
+    {
+      "id": "hue",
+      "name": { "en": "Hue", "vi": "Hue" },
+      "type": "place",
+      "era": "jesuit"
+    },
+    {
+      "id": "phatdiem",
+      "name": { "en": "Phat Diem", "vi": "Phat Diem" },
+      "type": "place",
+      "era": "colonial"
+    },
+    {
+      "id": "saigon",
+      "name": { "en": "Saigon / Ho Chi Minh City", "vi": "Sai Gon / Thanh pho Ho Chi Minh" },
+      "type": "place",
+      "era": "mep"
+    },
+    {
+      "id": "phuyen",
+      "name": { "en": "Phu Yen", "vi": "Phu Yen" },
+      "type": "place",
+      "era": "jesuit"
+    },
+    {
+      "id": "quocngu",
+      "name": { "en": "Chu Quoc Ngu (Romanized Vietnamese)", "vi": "Chu Quoc Ngu" },
+      "type": "organization",
+      "era": "jesuit",
+      "note": { "en": "Romanized Vietnamese writing system", "vi": "He thong chu viet La-tinh hoa tieng Viet" }
+    }
+  ],
+  "links": [
+    {
+      "source": "rhodes",
+      "target": "sej",
+      "type": "sent_by",
+      "label": { "en": "sent by", "vi": "duoc gui boi" }
+    },
+    {
+      "source": "rhodes",
+      "target": "pina",
+      "type": "trained_by",
+      "label": { "en": "trained by", "vi": "duoc dao tao boi" }
+    },
+    {
+      "source": "rhodes",
+      "target": "quocngu",
+      "type": "founded",
+      "label": { "en": "co-developed", "vi": "dong phat trien" }
+    },
+    {
+      "source": "rhodes",
+      "target": "hanoi",
+      "type": "founded",
+      "label": { "en": "evangelized in", "vi": "truyen giao tai" }
+    },
+    {
+      "source": "rhodes",
+      "target": "hoian",
+      "type": "founded",
+      "label": { "en": "served in", "vi": "phuc vu tai" }
+    },
+    {
+      "source": "rhodes",
+      "target": "danang",
+      "type": "founded",
+      "label": { "en": "served in", "vi": "phuc vu tai" }
+    },
+    {
+      "source": "rhodes",
+      "target": "hue",
+      "type": "founded",
+      "label": { "en": "served in", "vi": "phuc vu tai" }
+    },
+    {
+      "source": "rhodes",
+      "target": "propaganda",
+      "type": "partnered_with",
+      "label": { "en": "petitioned", "vi": "thỉnh nguyện" }
+    },
+    {
+      "source": "rhodes",
+      "target": "andrew",
+      "type": "founded",
+      "label": { "en": "catechized", "vi": "day giao ly" }
+    },
+    {
+      "source": "pina",
+      "target": "sej",
+      "type": "sent_by",
+      "label": { "en": "sent by", "vi": "duoc gui boi" }
+    },
+    {
+      "source": "pina",
+      "target": "quocngu",
+      "type": "founded",
+      "label": { "en": "pioneered", "vi": "khai pha" }
+    },
+    {
+      "source": "pina",
+      "target": "hoian",
+      "type": "founded",
+      "label": { "en": "served in", "vi": "phuc vu tai" }
+    },
+    {
+      "source": "pina",
+      "target": "danang",
+      "type": "founded",
+      "label": { "en": "served in", "vi": "phuc vu tai" }
+    },
+    {
+      "source": "borri",
+      "target": "sej",
+      "type": "sent_by",
+      "label": { "en": "sent by", "vi": "duoc gui boi" }
+    },
+    {
+      "source": "borri",
+      "target": "hoian",
+      "type": "founded",
+      "label": { "en": "served in", "vi": "phuc vu tai" }
+    },
+    {
+      "source": "borri",
+      "target": "danang",
+      "type": "founded",
+      "label": { "en": "served in", "vi": "phuc vu tai" }
+    },
+    {
+      "source": "andrew",
+      "target": "rhodes",
+      "type": "trained_by",
+      "label": { "en": "trained by", "vi": "duoc dao tao boi" }
+    },
+    {
+      "source": "andrew",
+      "target": "phuyen",
+      "type": "martyred_at",
+      "label": { "en": "martyred at", "vi": "tu dao tai" }
+    },
+    {
+      "source": "pigneau",
+      "target": "mep",
+      "type": "sent_by",
+      "label": { "en": "sent by", "vi": "duoc gui boi" }
+    },
+    {
+      "source": "pigneau",
+      "target": "nguyen_anh",
+      "type": "partnered_with",
+      "label": { "en": "allied with", "vi": "lien minh voi" }
+    },
+    {
+      "source": "pigneau",
+      "target": "saigon",
+      "type": "founded",
+      "label": { "en": "served in", "vi": "phuc vu tai" }
+    },
+    {
+      "source": "pigneau",
+      "target": "hue",
+      "type": "founded",
+      "label": { "en": "served in", "vi": "phuc vu tai" }
+    },
+    {
+      "source": "pigneau",
+      "target": "propaganda",
+      "type": "sent_by",
+      "label": { "en": "appointed by", "vi": "duoc bo nhiem boi" }
+    },
+    {
+      "source": "retord",
+      "target": "mep",
+      "type": "sent_by",
+      "label": { "en": "sent by", "vi": "duoc gui boi" }
+    },
+    {
+      "source": "retord",
+      "target": "hanoi",
+      "type": "founded",
+      "label": { "en": "served in", "vi": "phuc vu tai" }
+    },
+    {
+      "source": "retord",
+      "target": "hanoi",
+      "type": "martyred_at",
+      "label": { "en": "martyred near", "vi": "tu dao gan" }
+    },
+    {
+      "source": "puginier",
+      "target": "mep",
+      "type": "sent_by",
+      "label": { "en": "sent by", "vi": "duoc gui boi" }
+    },
+    {
+      "source": "puginier",
+      "target": "hanoi",
+      "type": "founded",
+      "label": { "en": "served in", "vi": "phuc vu tai" }
+    },
+    {
+      "source": "puginier",
+      "target": "hanoi",
+      "type": "founded",
+      "label": { "en": "built Hanoi Cathedral", "vi": "xay Nha tho Lon Ha Noi" }
+    },
+    {
+      "source": "jaffray",
+      "target": "cma",
+      "type": "sent_by",
+      "label": { "en": "sent by", "vi": "duoc gui boi" }
+    },
+    {
+      "source": "jaffray",
+      "target": "ecvn",
+      "type": "founded",
+      "label": { "en": "founded", "vi": "sang lap" }
+    },
+    {
+      "source": "jaffray",
+      "target": "danang",
+      "type": "founded",
+      "label": { "en": "began work in", "vi": "bat dau tai" }
+    },
+    {
+      "source": "jaffray",
+      "target": "saigon",
+      "type": "founded",
+      "label": { "en": "served in", "vi": "phuc vu tai" }
+    },
+    {
+      "source": "irwin",
+      "target": "cma",
+      "type": "sent_by",
+      "label": { "en": "sent by", "vi": "duoc gui boi" }
+    },
+    {
+      "source": "irwin",
+      "target": "hanoi",
+      "type": "founded",
+      "label": { "en": "served in", "vi": "phuc vu tai" }
+    },
+    {
+      "source": "irwin",
+      "target": "jaffray",
+      "type": "partnered_with",
+      "label": { "en": "partnered with", "vi": "hop tac voi" }
+    },
+    {
+      "source": "smith",
+      "target": "cma",
+      "type": "sent_by",
+      "label": { "en": "sent by", "vi": "duoc gui boi" }
+    },
+    {
+      "source": "smith",
+      "target": "saigon",
+      "type": "founded",
+      "label": { "en": "served in", "vi": "phuc vu tai" }
+    },
+    {
+      "source": "smith",
+      "target": "ecvn",
+      "type": "partnered_with",
+      "label": { "en": "supported", "vi": "ho tro" }
+    },
+    {
+      "source": "tranluc",
+      "target": "phatdiem",
+      "type": "founded",
+      "label": { "en": "built cathedral", "vi": "xay nha tho" }
+    },
+    {
+      "source": "tranluc",
+      "target": "mep",
+      "type": "trained_by",
+      "label": { "en": "trained by", "vi": "duoc dao tao boi" }
+    },
+    {
+      "source": "tranluc",
+      "target": "cbcv",
+      "type": "partnered_with",
+      "label": { "en": "served under", "vi": "phuc vu duoi" }
+    },
+    {
+      "source": "thuan",
+      "target": "cbcv",
+      "type": "ordained_by",
+      "label": { "en": "ordained by", "vi": "duoc phong chuc boi" }
+    },
+    {
+      "source": "thuan",
+      "target": "saigon",
+      "type": "founded",
+      "label": { "en": "served in", "vi": "phuc vu tai" }
+    },
+    {
+      "source": "thuan",
+      "target": "hue",
+      "type": "founded",
+      "label": { "en": "served in", "vi": "phuc vu tai" }
+    },
+    {
+      "source": "diem",
+      "target": "cbcv",
+      "type": "partnered_with",
+      "label": { "en": "partnered with", "vi": "hop tac voi" }
+    },
+    {
+      "source": "diem",
+      "target": "saigon",
+      "type": "founded",
+      "label": { "en": "governed from", "vi": "cai tri tu" }
+    },
+    {
+      "source": "diem",
+      "target": "hue",
+      "type": "founded",
+      "label": { "en": "born in", "vi": "sinh tai" }
+    },
+    {
+      "source": "diem",
+      "target": "le_huu",
+      "type": "partnered_with",
+      "label": { "en": "allied with", "vi": "lien minh voi" }
+    },
+    {
+      "source": "le_huu",
+      "target": "phatdiem",
+      "type": "founded",
+      "label": { "en": "bishop of", "vi": "giam muc" }
+    },
+    {
+      "source": "le_huu",
+      "target": "cbcv",
+      "type": "ordained_by",
+      "label": { "en": "ordained by", "vi": "duoc phong chuc boi" }
+    },
+    {
+      "source": "hoang_quynh",
+      "target": "hanoi",
+      "type": "founded",
+      "label": { "en": "led church in", "vi": "lanh dao giao hoi tai" }
+    },
+    {
+      "source": "hoang_quynh",
+      "target": "cbcv",
+      "type": "partnered_with",
+      "label": { "en": "served under", "vi": "phuc vu duoi" }
+    },
+    {
+      "source": "mep",
+      "target": "propaganda",
+      "type": "sent_by",
+      "label": { "en": "authorized by", "vi": "duoc uy quyen boi" }
+    },
+    {
+      "source": "propaganda",
+      "target": "mep",
+      "type": "founded",
+      "label": { "en": "established", "vi": "thanh lap" }
+    },
+    {
+      "source": "ecvn",
+      "target": "cma",
+      "type": "founded",
+      "label": { "en": "grew from", "vi": "phat trien tu" }
+    },
+    {
+      "source": "nguyen_anh",
+      "target": "hue",
+      "type": "founded",
+      "label": { "en": "ruled from", "vi": "tri vi tai" }
+    },
+    {
+      "source": "nguyen_anh",
+      "target": "saigon",
+      "type": "founded",
+      "label": { "en": "recaptured", "vi": "chiem lai" }
+    },
+    {
+      "source": "rhodes",
+      "target": "mep",
+      "type": "founded",
+      "label": { "en": "inspired founding of", "vi": "truyen cam hung thanh lap" }
+    }
+  ]
+}

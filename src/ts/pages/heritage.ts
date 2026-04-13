@@ -11,22 +11,22 @@ export function renderHeritage(): void {
       <p class="section-subtitle" data-i18n="heritage.subtitle">${t('heritage.subtitle')}</p>
       <div class="gold-divider"></div>
       <div class="heritage-grid">
-        <div class="lacquer-card featured" style="border-top: 3px solid var(--accent-cinnabar);">
+        <a href="#/heritage/martyrs" class="lacquer-card featured" style="border-top: 3px solid var(--accent-cinnabar); text-decoration: none;">
           <div class="card-number" style="color: var(--accent-cinnabar);">I</div>
           <div class="card-title" style="font-size: 28px; margin-bottom: var(--space-md);" data-i18n="heritage.martyrs.title">${t('heritage.martyrs.title')}</div>
           <div class="card-desc" style="font-size: 16px; line-height: 1.6;" data-i18n="heritage.martyrs.desc">${t('heritage.martyrs.desc')}</div>
           <div style="margin-top: var(--space-lg);">
-            <span class="btn-cinnabar" style="opacity: 0.5; cursor: default;" data-i18n="heritage.coming">${t('heritage.coming')}</span>
+            <span class="btn-cinnabar">${t('common.readmore')} &rarr;</span>
           </div>
-        </div>
-        <div class="lacquer-card featured" style="border-top: 3px solid var(--accent-gold);">
+        </a>
+        <a href="#/heritage/script" class="lacquer-card featured" style="border-top: 3px solid var(--accent-gold); text-decoration: none;">
           <div class="card-number">II</div>
           <div class="card-title" style="font-size: 28px; margin-bottom: var(--space-md);" data-i18n="heritage.script.title">${t('heritage.script.title')}</div>
           <div class="card-desc" style="font-size: 16px; line-height: 1.6;" data-i18n="heritage.script.desc">${t('heritage.script.desc')}</div>
           <div style="margin-top: var(--space-lg);">
-            <span class="btn-gold-ghost" style="opacity: 0.5; cursor: default;" data-i18n="heritage.coming">${t('heritage.coming')}</span>
+            <span class="btn-gold-ghost">${t('common.readmore')} &rarr;</span>
           </div>
-        </div>
+        </a>
       </div>
     </div>
     <footer class="footer">

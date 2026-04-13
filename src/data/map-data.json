@@ -1,0 +1,370 @@
+[
+  {
+    "lat": 15.8801,
+    "lng": 108.3380,
+    "year": 1533,
+    "type": "catholic",
+    "name": { "en": "Hội An Early Contact", "vi": "Hội An Tiếp Xúc Đầu Tiên" },
+    "description": { "en": "Earliest recorded Christian presence in Vietnam by Portuguese missionaries", "vi": "Sự hiện diện Kitô giáo sớm nhất được ghi nhận tại Việt Nam bởi các nhà truyền giáo Bồ Đào Nha" }
+  },
+  {
+    "lat": 15.8801,
+    "lng": 108.3380,
+    "year": 1615,
+    "type": "catholic",
+    "name": { "en": "Hội An Jesuit Mission", "vi": "Cứ điểm Dòng Tên Hội An" },
+    "description": { "en": "Early Jesuit trading post mission in the major port town of Faifo", "vi": "Cứ điểm truyền giáo Dòng Tên tại thương cảng Faifo" }
+  },
+  {
+    "lat": 16.0544,
+    "lng": 108.2022,
+    "year": 1615,
+    "type": "catholic",
+    "name": { "en": "Đà Nẵng Jesuit Mission", "vi": "Cứ điểm Dòng Tên Đà Nẵng" },
+    "description": { "en": "First permanent Jesuit mission headquarters established in Cochinchina", "vi": "Cứ điểm truyền giáo Dòng Tên thường trực đầu tiên tại xứ Đàng Trong" }
+  },
+  {
+    "lat": 15.88,
+    "lng": 108.34,
+    "year": 1624,
+    "type": "catholic",
+    "name": { "en": "Faifo — Alexandre de Rhodes Arrives", "vi": "Faifo — Alexandre de Rhodes Đến" },
+    "description": { "en": "Alexandre de Rhodes arrives and begins developing the Vietnamese romanized script (chữ Quốc ngữ)", "vi": "Alexandre de Rhodes đến và bắt đầu phát triển chữ Quốc ngữ" }
+  },
+  {
+    "lat": 19.8067,
+    "lng": 105.7852,
+    "year": 1627,
+    "type": "catholic",
+    "name": { "en": "Thanh Hóa Mission", "vi": "Cứ điểm Truyền Giáo Thanh Hóa" },
+    "description": { "en": "Alexandre de Rhodes establishes mission in Tonkin region", "vi": "Alexandre de Rhodes thiết lập cứ điểm truyền giáo tại xứ Đàng Ngoài" }
+  },
+  {
+    "lat": 21.0285,
+    "lng": 105.8542,
+    "year": 1627,
+    "type": "catholic",
+    "name": { "en": "Thăng Long (Hanoi) Tonkin Mission", "vi": "Thăng Long (Hà Nội) Cứ Điểm Đàng Ngoài" },
+    "description": { "en": "Center of the Tonkin mission, rapid growth of Catholic community", "vi": "Trung tâm truyền giáo Đàng Ngoài, cộng đồng Công giáo phát triển nhanh" }
+  },
+  {
+    "lat": 16.4637,
+    "lng": 107.5909,
+    "year": 1635,
+    "type": "catholic",
+    "name": { "en": "Huế Royal Court Contact", "vi": "Huế Tiếp Xúc Triều Đình" },
+    "description": { "en": "Jesuits make contact with the Nguyễn lords' royal court", "vi": "Dòng Tên tiếp xúc với triều đình chúa Nguyễn" }
+  },
+  {
+    "lat": 13.0882,
+    "lng": 109.0929,
+    "year": 1641,
+    "type": "catholic",
+    "name": { "en": "Phú Yên — Martyrdom of Andrew", "vi": "Phú Yên — Tử Đạo Anrê" },
+    "description": { "en": "Andrew of Phú Yên, Vietnamese catechist, martyred — first Vietnamese martyr", "vi": "Anrê Phú Yên, thầy giảng Việt Nam, tử đạo — vị tử đạo Việt Nam đầu tiên" }
+  },
+  {
+    "lat": 20.4200,
+    "lng": 106.1700,
+    "year": 1658,
+    "type": "catholic",
+    "name": { "en": "Nam Định Early Parish", "vi": "Giáo Xứ Nam Định Sơ Khai" },
+    "description": { "en": "One of the earliest Catholic parishes in the Red River Delta", "vi": "Một trong những giáo xứ Công giáo sớm nhất tại đồng bằng sông Hồng" }
+  },
+  {
+    "lat": 10.8231,
+    "lng": 106.6297,
+    "year": 1670,
+    "type": "catholic",
+    "name": { "en": "Saigon MEP Southern Base", "vi": "Sài Gòn Cứ Điểm MEP Phía Nam" },
+    "description": { "en": "Paris Foreign Missions Society (MEP) establishes southern base of operations", "vi": "Hội Thừa sai Paris (MEP) thiết lập cứ điểm hoạt động phía Nam" }
+  },
+  {
+    "lat": 20.5400,
+    "lng": 105.9200,
+    "year": 1679,
+    "type": "catholic",
+    "name": { "en": "Kẻ Sở (Hà Nam) Seminary", "vi": "Kẻ Sở (Hà Nam) Chủng Viện" },
+    "description": { "en": "MEP seminary established, training Vietnamese clergy under Pigneau de Béhaine's influence", "vi": "Chủng viện MEP được thành lập, đào tạo linh mục Việt Nam dưới ảnh hưởng của Pigneau de Béhaine" }
+  },
+  {
+    "lat": 20.2600,
+    "lng": 106.2100,
+    "year": 1700,
+    "type": "catholic",
+    "name": { "en": "Bùi Chu Diocese", "vi": "Giáo Phận Bùi Chu" },
+    "description": { "en": "One of the oldest Catholic dioceses in Vietnam, major faith center in Nam Định", "vi": "Một trong những giáo phận Công giáo lâu đời nhất Việt Nam, trung tâm đức tin lớn tại Nam Định" }
+  },
+  {
+    "lat": 20.9500,
+    "lng": 106.3200,
+    "year": 1720,
+    "type": "catholic",
+    "name": { "en": "Hải Phòng Catholic Community", "vi": "Cộng Đồng Công Giáo Hải Phòng" },
+    "description": { "en": "Growing Catholic community in the northern port city", "vi": "Cộng đồng Công giáo phát triển tại thành phố cảng phía Bắc" }
+  },
+  {
+    "lat": 18.6796,
+    "lng": 105.6813,
+    "year": 1750,
+    "type": "catholic",
+    "name": { "en": "Vinh/Nghệ An Catholic Region", "vi": "Vùng Công Giáo Vinh/Nghệ An" },
+    "description": { "en": "Dense Catholic population develops in Nghệ An and Hà Tĩnh provinces", "vi": "Cộng đồng Công giáo đông đúc phát triển tại các tỉnh Nghệ An và Hà Tĩnh" }
+  },
+  {
+    "lat": 20.1500,
+    "lng": 106.0700,
+    "year": 1790,
+    "type": "catholic",
+    "name": { "en": "Phát Diệm Catholic Center", "vi": "Trung Tâm Công Giáo Phát Diệm" },
+    "description": { "en": "Major Catholic center; later home to the famous stone cathedral built in Vietnamese style", "vi": "Trung tâm Công giáo lớn; sau này là nơi xây dựng nhà thờ đá nổi tiếng theo phong cách Việt Nam" }
+  },
+  {
+    "lat": 14.0583,
+    "lng": 108.2772,
+    "year": 1850,
+    "type": "catholic",
+    "name": { "en": "Kon Tum Early Mission", "vi": "Cứ Điểm Truyền Giáo Kon Tum Sơ Khai" },
+    "description": { "en": "MEP missionaries begin work among Bahnar ethnic minority in the Central Highlands", "vi": "Các thừa sai MEP bắt đầu truyền giáo cho dân tộc Ba Na tại Tây Nguyên" }
+  },
+  {
+    "lat": 10.7798,
+    "lng": 106.6990,
+    "year": 1863,
+    "type": "catholic",
+    "name": { "en": "Saigon Notre-Dame Cathedral", "vi": "Nhà Thờ Đức Bà Sài Gòn" },
+    "description": { "en": "Construction of Notre-Dame Cathedral begins under French colonial rule", "vi": "Khởi công xây dựng Nhà thờ Đức Bà dưới thời Pháp thuộc" }
+  },
+  {
+    "lat": 21.0288,
+    "lng": 105.8490,
+    "year": 1886,
+    "type": "catholic",
+    "name": { "en": "Hanoi St. Joseph Cathedral", "vi": "Nhà Thờ Lớn Hà Nội (Thánh Giuse)" },
+    "description": { "en": "St. Joseph's Cathedral built, becomes center of northern Catholicism", "vi": "Nhà thờ Thánh Giuse được xây dựng, trở thành trung tâm Công giáo miền Bắc" }
+  },
+  {
+    "lat": 13.7563,
+    "lng": 109.2191,
+    "year": 1890,
+    "type": "catholic",
+    "name": { "en": "Qui Nhơn MEP Mission Center", "vi": "Trung Tâm Truyền Giáo MEP Qui Nhơn" },
+    "description": { "en": "MEP mission center serving the central coast region", "vi": "Trung tâm truyền giáo MEP phục vụ vùng duyên hải miền Trung" }
+  },
+  {
+    "lat": 12.2388,
+    "lng": 109.1967,
+    "year": 1900,
+    "type": "catholic",
+    "name": { "en": "Nha Trang Diocese", "vi": "Giáo Phận Nha Trang" },
+    "description": { "en": "Diocese established to serve growing Catholic population along the coast", "vi": "Giáo phận được thành lập để phục vụ cộng đồng Công giáo đang phát triển dọc bờ biển" }
+  },
+  {
+    "lat": 16.0544,
+    "lng": 108.2022,
+    "year": 1911,
+    "type": "protestant",
+    "name": { "en": "Đà Nẵng CMA First Station", "vi": "Trạm CMA Đầu Tiên Đà Nẵng" },
+    "description": { "en": "Christian and Missionary Alliance (CMA) opens first Protestant station in Vietnam", "vi": "Hội Truyền giáo CMA mở trạm Tin Lành đầu tiên tại Việt Nam" }
+  },
+  {
+    "lat": 11.9404,
+    "lng": 108.4583,
+    "year": 1920,
+    "type": "catholic",
+    "name": { "en": "Đà Lạt Seminary & Hill Station", "vi": "Đà Lạt Chủng Viện & Đồi Thông" },
+    "description": { "en": "Hill station becomes home to Catholic seminary and retreat center", "vi": "Thành phố trên cao trở thành nơi đặt chủng viện và trung tâm tĩnh tâm Công giáo" }
+  },
+  {
+    "lat": 10.8231,
+    "lng": 106.6297,
+    "year": 1920,
+    "type": "protestant",
+    "name": { "en": "Saigon CMA Southern HQ", "vi": "Tổng Hành Dinh CMA Miền Nam Sài Gòn" },
+    "description": { "en": "CMA establishes southern headquarters, Tin Lành church grows rapidly", "vi": "CMA thiết lập tổng hành dinh miền Nam, Hội Thánh Tin Lành phát triển nhanh" }
+  },
+  {
+    "lat": 21.0285,
+    "lng": 105.8542,
+    "year": 1929,
+    "type": "protestant",
+    "name": { "en": "Hanoi CMA Tonkin Mission", "vi": "CMA Cứ Điểm Bắc Kỳ Hà Nội" },
+    "description": { "en": "CMA opens Tonkin mission, Protestant presence established in the north", "vi": "CMA mở cứ điểm Bắc Kỳ, sự hiện diện Tin Lành được thiết lập tại miền Bắc" }
+  },
+  {
+    "lat": 10.3600,
+    "lng": 106.3500,
+    "year": 1930,
+    "type": "protestant",
+    "name": { "en": "Mỹ Tho Mekong Delta Outreach", "vi": "Mỹ Tho Truyền Giáo Đồng Bằng Sông Cửu Long" },
+    "description": { "en": "CMA expands Protestant outreach into the Mekong Delta region", "vi": "CMA mở rộng truyền giáo Tin Lành vào vùng đồng bằng sông Cửu Long" }
+  },
+  {
+    "lat": 10.2539,
+    "lng": 105.9722,
+    "year": 1938,
+    "type": "catholic",
+    "name": { "en": "Vĩnh Long Southern Diocese", "vi": "Giáo Phận Vĩnh Long" },
+    "description": { "en": "Southern diocese established, serving the western Mekong Delta", "vi": "Giáo phận miền Nam được thành lập, phục vụ vùng Tây đồng bằng sông Cửu Long" }
+  },
+  {
+    "lat": 10.8231,
+    "lng": 106.6297,
+    "year": 1954,
+    "type": "catholic",
+    "name": { "en": "Saigon — 800K Catholic Refugees Arrive", "vi": "Sài Gòn — 800.000 Giáo Dân Di Cư" },
+    "description": { "en": "Approximately 800,000 northern Catholics flee south after Geneva Accords partition", "vi": "Khoảng 800.000 giáo dân miền Bắc di cư vào Nam sau Hiệp định Genève" }
+  },
+  {
+    "lat": 10.9570,
+    "lng": 106.8420,
+    "year": 1954,
+    "type": "catholic",
+    "name": { "en": "Biên Hòa Refugee Settlements", "vi": "Khu Định Cư Giáo Dân Biên Hòa" },
+    "description": { "en": "Catholic refugee settlements established around Biên Hòa", "vi": "Các khu định cư giáo dân được thiết lập quanh Biên Hòa" }
+  },
+  {
+    "lat": 10.3460,
+    "lng": 107.0843,
+    "year": 1955,
+    "type": "catholic",
+    "name": { "en": "Vũng Tàu Coastal Parish Expansion", "vi": "Vũng Tàu Mở Rộng Giáo Xứ Ven Biển" },
+    "description": { "en": "Coastal parish expansion driven by northern Catholic refugees", "vi": "Mở rộng giáo xứ ven biển nhờ giáo dân di cư từ miền Bắc" }
+  },
+  {
+    "lat": 11.5564,
+    "lng": 108.9893,
+    "year": 1960,
+    "type": "catholic",
+    "name": { "en": "Phan Rang Catholic Parish", "vi": "Giáo Xứ Công Giáo Phan Rang" },
+    "description": { "en": "Catholic community grows with refugee resettlement along the coast", "vi": "Cộng đồng Công giáo phát triển nhờ tái định cư giáo dân dọc bờ biển" }
+  },
+  {
+    "lat": 10.9333,
+    "lng": 106.6333,
+    "year": 1965,
+    "type": "protestant",
+    "name": { "en": "Thủ Đức Protestant Churches", "vi": "Hội Thánh Tin Lành Thủ Đức" },
+    "description": { "en": "Protestant house churches grow during wartime among displaced populations", "vi": "Hội thánh Tin Lành tại gia phát triển trong chiến tranh giữa cộng đồng di dân" }
+  },
+  {
+    "lat": 12.6667,
+    "lng": 108.0500,
+    "year": 1990,
+    "type": "protestant",
+    "name": { "en": "Buôn Ma Thuột — Ede/Jarai Conversions", "vi": "Buôn Ma Thuột — Ê Đê/Gia Rai Tin Chúa" },
+    "description": { "en": "Massive wave of conversions among Ede and Jarai ethnic minorities", "vi": "Làn sóng tin Chúa lớn trong cộng đồng dân tộc Ê Đê và Gia Rai" }
+  },
+  {
+    "lat": 14.3497,
+    "lng": 108.0005,
+    "year": 1992,
+    "type": "both",
+    "name": { "en": "Kon Tum — Bahnar Catholic & Protestant", "vi": "Kon Tum — Ba Na Công Giáo & Tin Lành" },
+    "description": { "en": "Both Catholic (historic MEP) and Protestant growth among Bahnar people", "vi": "Cả Công giáo (MEP lịch sử) và Tin Lành phát triển trong cộng đồng Ba Na" }
+  },
+  {
+    "lat": 13.9833,
+    "lng": 108.0000,
+    "year": 1995,
+    "type": "protestant",
+    "name": { "en": "Pleiku/Gia Lai — Jarai Church Growth", "vi": "Pleiku/Gia Lai — Phát Triển Hội Thánh Gia Rai" },
+    "description": { "en": "Rapid Jarai church growth despite government restrictions", "vi": "Hội thánh Gia Rai phát triển nhanh bất chấp hạn chế của chính quyền" }
+  },
+  {
+    "lat": 22.3364,
+    "lng": 103.8438,
+    "year": 1995,
+    "type": "protestant",
+    "name": { "en": "Sapa/Lào Cai — Hmong Conversions", "vi": "Sapa/Lào Cai — Người Hmông Tin Chúa" },
+    "description": { "en": "Significant Hmong conversions to Protestant Christianity in the northwest", "vi": "Nhiều người Hmông tin nhận Chúa tại vùng Tây Bắc" }
+  },
+  {
+    "lat": 12.7100,
+    "lng": 108.2378,
+    "year": 2000,
+    "type": "protestant",
+    "name": { "en": "Đắk Lắk — Montagnard Growth", "vi": "Đắk Lắk — Phát Triển Người Thượng" },
+    "description": { "en": "Massive Montagnard (Degar) Protestant growth across Đắk Lắk province", "vi": "Phong trào tin Chúa lớn trong cộng đồng người Thượng (Đề Ga) toàn tỉnh Đắk Lắk" }
+  },
+  {
+    "lat": 22.3964,
+    "lng": 103.4582,
+    "year": 2000,
+    "type": "protestant",
+    "name": { "en": "Lai Châu — Hmong Growth", "vi": "Lai Châu — Người Hmông Phát Triển" },
+    "description": { "en": "Hmong Protestant communities grow in remote northwestern province", "vi": "Cộng đồng Tin Lành Hmông phát triển tại tỉnh vùng cao Tây Bắc" }
+  },
+  {
+    "lat": 21.3860,
+    "lng": 103.0230,
+    "year": 2002,
+    "type": "protestant",
+    "name": { "en": "Điện Biên — Northwestern Hmong", "vi": "Điện Biên — Người Hmông Tây Bắc" },
+    "description": { "en": "Protestant faith spreads among Hmong communities near the Lao border", "vi": "Đức tin Tin Lành lan rộng trong cộng đồng Hmông gần biên giới Lào" }
+  },
+  {
+    "lat": 21.3256,
+    "lng": 103.9188,
+    "year": 2005,
+    "type": "protestant",
+    "name": { "en": "Sơn La — Hmong Growth", "vi": "Sơn La — Người Hmông Phát Triển" },
+    "description": { "en": "Continued Hmong church growth in Sơn La province", "vi": "Hội thánh Hmông tiếp tục phát triển tại tỉnh Sơn La" }
+  },
+  {
+    "lat": 10.8231,
+    "lng": 106.6297,
+    "year": 2010,
+    "type": "both",
+    "name": { "en": "Ho Chi Minh City — Largest Christian Population", "vi": "TP. Hồ Chí Minh — Cộng Đồng Kitô Giáo Lớn Nhất" },
+    "description": { "en": "Largest Christian population in Vietnam with both Catholic and Protestant megachurches", "vi": "Cộng đồng Kitô giáo lớn nhất Việt Nam với cả nhà thờ Công giáo và Tin Lành quy mô lớn" }
+  },
+  {
+    "lat": 21.0285,
+    "lng": 105.8542,
+    "year": 2015,
+    "type": "both",
+    "name": { "en": "Hanoi — Growing Registered Churches", "vi": "Hà Nội — Hội Thánh Đăng Ký Phát Triển" },
+    "description": { "en": "Growing number of registered Protestant and Catholic churches in the capital", "vi": "Số lượng hội thánh Tin Lành và Công giáo đăng ký ngày càng tăng tại thủ đô" }
+  },
+  {
+    "lat": 10.0452,
+    "lng": 105.7469,
+    "year": 2018,
+    "type": "catholic",
+    "name": { "en": "Cần Thơ Mekong Delta Diocese", "vi": "Giáo Phận Cần Thơ Đồng Bằng Sông Cửu Long" },
+    "description": { "en": "Active diocese serving the Mekong Delta's Catholic communities", "vi": "Giáo phận hoạt động phục vụ cộng đồng Công giáo đồng bằng sông Cửu Long" }
+  },
+  {
+    "lat": 16.0544,
+    "lng": 108.2022,
+    "year": 2020,
+    "type": "both",
+    "name": { "en": "Đà Nẵng — Central Vietnam Hub", "vi": "Đà Nẵng — Trung Tâm Miền Trung" },
+    "description": { "en": "Both Catholic and Protestant presence in central Vietnam's largest city", "vi": "Cả Công giáo và Tin Lành hiện diện tại thành phố lớn nhất miền Trung" }
+  },
+  {
+    "lat": 20.8600,
+    "lng": 106.6800,
+    "year": 2022,
+    "type": "catholic",
+    "name": { "en": "Hải Phòng Modern Diocese", "vi": "Giáo Phận Hải Phòng Hiện Đại" },
+    "description": { "en": "Active diocese with strong Catholic traditions in the northern port city", "vi": "Giáo phận hoạt động với truyền thống Công giáo vững mạnh tại thành phố cảng phía Bắc" }
+  },
+  {
+    "lat": 16.4637,
+    "lng": 107.5909,
+    "year": 2023,
+    "type": "both",
+    "name": { "en": "Huế — Historic Faith City", "vi": "Huế — Thành Phố Đức Tin Lịch Sử" },
+    "description": { "en": "Continued Catholic and growing Protestant presence in the former imperial capital", "vi": "Công giáo tiếp tục và Tin Lành phát triển tại cố đô" }
+  },
+  {
+    "lat": 11.9404,
+    "lng": 108.4583,
+    "year": 2024,
+    "type": "both",
+    "name": { "en": "Đà Lạt Modern Christian Community", "vi": "Cộng Đồng Kitô Giáo Đà Lạt Hiện Đại" },
+    "description": { "en": "Highland city with thriving Catholic and emerging Protestant communities", "vi": "Thành phố cao nguyên với cộng đồng Công giáo thịnh vượng và Tin Lành đang phát triển" }
+  }
+]

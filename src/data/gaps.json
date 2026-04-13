@@ -1,0 +1,352 @@
+[
+  {
+    "id": "gap-01",
+    "topic": {
+      "en": "Pre-1615 Catholic contact documentation",
+      "vi": "Tài liệu tiếp xúc Công giáo trước 1615"
+    },
+    "category": "chronological",
+    "description": {
+      "en": "The period 1533-1615 is documented almost entirely from Portuguese trade records. No systematic study of early Dominican and Franciscan activity exists. The identities and movements of the first missionaries remain fragmentary.",
+      "vi": "Giai đoạn 1533-1615 được ghi chép gần như hoàn toàn từ hồ sơ thương mại Bồ Đào Nha. Không có nghiên cứu hệ thống nào về hoạt động ban đầu của Dòng Đa Minh và Dòng Phanxicô. Danh tính và hành trình của các nhà truyền giáo đầu tiên vẫn còn rời rạc."
+    },
+    "significance": 5,
+    "status": "open"
+  },
+  {
+    "id": "gap-02",
+    "topic": {
+      "en": "MEP transition period (1660-1700)",
+      "vi": "Giai đoạn chuyển tiếp MEP (1660-1700)"
+    },
+    "category": "chronological",
+    "description": {
+      "en": "The handover from Jesuit to MEP (Missions Étrangères de Paris) leadership is poorly documented in English-language scholarship. Internal MEP correspondence from this era remains largely unanalyzed, though archives exist in Paris.",
+      "vi": "Quá trình chuyển giao lãnh đạo từ Dòng Tên sang MEP (Hội Thừa Sai Paris) ít được ghi chép trong tài liệu tiếng Anh. Thư từ nội bộ MEP thời kỳ này phần lớn chưa được phân tích, dù kho lưu trữ tồn tại tại Paris."
+    },
+    "significance": 4,
+    "status": "in-progress"
+  },
+  {
+    "id": "gap-03",
+    "topic": {
+      "en": "1954 Catholic migration oral histories",
+      "vi": "Lịch sử truyền khẩu về cuộc di cư Công giáo 1954"
+    },
+    "category": "chronological",
+    "description": {
+      "en": "An estimated 800,000 Catholics fled North Vietnam after the 1954 Geneva Accords. First-generation survivors are dying. Systematic oral history collection has not been attempted at scale, and individual family narratives are being lost.",
+      "vi": "Ước tính 800.000 người Công giáo rời miền Bắc sau Hiệp định Genève 1954. Thế hệ đầu tiên đang qua đời. Chưa có nỗ lực thu thập lịch sử truyền khẩu quy mô lớn, và các câu chuyện gia đình đang dần mất đi."
+    },
+    "significance": 5,
+    "status": "open"
+  },
+  {
+    "id": "gap-04",
+    "topic": {
+      "en": "Post-1975 underground church documentation",
+      "vi": "Tài liệu về Giáo hội bí mật sau 1975"
+    },
+    "category": "chronological",
+    "description": {
+      "en": "After reunification, unregistered churches operated under severe restrictions. Most documentation was destroyed or hidden. Only anecdotal accounts exist for the 1975-1990 period. Cardinal Thuận's prison writings are the rare exception.",
+      "vi": "Sau thống nhất, các nhà thờ không đăng ký hoạt động dưới hạn chế nghiêm ngặt. Phần lớn tài liệu bị tiêu hủy hoặc cất giấu. Chỉ có các tường thuật rời rạc cho giai đoạn 1975-1990. Tác phẩm trong tù của Hồng y Thuận là ngoại lệ hiếm hoi."
+    },
+    "significance": 5,
+    "status": "open"
+  },
+  {
+    "id": "gap-05",
+    "topic": {
+      "en": "Wartime Protestant church (1955-1975)",
+      "vi": "Giáo hội Tin Lành thời chiến (1955-1975)"
+    },
+    "category": "chronological",
+    "description": {
+      "en": "Protestant growth in South Vietnam during the war years is documented primarily through CMA mission reports. Vietnamese Protestant voices from this era — pastors, lay leaders, military chaplains — are almost entirely absent from the scholarly record.",
+      "vi": "Sự phát triển Tin Lành ở miền Nam trong thời chiến chủ yếu được ghi chép qua báo cáo truyền giáo CMA. Tiếng nói Tin Lành Việt Nam thời kỳ này — mục sư, lãnh đạo giáo dân, tuyên úy quân đội — gần như hoàn toàn vắng mặt trong tài liệu học thuật."
+    },
+    "significance": 4,
+    "status": "open"
+  },
+  {
+    "id": "gap-06",
+    "topic": {
+      "en": "Central Highlands ethnographic fieldwork",
+      "vi": "Khảo sát dân tộc học Tây Nguyên"
+    },
+    "category": "geographic",
+    "description": {
+      "en": "Explosive Protestant growth among Montagnard/Degar peoples since the 1990s is widely noted but poorly studied in situ. Government restrictions on foreign researchers in the Central Highlands make fieldwork extremely difficult. Most studies rely on diaspora interviews.",
+      "vi": "Sự bùng nổ Tin Lành trong cộng đồng người Thượng từ thập niên 1990 được ghi nhận rộng rãi nhưng ít được nghiên cứu tại chỗ. Hạn chế của chính phủ đối với nhà nghiên cứu nước ngoài ở Tây Nguyên khiến khảo sát thực địa cực kỳ khó khăn."
+    },
+    "significance": 5,
+    "status": "in-progress"
+  },
+  {
+    "id": "gap-07",
+    "topic": {
+      "en": "Mekong Delta Catholic communities",
+      "vi": "Cộng đồng Công giáo đồng bằng sông Cửu Long"
+    },
+    "category": "geographic",
+    "description": {
+      "en": "The Mekong Delta has distinct Catholic communities dating to the 17th-century MEP missions. Their unique inculturation practices — blending Khmer, Vietnamese, and French Catholic traditions — have not been studied systematically.",
+      "vi": "Đồng bằng sông Cửu Long có các cộng đồng Công giáo riêng biệt từ các sứ mạng MEP thế kỷ 17. Các thực hành hội nhập văn hóa độc đáo — kết hợp truyền thống Công giáo Khmer, Việt Nam, và Pháp — chưa được nghiên cứu hệ thống."
+    },
+    "significance": 3,
+    "status": "open"
+  },
+  {
+    "id": "gap-08",
+    "topic": {
+      "en": "Northern Protestant growth (post-Đổi Mới)",
+      "vi": "Sự phát triển Tin Lành miền Bắc (sau Đổi Mới)"
+    },
+    "category": "geographic",
+    "description": {
+      "en": "Protestant growth in northern Vietnam since the 1986 Đổi Mới reforms has been rapid but poorly documented. Unlike the well-studied Central Highlands, Hmong and Dao conversion in the northwest provinces lacks longitudinal studies.",
+      "vi": "Sự phát triển Tin Lành ở miền Bắc từ sau Đổi Mới 1986 diễn ra nhanh chóng nhưng ít được ghi chép. Khác với Tây Nguyên đã được nghiên cứu nhiều, việc cải đạo của người H'Mông và Dao ở các tỉnh Tây Bắc thiếu nghiên cứu dài hạn."
+    },
+    "significance": 4,
+    "status": "open"
+  },
+  {
+    "id": "gap-09",
+    "topic": {
+      "en": "Coastal Catholic diocesan archives",
+      "vi": "Kho lưu trữ giáo phận Công giáo ven biển"
+    },
+    "category": "geographic",
+    "description": {
+      "en": "Diocesan archives in Huế, Quy Nhơn, and Nha Trang hold centuries of parish records, baptismal registers, and bishop correspondence. These collections have never been catalogued for external researchers or digitized.",
+      "vi": "Kho lưu trữ giáo phận ở Huế, Quy Nhơn, và Nha Trang chứa hàng thế kỷ sổ giáo xứ, sổ rửa tội, và thư từ giám mục. Các bộ sưu tập này chưa bao giờ được lập danh mục cho nhà nghiên cứu bên ngoài hoặc số hóa."
+    },
+    "significance": 4,
+    "status": "open"
+  },
+  {
+    "id": "gap-10",
+    "topic": {
+      "en": "Hmong conversion dynamics and motivations",
+      "vi": "Động lực và nguyên nhân cải đạo của người H'Mông"
+    },
+    "category": "ethnic",
+    "description": {
+      "en": "Why did hundreds of thousands of Hmong convert to Protestant Christianity starting in the 1980s-90s? Existing theories (political protest, modernization, messianic expectations) have not been tested through large-scale ethnographic research with Hmong informants.",
+      "vi": "Tại sao hàng trăm nghìn người H'Mông cải đạo sang Tin Lành từ thập niên 1980-90? Các lý thuyết hiện có (phản kháng chính trị, hiện đại hóa, kỳ vọng cứu thế) chưa được kiểm chứng qua nghiên cứu dân tộc học quy mô lớn với người cung cấp thông tin H'Mông."
+    },
+    "significance": 5,
+    "status": "in-progress"
+  },
+  {
+    "id": "gap-11",
+    "topic": {
+      "en": "Montagnard/Degar indigenous church structures",
+      "vi": "Cấu trúc Giáo hội bản địa người Thượng/Dega"
+    },
+    "category": "ethnic",
+    "description": {
+      "en": "Montagnard churches in the Central Highlands have developed autonomous leadership structures distinct from both lowland Vietnamese and Western models. These indigenous ecclesiologies are undocumented in academic literature.",
+      "vi": "Các nhà thờ người Thượng ở Tây Nguyên đã phát triển cấu trúc lãnh đạo tự trị khác biệt với cả mô hình người Việt vùng đồng bằng và phương Tây. Các mô hình giáo hội bản địa này chưa được ghi chép trong tài liệu học thuật."
+    },
+    "significance": 4,
+    "status": "open"
+  },
+  {
+    "id": "gap-12",
+    "topic": {
+      "en": "Cham Muslim-Christian interface",
+      "vi": "Giao thoa Hồi giáo Chăm — Kitô giáo"
+    },
+    "category": "ethnic",
+    "description": {
+      "en": "The Cham people include both Muslim and Hindu communities. Christian outreach to the Cham is almost entirely undocumented. What interactions exist between Cham Islam and Vietnamese Christianity? Are there Cham converts? No studies address these questions.",
+      "vi": "Người Chăm gồm cả cộng đồng Hồi giáo và Ấn Độ giáo. Hoạt động truyền giáo Kitô đến người Chăm gần như không được ghi chép. Có tương tác gì giữa Hồi giáo Chăm và Kitô giáo Việt Nam? Có người Chăm cải đạo không? Không có nghiên cứu nào trả lời."
+    },
+    "significance": 3,
+    "status": "open"
+  },
+  {
+    "id": "gap-13",
+    "topic": {
+      "en": "Khmer Krom Christian communities",
+      "vi": "Cộng đồng Kitô giáo Khmer Krom"
+    },
+    "category": "ethnic",
+    "description": {
+      "en": "Ethnic Khmer in southern Vietnam (Khmer Krom) are predominantly Theravada Buddhist. Whether and how Christianity has reached this community — and how it interacts with Khmer Buddhist identity — is completely unstudied.",
+      "vi": "Người Khmer ở miền Nam Việt Nam (Khmer Krom) chủ yếu theo Phật giáo Nguyên thủy. Liệu và bằng cách nào Kitô giáo đã tiếp cận cộng đồng này — và tương tác như thế nào với bản sắc Phật giáo Khmer — hoàn toàn chưa được nghiên cứu."
+    },
+    "significance": 2,
+    "status": "open"
+  },
+  {
+    "id": "gap-14",
+    "topic": {
+      "en": "Ancestor worship inculturation theology",
+      "vi": "Thần học hội nhập văn hóa thờ cúng tổ tiên"
+    },
+    "category": "thematic",
+    "description": {
+      "en": "The Rites Controversy (1600s-1742) was never resolved for Vietnam specifically. Modern Vietnamese theologians have proposed inculturation approaches to ancestor veneration, but no comprehensive comparative study maps these proposals against actual parish-level practice.",
+      "vi": "Cuộc tranh luận về nghi lễ (thế kỷ 17-1742) chưa bao giờ được giải quyết riêng cho Việt Nam. Các nhà thần học Việt Nam hiện đại đã đề xuất các phương pháp hội nhập văn hóa cho việc thờ kính tổ tiên, nhưng không có nghiên cứu so sánh toàn diện nào đối chiếu các đề xuất này với thực hành ở cấp giáo xứ."
+    },
+    "significance": 5,
+    "status": "in-progress"
+  },
+  {
+    "id": "gap-15",
+    "topic": {
+      "en": "Women in Vietnamese church history",
+      "vi": "Phụ nữ trong lịch sử Giáo hội Việt Nam"
+    },
+    "category": "thematic",
+    "description": {
+      "en": "Women played critical roles as catechists, religious sisters, and lay leaders throughout Vietnamese Christianity, yet they are nearly invisible in the historiography. The Lovers of the Holy Cross — founded 1670 — is the oldest Asian women's religious order and remains poorly studied.",
+      "vi": "Phụ nữ đóng vai trò quan trọng với tư cách giáo lý viên, nữ tu, và lãnh đạo giáo dân trong suốt lịch sử Kitô giáo Việt Nam, nhưng gần như vô hình trong sử học. Dòng Mến Thánh Giá — thành lập 1670 — là dòng nữ tu lâu đời nhất châu Á và vẫn ít được nghiên cứu."
+    },
+    "significance": 5,
+    "status": "open"
+  },
+  {
+    "id": "gap-16",
+    "topic": {
+      "en": "Catholic-Protestant cooperation and tensions",
+      "vi": "Hợp tác và căng thẳng Công giáo — Tin Lành"
+    },
+    "category": "thematic",
+    "description": {
+      "en": "Vietnam has both a large Catholic minority (~7%) and a growing Protestant community (~2-3%). How these communities relate to each other — ecumenical cooperation, competition, theological friction — has not been studied from either side.",
+      "vi": "Việt Nam có cả cộng đồng Công giáo thiểu số lớn (~7%) và cộng đồng Tin Lành đang phát triển (~2-3%). Mối quan hệ giữa hai cộng đồng này — hợp tác đại kết, cạnh tranh, ma sát thần học — chưa được nghiên cứu từ bất kỳ phía nào."
+    },
+    "significance": 3,
+    "status": "open"
+  },
+  {
+    "id": "gap-17",
+    "topic": {
+      "en": "Vietnamese theological education history",
+      "vi": "Lịch sử giáo dục thần học Việt Nam"
+    },
+    "category": "thematic",
+    "description": {
+      "en": "Seminary education in Vietnam dates to the 1660s under MEP leadership. The evolution of theological training — from colonial-era Latin seminaries to contemporary Vietnamese-language programs — has never been comprehensively documented.",
+      "vi": "Giáo dục chủng viện ở Việt Nam bắt đầu từ thập niên 1660 dưới sự lãnh đạo MEP. Sự phát triển của đào tạo thần học — từ chủng viện tiếng Latin thời thuộc địa đến các chương trình tiếng Việt đương đại — chưa bao giờ được ghi chép toàn diện."
+    },
+    "significance": 3,
+    "status": "open"
+  },
+  {
+    "id": "gap-18",
+    "topic": {
+      "en": "Vietnamese Christian art and architecture",
+      "vi": "Nghệ thuật và kiến trúc Kitô giáo Việt Nam"
+    },
+    "category": "thematic",
+    "description": {
+      "en": "From Phát Diệm Cathedral's Vietnamese-Buddhist architectural fusion to contemporary Marian devotional art, Vietnamese Christianity produced a unique visual culture. No art-historical survey exists. Individual monuments are documented, but the broader tradition is not.",
+      "vi": "Từ kiến trúc hòa hợp Việt-Phật của Nhà thờ Phát Diệm đến nghệ thuật sùng kính Đức Mẹ đương đại, Kitô giáo Việt Nam đã tạo ra văn hóa thị giác độc đáo. Không có khảo sát lịch sử nghệ thuật nào. Các di tích riêng lẻ được ghi chép, nhưng truyền thống rộng hơn thì không."
+    },
+    "significance": 3,
+    "status": "open"
+  },
+  {
+    "id": "gap-19",
+    "topic": {
+      "en": "Bible translation history in Vietnamese",
+      "vi": "Lịch sử dịch Kinh Thánh tiếng Việt"
+    },
+    "category": "thematic",
+    "description": {
+      "en": "Multiple Vietnamese Bible translations exist (Catholic and Protestant), but no comparative study traces the translation history, the theological choices made by different translators, or the impact of different versions on Vietnamese Christian communities.",
+      "vi": "Có nhiều bản dịch Kinh Thánh tiếng Việt (Công giáo và Tin Lành), nhưng không có nghiên cứu so sánh nào truy nguyên lịch sử dịch thuật, các lựa chọn thần học của từng dịch giả, hoặc tác động của các phiên bản khác nhau lên cộng đồng Kitô giáo Việt Nam."
+    },
+    "significance": 4,
+    "status": "completed"
+  },
+  {
+    "id": "gap-20",
+    "topic": {
+      "en": "Vietnam-Philippines Catholic comparison",
+      "vi": "So sánh Công giáo Việt Nam — Philippines"
+    },
+    "category": "comparative",
+    "description": {
+      "en": "Both nations received Catholicism from Iberian missionaries in the 16th century. The Philippines became 85% Catholic; Vietnam stabilized at ~7%. No rigorous comparative study explains the divergence — colonization patterns, indigenous religion, state formation, or other factors.",
+      "vi": "Cả hai quốc gia đều tiếp nhận Công giáo từ nhà truyền giáo Iberia vào thế kỷ 16. Philippines trở thành 85% Công giáo; Việt Nam ổn định ở ~7%. Không có nghiên cứu so sánh nghiêm ngặt nào giải thích sự khác biệt — mô hình thuộc địa, tôn giáo bản địa, hình thành nhà nước, hay yếu tố khác."
+    },
+    "significance": 4,
+    "status": "open"
+  },
+  {
+    "id": "gap-21",
+    "topic": {
+      "en": "Vietnam-South Korea church growth comparison",
+      "vi": "So sánh tăng trưởng Giáo hội Việt Nam — Hàn Quốc"
+    },
+    "category": "comparative",
+    "description": {
+      "en": "South Korea's Protestant explosion (2% to 30% in 50 years) is the best-studied Asian conversion story. Vietnam's parallel Protestant growth since 1990 invites comparison, but no systematic study places them side by side using common analytical frameworks.",
+      "vi": "Sự bùng nổ Tin Lành Hàn Quốc (2% lên 30% trong 50 năm) là câu chuyện cải đạo châu Á được nghiên cứu nhiều nhất. Sự tăng trưởng Tin Lành song song của Việt Nam từ 1990 mời gọi so sánh, nhưng không có nghiên cứu hệ thống nào đặt cạnh nhau bằng khung phân tích chung."
+    },
+    "significance": 4,
+    "status": "open"
+  },
+  {
+    "id": "gap-22",
+    "topic": {
+      "en": "French vs. English language scholarship gap",
+      "vi": "Khoảng cách học thuật tiếng Pháp — tiếng Anh"
+    },
+    "category": "comparative",
+    "description": {
+      "en": "The richest archive of Vietnamese Christian history exists in French — MEP records, colonial-era studies, Jesuit correspondence. Most English-language scholars cannot access it. Key French-language works remain untranslated, creating parallel but disconnected historiographies.",
+      "vi": "Kho tài liệu phong phú nhất về lịch sử Kitô giáo Việt Nam tồn tại bằng tiếng Pháp — hồ sơ MEP, nghiên cứu thời thuộc địa, thư từ Dòng Tên. Phần lớn học giả tiếng Anh không thể tiếp cận. Các tác phẩm tiếng Pháp quan trọng chưa được dịch, tạo nên hai dòng sử học song song nhưng rời rạc."
+    },
+    "significance": 5,
+    "status": "completed"
+  },
+  {
+    "id": "gap-23",
+    "topic": {
+      "en": "Vietnamese diaspora returnee faith longitudinal studies",
+      "vi": "Nghiên cứu dài hạn đức tin người Việt hải ngoại trở về"
+    },
+    "category": "comparative",
+    "description": {
+      "en": "Vietnamese students who become Christian abroad and return to Vietnam face unique challenges. No longitudinal study tracks faith retention, church integration, or identity negotiation over 5+ years post-return. Current data is anecdotal.",
+      "vi": "Sinh viên Việt Nam trở thành Kitô hữu ở nước ngoài và trở về Việt Nam đối mặt thách thức riêng biệt. Không có nghiên cứu dài hạn nào theo dõi việc gìn giữ đức tin, hội nhập nhà thờ, hoặc thương lượng bản sắc trong 5+ năm sau khi trở về. Dữ liệu hiện tại chỉ là giai thoại."
+    },
+    "significance": 5,
+    "status": "open"
+  },
+  {
+    "id": "gap-24",
+    "topic": {
+      "en": "Vietnamese-language theological scholarship on mission history",
+      "vi": "Học thuật thần học tiếng Việt về lịch sử truyền giáo"
+    },
+    "category": "comparative",
+    "description": {
+      "en": "Vietnamese Catholic and Protestant scholars have produced significant work in Vietnamese that is invisible to English-language academia. No bibliographic survey of Vietnamese-language mission historiography exists, making cross-linguistic scholarly dialogue impossible.",
+      "vi": "Các học giả Công giáo và Tin Lành Việt Nam đã sản xuất các công trình quan trọng bằng tiếng Việt mà học thuật tiếng Anh không biết đến. Không có khảo sát thư mục nào về sử học truyền giáo tiếng Việt, khiến đối thoại học thuật xuyên ngôn ngữ bất khả thi."
+    },
+    "significance": 4,
+    "status": "open"
+  },
+  {
+    "id": "gap-25",
+    "topic": {
+      "en": "Church-state negotiation mechanisms (contemporary)",
+      "vi": "Cơ chế đàm phán Giáo hội — Nhà nước (đương đại)"
+    },
+    "category": "thematic",
+    "description": {
+      "en": "How do Vietnamese churches actually negotiate with Communist Party officials at the local level? The 2004 Ordinance on Religion and subsequent laws create the legal framework, but the informal practices — gift-giving, personal relationships, strategic compliance — are undocumented.",
+      "vi": "Các nhà thờ Việt Nam thực sự đàm phán với quan chức Đảng Cộng sản ở cấp địa phương như thế nào? Pháp lệnh Tín ngưỡng 2004 và các luật tiếp theo tạo khung pháp lý, nhưng các thực hành không chính thức — tặng quà, quan hệ cá nhân, tuân thủ chiến lược — không được ghi chép."
+    },
+    "significance": 4,
+    "status": "open"
+  }
+]
