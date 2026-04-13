@@ -1,0 +1,96 @@
+{
+  "id": "03",
+  "title": {
+    "en": "Research Gaps in the Study of Christianity in Vietnam",
+    "vi": "Kho\u1ea3ng tr\u1ed1ng nghi\u00ean c\u1ee9u trong vi\u1ec7c nghi\u00ean c\u1ee9u Kit\u00f4 gi\u00e1o t\u1ea1i Vi\u1ec7t Nam"
+  },
+  "summary": {
+    "en": "Christianity has been present in Vietnam for nearly five centuries, yet the scholarly literature remains remarkably uneven. Catholic missionary history from the Jesuit period onward is reasonably well documented, but vast stretches of time, geography, ethnicity, and theological inquiry remain underexplored. This report catalogs approximately 30 understudied areas organized into seven categories --- chronological, geographic, denominational, ethnic, thematic, diaspora, and comparative --- and explains what is missing, why it matters, and what kind of research would begin to fill each gap.",
+    "vi": "Kit\u00f4 gi\u00e1o \u0111\u00e3 hi\u1ec7n di\u1ec7n t\u1ea1i Vi\u1ec7t Nam g\u1ea7n n\u0103m th\u1ebf k\u1ef7, nh\u01b0ng t\u00e0i li\u1ec7u h\u1ecdc thu\u1eadt v\u1eabn kh\u00f4ng \u0111\u1ed3ng \u0111\u1ec1u \u0111\u00e1ng k\u1ec3. L\u1ecbch s\u1eed truy\u1ec1n gi\u00e1o C\u00f4ng gi\u00e1o \u0111\u01b0\u1ee3c ghi ch\u00e9p kh\u00e1 t\u1ed1t, nh\u01b0ng nhi\u1ec1u kho\u1ea3ng th\u1eddi gian, \u0111\u1ecba l\u00fd, s\u1eafc t\u1ed9c v\u00e0 th\u1ea7n h\u1ecdc v\u1eabn ch\u01b0a \u0111\u01b0\u1ee3c kh\u00e1m ph\u00e1. B\u00e1o c\u00e1o n\u00e0y li\u1ec7t k\u00ea kho\u1ea3ng 30 l\u0129nh v\u1ef1c ch\u01b0a \u0111\u01b0\u1ee3c nghi\u00ean c\u1ee9u \u0111\u1ea7y \u0111\u1ee7, t\u1ed5 ch\u1ee9c theo b\u1ea3y lo\u1ea1i --- ni\u00ean \u0111\u1ea1i, \u0111\u1ecba l\u00fd, gi\u00e1o ph\u00e1i, s\u1eafc t\u1ed9c, ch\u1ee7 \u0111\u1ec1, h\u1ea3i ngo\u1ea1i v\u00e0 so s\u00e1nh. [B\u1ea3n d\u1ecbch AI \u2014 Ch\u1edd xem x\u00e9t]"
+  },
+  "tags": ["gaps", "scholarship", "contemporary"],
+  "readingTime": 16,
+  "featured": false,
+  "sections": [
+    {
+      "heading": {
+        "en": "Chronological Gaps",
+        "vi": "Kho\u1ea3ng tr\u1ed1ng theo ni\u00ean \u0111\u1ea1i"
+      },
+      "content": {
+        "en": "### Pre-Jesuit Contact Period (1533--1615)\n\nBetween fragmentary mentions of early Portuguese contact and the Jesuit arrival in 1615, almost nothing has been published. **What is needed:** Archival research in Lisbon, Goa, and Macau; analysis of Vietnamese imperial records; archaeological investigation of early Portuguese trading posts.\n\n### Tay Son Period Christianity (1770s--1800s)\n\nThe Tay Son rebellion and dynasty represents massive political upheaval during which missionary activity continued but is poorly documented. **What is needed:** Vietnamese-language archival research; translation of French missionary correspondence.\n\n### Japanese Occupation Era (1940--1945)\n\nHow Christian institutions navigated dual colonial authority (French Vichy and Japanese military control) is largely undocumented. **What is needed:** Oral history (urgent, as last witnesses are dying); Japanese military archives; Vatican diplomatic correspondence.\n\n### Immediate Post-Reunification Underground Church (1975--1986)\n\nThe decade between reunification and Doi Moi is documented almost entirely from exile accounts, not systematic scholarship. By war's end there were roughly 154,000 Evangelical Christians, many in underground churches. Vietnamese pastors smuggled Hmong-language Bibles and ran underground Bible schools. **What is needed:** Oral history projects; declassified government surveillance records; denominational archive analysis.",
+        "vi": "### Giai \u0111o\u1ea1n tr\u01b0\u1edbc D\u00f2ng T\u00ean (1533--1615)\n\nH\u1ea7u nh\u01b0 kh\u00f4ng c\u00f3 t\u00e0i li\u1ec7u \u0111\u01b0\u1ee3c xu\u1ea5t b\u1ea3n. C\u1ea7n nghi\u00ean c\u1ee9u l\u01b0u tr\u1eef t\u1ea1i Lisbon, Goa v\u00e0 Ma Cao.\n\n### Th\u1eddi k\u1ef3 T\u00e2y S\u01a1n (1770s--1800s)\n\nHo\u1ea1t \u0111\u1ed9ng truy\u1ec1n gi\u00e1o ti\u1ebfp t\u1ee5c nh\u01b0ng thi\u1ebfu t\u00e0i li\u1ec7u.\n\n### Th\u1eddi k\u1ef3 Nh\u1eadt chi\u1ebfm \u0111\u00f3ng (1940--1945)\n\nC\u00e1c t\u1ed5 ch\u1ee9c Kit\u00f4 gi\u00e1o \u0111\u1ed1i ph\u00f3 v\u1edbi quy\u1ec1n l\u1ef1c k\u00e9p nh\u01b0 th\u1ebf n\u00e0o ch\u01b0a \u0111\u01b0\u1ee3c ghi nh\u1eadn.\n\n### Gi\u00e1o h\u1ed9i b\u00ed m\u1eadt sau th\u1ed1ng nh\u1ea5t (1975--1986)\n\nGiai \u0111o\u1ea1n n\u00e0y ch\u1ee7 y\u1ebfu \u0111\u01b0\u1ee3c ghi nh\u1eadn t\u1eeb t\u00e0i li\u1ec7u l\u01b0u vong."
+      }
+    },
+    {
+      "heading": {
+        "en": "Geographic Gaps",
+        "vi": "Kho\u1ea3ng tr\u1ed1ng theo \u0111\u1ecba l\u00fd"
+      },
+      "content": {
+        "en": "### Central Highlands Christianity Among Ethnic Minorities\n\nA distinctive form called *Tin Lanh Dega* (\"Dega Protestantism\") blends cultural pride, political autonomy, and evangelism. The Vietnamese government banned it as separatist. Human Rights Watch has documented forced renunciations and imprisonment. Academic scholarship on the religious dimensions remains thin. **What is needed:** Ethnographic fieldwork; theological analysis; comparative study.\n\n### Northern Vietnam Protestant Growth Post-2000\n\nThe most dramatic church growth since 2000 has occurred in northern provinces among Hmong, driven by radio evangelism, not foreign missionaries, under tighter government surveillance. **What is needed:** Quantitative mapping of church planting; institutional analysis; comparison of northern/southern Protestant ecclesiology.\n\n### Mekong Delta Catholic Communities\n\nSome of Vietnam's oldest Catholic parishes alongside newer communities formed after 1954. The delta's unique ecology and ethnic diversity shape church life in understudied ways.\n\n### Urban vs. Rural Church Dynamics\n\nVietnam's rapid urbanization is reshaping Christianity, but the literature treats \"the Vietnamese church\" as monolithic. Ho Chi Minh City megachurch-adjacent congregations, Hanoi's small registered churches, and rural house churches represent fundamentally different realities.",
+        "vi": "### T\u00e2y Nguy\u00ean\n\n*Tin L\u00e0nh Dega* b\u1ecb ch\u00ednh ph\u1ee7 c\u1ea5m v\u00ec coi l\u00e0 ly khai. C\u1ea7n nghi\u00ean c\u1ee9u d\u00e2n t\u1ed9c h\u1ecdc v\u00e0 th\u1ea7n h\u1ecdc.\n\n### Mi\u1ec1n B\u1eafc Vi\u1ec7t Nam sau 2000\n\nT\u0103ng tr\u01b0\u1edfng m\u1ea1nh nh\u1ea5t qua truy\u1ec1n gi\u00e1o radio trong c\u1ed9ng \u0111\u1ed3ng Hmong.\n\n### \u0110\u1ed3ng b\u1eb1ng s\u00f4ng C\u1eedu Long v\u00e0 th\u00e0nh th\u1ecb vs n\u00f4ng th\u00f4n\n\nC\u00e1c c\u1ed9ng \u0111\u1ed3ng C\u00f4ng gi\u00e1o l\u00e2u \u0111\u1eddi v\u00e0 s\u1ef1 kh\u00e1c bi\u1ec7t gi\u1eefa gi\u00e1o h\u1ed9i th\u00e0nh th\u1ecb v\u00e0 n\u00f4ng th\u00f4n ch\u01b0a \u0111\u01b0\u1ee3c nghi\u00ean c\u1ee9u."
+      }
+    },
+    {
+      "heading": {
+        "en": "Denominational and Tradition Gaps",
+        "vi": "Kho\u1ea3ng tr\u1ed1ng theo gi\u00e1o ph\u00e1i v\u00e0 truy\u1ec1n th\u1ed1ng"
+      },
+      "content": {
+        "en": "### Protestant House Church Movement\n\nBy the early 2000s, more than half of Vietnamese Protestants belonged to evangelical house churches rather than registered denominations. In 1988, a house church movement began when pastors were expelled from official churches; leader Tran Dinh Ai built a network reaching 16,000 members and 165 churches by 1997. Systematic academic study barely exists.\n\n### Pentecostal and Charismatic Growth\n\nAbout one-third to one-half of Vietnamese evangelicals identify with Pentecostalism. Ethnic minorities make up 14% of Vietnam's population yet account for three-quarters of all evangelicals. Vince Le's *Vietnamese Evangelicals and Pentecostalism* (2019) is a landmark but the field needs far more work.\n\n### Smaller Denominations\n\nSeventh-day Adventists (founded in Saigon 1929, ~16,000 members in 2025), Baptist Convention (509 churches, 51,000 members in 2023), Mennonites, Methodists, and Church of Christ have virtually no dedicated scholarship.\n\n### Indigenous Vietnamese Christian Movements\n\nDistinctly Vietnamese Christian movements initiated without foreign denominational affiliation are poorly documented.",
+        "vi": "### Phong tr\u00e0o nh\u00e0 th\u1edd gia \u0111\u00ecnh\n\nH\u01a1n m\u1ed9t n\u1eeda ng\u01b0\u1eddi Tin L\u00e0nh thu\u1ed9c nh\u00e0 th\u1edd gia \u0111\u00ecnh, nh\u01b0ng h\u1ea7u nh\u01b0 kh\u00f4ng c\u00f3 nghi\u00ean c\u1ee9u h\u1ecdc thu\u1eadt.\n\n### C\u00e1c gi\u00e1o ph\u00e1i nh\u1ecf\n\nC\u00e1c nh\u00f3m nh\u01b0 Adventist, Baptist, Mennonite ch\u01b0a c\u00f3 nghi\u00ean c\u1ee9u chuy\u00ean bi\u1ec7t."
+      }
+    },
+    {
+      "heading": {
+        "en": "Ethnic and Demographic Gaps",
+        "vi": "Kho\u1ea3ng tr\u1ed1ng v\u1ec1 s\u1eafc t\u1ed9c v\u00e0 nh\u00e2n kh\u1ea9u h\u1ecdc"
+      },
+      "content": {
+        "en": "### Hmong Christianity\n\nPerhaps the most consequential gap. Roughly one-third of Vietnam's 1.4 million Hmong have converted to Protestantism in just thirty years, beginning when villagers encountered Hmong-language radio broadcasts from Manila --- with no foreign missionaries physically present. The northern mountainous region now has 300,000 Hmong Protestants. Toan Thanh Nguyen's *The New Way* (2021) has begun to address this, but the scale of the phenomenon far outpaces the scholarship.\n\n### Montagnard/Degar Christian Communities\n\nBeyond human rights documentation, the internal religious life --- theology, leadership formation, worship practices --- is barely studied.\n\n### Khmer Krom and Christianity\n\nThe Khmer Krom are overwhelmingly Theravada Buddhist, but small Christian communities exist among them. The intersection of ethnic identity, Buddhist heritage, and Christian conversion is entirely unstudied.\n\n### Youth and Generational Shifts\n\nVietnamese Americans account for 4% of newly ordained Catholic priests and 8% of all seminarians nationwide. Yet market economy pressures and secularization are creating generational fault lines. Church leaders report materialism is drawing young Catholics away from faith.",
+        "vi": "### Kit\u00f4 gi\u00e1o Hmong\n\nKho\u1ea3ng m\u1ed9t ph\u1ea7n ba trong 1,4 tri\u1ec7u ng\u01b0\u1eddi Hmong \u0111\u00e3 c\u1ea3i \u0111\u1ea1o ch\u1ec9 trong 30 n\u0103m, qua \u0111\u00e0i ph\u00e1t thanh kh\u00f4ng c\u00f3 nh\u00e0 truy\u1ec1n gi\u00e1o n\u01b0\u1edbc ngo\u00e0i.\n\n### C\u1ed9ng \u0111\u1ed3ng Montagnard/Dega\n\n\u0110\u1eddi s\u1ed1ng t\u00f4n gi\u00e1o n\u1ed9i b\u1ed9 h\u1ea7u nh\u01b0 ch\u01b0a \u0111\u01b0\u1ee3c nghi\u00ean c\u1ee9u.\n\n### Thanh ni\u00ean v\u00e0 chuy\u1ec3n \u0111\u1ed5i th\u1ebf h\u1ec7\n\n\u00c1p l\u1ef1c kinh t\u1ebf th\u1ecb tr\u01b0\u1eddng v\u00e0 th\u1ebf t\u1ee5c h\u00f3a \u0111ang t\u1ea1o ra nh\u1eefng \u0111\u1ee9t g\u00e3y th\u1ebf h\u1ec7."
+      }
+    },
+    {
+      "heading": {
+        "en": "Thematic Gaps",
+        "vi": "Kho\u1ea3ng tr\u1ed1ng theo ch\u1ee7 \u0111\u1ec1"
+      },
+      "content": {
+        "en": "### Vietnamese Theology\n\nWhat does an indigenous Vietnamese Christian theology look like? KimSon Nguyen has proposed frameworks including God as Dao (the Way) and ancestor veneration as theological framework. But these remain isolated proposals, not a sustained tradition. The core challenge: presenting Christian faith so that Vietnamese can follow Christ while remaining culturally Vietnamese.\n\n### Christian-Buddhist Dialogue\n\nBuddhism and Christianity have coexisted for four centuries. Scholars have compared Ignatian and Vietnamese Truc Lam Zen traditions and studied Quan Am (Guanyin) and Mary. But most Buddhist-Christian dialogue scholarship comes from other Asian contexts. Vietnam-specific dialogue is its own distinct field.\n\n### Christianity and Vietnamese Nationalism\n\nThe most politically charged gap. Many Catholics initially supported independence and fought alongside the Viet Minh. Ho Chi Minh attended Christmas Mass in 1945. The full complexity of Christian patriotism, collaboration, resistance, and accommodation has never been synthesized.\n\n### Women in Vietnamese Church History\n\nOf more than 25,000 religious sisters in Vietnam, very few have held decision-making positions. Yet women comprise the majority of congregations. Among the Hmong, women often convert first, seeing Christianity as a path away from domestic violence.\n\n### Digital Church and Social Media Christianity\n\nVietnam has one of Southeast Asia's highest internet penetration rates, yet digital Christianity is nearly unstudied.\n\n### Persecution Documentation\n\nAcademic scholarship contextualizing persecution within Vietnamese legal and political frameworks is limited.",
+        "vi": "### Th\u1ea7n h\u1ecdc Vi\u1ec7t Nam\n\nThi\u00ean Ch\u00faa nh\u01b0 \u0110\u1ea1o, th\u1edd c\u00fang t\u1ed5 ti\u00ean nh\u01b0 khu\u00f4n kh\u1ed5 th\u1ea7n h\u1ecdc --- nh\u1eefng \u0111\u1ec1 xu\u1ea5t \u0111\u01a1n l\u1ebb ch\u01b0a th\u00e0nh truy\u1ec1n th\u1ed1ng.\n\n### \u0110\u1ed1i tho\u1ea1i Ph\u1eadt gi\u00e1o--Kit\u00f4 gi\u00e1o\n\nB\u1ed1n th\u1ebf k\u1ef7 chung s\u1ed1ng nh\u01b0ng nghi\u00ean c\u1ee9u \u0111\u1ed1i tho\u1ea1i ri\u00eang cho Vi\u1ec7t Nam r\u1ea5t \u00edt.\n\n### Ph\u1ee5 n\u1eef v\u00e0 gi\u00e1o h\u1ed9i s\u1ed1\n\nPh\u1ee5 n\u1eef chi\u1ebfm \u0111a s\u1ed1 gi\u00e1o d\u00e2n nh\u01b0ng thi\u1ebfu ti\u1ebfng n\u00f3i; Kit\u00f4 gi\u00e1o s\u1ed1 g\u1ea7n nh\u01b0 ch\u01b0a \u0111\u01b0\u1ee3c nghi\u00ean c\u1ee9u."
+      }
+    },
+    {
+      "heading": {
+        "en": "Diaspora Gaps",
+        "vi": "Kho\u1ea3ng tr\u1ed1ng v\u1ec1 c\u1ed9ng \u0111\u1ed3ng h\u1ea3i ngo\u1ea1i"
+      },
+      "content": {
+        "en": "### Viet Kieu Church Dynamics\n\nChristians formed approximately 75% of Vietnamese refugees after 1975. The Vietnamese Catholic community in the US numbers around 700,000 faithful, with approximately 1,000 Vietnamese priests. Yet diaspora church scholarship remains thin beyond demographic description.\n\n### Second-Generation Faith Retention\n\nFirst, second, and third generations hold different relationships to both faith and Vietnamese identity. Empirical data on retention rates and patterns of disaffiliation is scarce.\n\n### Vietnamese Christians in Other Asian Countries\n\nApproximately 700,000 Vietnamese migrant workers live across Japan, Taiwan, South Korea, and Thailand, many from Catholic backgrounds. Vietnamese migrants are increasingly seen as \"strategic partners for Church renewal\" in aging Asian churches --- but this phenomenon has received almost no scholarly attention.\n\n### Returnee Faith Patterns\n\nWhat happens when diaspora Vietnamese return? Do they bring back transformed religious practices? The returnee faith phenomenon is documented anecdotally but not studied systematically.",
+        "vi": "### \u0110\u1ed9ng l\u1ef1c gi\u00e1o h\u1ed9i Vi\u1ec7t ki\u1ec1u\n\nKho\u1ea3ng 700.000 ng\u01b0\u1eddi C\u00f4ng gi\u00e1o Vi\u1ec7t t\u1ea1i M\u1ef9. Nghi\u00ean c\u1ee9u v\u1ec1 gi\u00e1o h\u1ed9i h\u1ea3i ngo\u1ea1i v\u1eabn m\u1ecfng.\n\n### Gi\u1eef \u0111\u1ea1o th\u1ebf h\u1ec7 th\u1ee9 hai\n\nD\u1eef li\u1ec7u v\u1ec1 t\u1ef7 l\u1ec7 gi\u1eef \u0111\u1ea1o r\u1ea5t thi\u1ebfu.\n\n### Ng\u01b0\u1eddi Vi\u1ec7t t\u1ea1i c\u00e1c n\u01b0\u1edbc ch\u00e2u \u00c1 v\u00e0 ng\u01b0\u1eddi h\u1ed3i h\u01b0\u01a1ng\n\n700.000 lao \u0111\u1ed9ng Vi\u1ec7t t\u1ea1i Nh\u1eadt, \u0110\u00e0i Loan, H\u00e0n Qu\u1ed1c ch\u01b0a \u0111\u01b0\u1ee3c nghi\u00ean c\u1ee9u. Hi\u1ec7n t\u01b0\u1ee3ng h\u1ed3i h\u01b0\u01a1ng c\u0169ng ch\u01b0a c\u00f3 nghi\u00ean c\u1ee9u h\u1ec7 th\u1ed1ng."
+      }
+    },
+    {
+      "heading": {
+        "en": "Comparative Gaps",
+        "vi": "Kho\u1ea3ng tr\u1ed1ng so s\u00e1nh"
+      },
+      "content": {
+        "en": "### Vietnam-China Comparison\n\nBoth are communist states with growing Christian populations, but trajectories diverge. China's Sinicization campaign has no direct parallel in Vietnam's more pragmatic religious management. In China Christianity grows among the ethnic majority; in Vietnam among minorities.\n\n### Vietnam-Philippines Comparison\n\nBoth received Catholicism through Iberian colonialism, but the Philippines became over 80% Catholic while Vietnam remained under 10%. A 2024 comparative study found \"entirely distinct historical pathways.\"\n\n### Vietnam-Korea Comparison\n\nBoth experienced war, partition, and foreign intervention, yet South Korea became ~30% Christian while Vietnam remained under 10%. Korea's Christianity began with indigenous intellectuals self-evangelizing; Vietnam's arrived through foreign missionaries. Korea's Protestant boom coincided with industrialization; Vietnam's occurred among marginalized ethnic minorities under communist rule.",
+        "vi": "### So s\u00e1nh Vi\u1ec7t Nam--Trung Qu\u1ed1c\n\nC\u1ea3 hai l\u00e0 nh\u00e0 n\u01b0\u1edbc c\u1ed9ng s\u1ea3n nh\u01b0ng qu\u1ef9 \u0111\u1ea1o Kit\u00f4 gi\u00e1o kh\u00e1c nhau.\n\n### So s\u00e1nh Vi\u1ec7t Nam--Philippines\n\nPhilippines h\u01a1n 80% C\u00f4ng gi\u00e1o, Vi\u1ec7t Nam d\u01b0\u1edbi 10%.\n\n### So s\u00e1nh Vi\u1ec7t Nam--H\u00e0n Qu\u1ed1c\n\nH\u00e0n Qu\u1ed1c ~30% Kit\u00f4 h\u1eefu, Vi\u1ec7t Nam d\u01b0\u1edbi 10% --- v\u1edbi nh\u1eefng \u0111\u01b0\u1eddng \u0111i ho\u00e0n to\u00e0n kh\u00e1c."
+      }
+    },
+    {
+      "heading": {
+        "en": "Priorities for Future Research",
+        "vi": "\u01afu ti\u00ean cho nghi\u00ean c\u1ee9u t\u01b0\u01a1ng lai"
+      },
+      "content": {
+        "en": "Three overarching patterns emerge:\n\n**The Protestant deficit.** Catholic history is reasonably covered for the colonial period, but Protestant history --- especially explosive post-Doi Moi growth --- has almost no sustained scholarly tradition. The forty-year gap in Protestant historiography (1972--2012) means the most dynamic period of church growth occurred with virtually no academic documentation.\n\n**The ethnic minority blind spot.** Ethnic minorities account for three-quarters of Vietnamese evangelicals, yet scholarship remains overwhelmingly focused on Kinh-majority church life. The Hmong conversion phenomenon may be one of the most significant church growth stories of the late twentieth century.\n\n**The theology gap.** Vietnam has produced almost no recognized indigenous theology. For a church of nearly 10 million, this represents a significant intellectual deficit with practical consequences for discipleship, leadership formation, and cultural engagement.\n\nFor missions organizations and funding bodies, these gaps represent both research opportunities and strategic intelligence needs.",
+        "vi": "Ba m\u00f4 h\u00ecnh ch\u00ednh: Thi\u1ebfu h\u1ee5t nghi\u00ean c\u1ee9u Tin L\u00e0nh, \u0111i\u1ec3m m\u00f9 v\u1ec1 d\u00e2n t\u1ed9c thi\u1ec3u s\u1ed1, v\u00e0 kho\u1ea3ng tr\u1ed1ng th\u1ea7n h\u1ecdc. V\u1edbi g\u1ea7n 10 tri\u1ec7u Kit\u00f4 h\u1eefu, vi\u1ec7c l\u1ea5p \u0111\u1ea7y nh\u1eefng kho\u1ea3ng tr\u1ed1ng n\u00e0y l\u00e0 c\u1ea5p thi\u1ebft."
+      }
+    }
+  ]
+}

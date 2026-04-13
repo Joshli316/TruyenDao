@@ -1,0 +1,86 @@
+{
+  "id": "02",
+  "title": {
+    "en": "Existing Scholarship and Academic Resources on Christianity in Vietnam",
+    "vi": "H\u1ecdc thu\u1eadt v\u00e0 t\u00e0i nguy\u00ean nghi\u00ean c\u1ee9u hi\u1ec7n c\u00f3 v\u1ec1 Kit\u00f4 gi\u00e1o t\u1ea1i Vi\u1ec7t Nam"
+  },
+  "summary": {
+    "en": "The academic study of Christianity in Vietnam draws on multiple scholarly traditions -- French colonial historiography, Vietnamese-language church history, English-language social history, and theological reflection from the Vietnamese diaspora. This report maps the major scholars, works, archives, journals, and institutions that define the field, and identifies critical gaps in English-language access that affect missions planning and strategy.",
+    "vi": "Vi\u1ec7c nghi\u00ean c\u1ee9u h\u1ecdc thu\u1eadt v\u1ec1 Kit\u00f4 gi\u00e1o t\u1ea1i Vi\u1ec7t Nam d\u1ef1a tr\u00ean nhi\u1ec1u truy\u1ec1n th\u1ed1ng h\u1ecdc thu\u1eadt -- s\u1eed h\u1ecdc thu\u1ed9c \u0111\u1ecba Ph\u00e1p, l\u1ecbch s\u1eed gi\u00e1o h\u1ed9i b\u1eb1ng ti\u1ebfng Vi\u1ec7t, l\u1ecbch s\u1eed x\u00e3 h\u1ed9i b\u1eb1ng ti\u1ebfng Anh, v\u00e0 suy t\u01b0 th\u1ea7n h\u1ecdc t\u1eeb c\u1ed9ng \u0111\u1ed3ng h\u1ea3i ngo\u1ea1i Vi\u1ec7t Nam. B\u00e1o c\u00e1o n\u00e0y l\u1eadp b\u1ea3n \u0111\u1ed3 c\u00e1c h\u1ecdc gi\u1ea3, t\u00e1c ph\u1ea9m, l\u01b0u tr\u1eef, t\u1ea1p ch\u00ed v\u00e0 t\u1ed5 ch\u1ee9c ch\u00ednh \u0111\u1ecbnh h\u00ecnh l\u0129nh v\u1ef1c n\u00e0y, v\u00e0 x\u00e1c \u0111\u1ecbnh nh\u1eefng kho\u1ea3ng tr\u1ed1ng quan tr\u1ecdng trong ti\u1ebfp c\u1eadn ti\u1ebfng Anh. [B\u1ea3n d\u1ecbch AI \u2014 Ch\u1edd xem x\u00e9t]"
+  },
+  "tags": ["scholarship", "archives", "history"],
+  "readingTime": 14,
+  "featured": false,
+  "sections": [
+    {
+      "heading": {
+        "en": "Major Western Scholars and Works",
+        "vi": "C\u00e1c h\u1ecdc gi\u1ea3 ph\u01b0\u01a1ng T\u00e2y v\u00e0 t\u00e1c ph\u1ea9m ch\u00ednh"
+      },
+      "content": {
+        "en": "### Charles Keith\n\nCharles Keith (Michigan State University) authored *Catholic Vietnam: A Church from Empire to Nation* (UC Press, 2012), the most important single English-language monograph on Vietnamese Catholicism. Keith demonstrates how French colonial rule transformed Catholic missions into powerful institutional structures, and how Vatican reforms enabling an independent national Church allowed Vietnamese Catholics to redefine their relationships with both missionary Catholicism and colonial rule.\n\n### Peter C. Phan\n\nPeter C. Phan (Georgetown University), a Vietnamese-born theologian, is the most prolific Vietnamese-American scholar of Christianity. He has authored or edited over 30 books and 300+ essays. Key works include *Vietnamese-American Catholics* (2005), *Asian Christianities* (2018), and *The Joy of Religious Pluralism* (2017). He is the first non-Anglo president of the Catholic Theological Society of America.\n\n### Jacob Ramsay\n\nJacob Ramsay authored *Mandarins and Martyrs* (Stanford, 2008), challenging the conventional narrative that blames French missionaries for destabilizing dynastic Vietnam, arguing for a more complex account of anti-Catholicism shaped by grassroots religious dynamics.\n\n### Keith Taylor\n\nKeith Taylor (Cornell University) published *A History of the Vietnamese* (Cambridge, 2013), a comprehensive narrative addressing religion within the broader sweep of Vietnamese history.\n\n### Older French-Language Works\n\n**Georges Taboulet** compiled *La Geste Francaise en Indochine* (1956), a two-volume, 937-page documentary history covering French engagement from its origins through 1914, including primary documents on Jesuit evangelization, MEP activity, and anti-Christian edicts.",
+        "vi": "### Charles Keith\n\n*Catholic Vietnam: A Church from Empire to Nation* (2012) l\u00e0 chuy\u00ean kh\u1ea3o ti\u1ebfng Anh quan tr\u1ecdng nh\u1ea5t v\u1ec1 C\u00f4ng gi\u00e1o Vi\u1ec7t Nam.\n\n### Peter C. Phan\n\nH\u1ecdc gi\u1ea3 g\u1ed1c Vi\u1ec7t nhi\u1ec1u t\u00e1c ph\u1ea9m nh\u1ea5t v\u1ec1 Kit\u00f4 gi\u00e1o, v\u1edbi h\u01a1n 30 cu\u1ed1n s\u00e1ch v\u00e0 300 b\u00e0i lu\u1eadn.\n\n### Jacob Ramsay\n\n*Mandarins and Martyrs* (2008) \u0111\u01b0a ra c\u00e1ch nh\u00ecn ph\u1ee9c t\u1ea1p h\u01a1n v\u1ec1 ch\u1ed1ng C\u00f4ng gi\u00e1o d\u01b0\u1edbi tri\u1ec1u Nguy\u1ec5n."
+      }
+    },
+    {
+      "heading": {
+        "en": "Vietnamese-Language Scholarship",
+        "vi": "H\u1ecdc thu\u1eadt b\u1eb1ng ti\u1ebfng Vi\u1ec7t"
+      },
+      "content": {
+        "en": "### Church Historians Writing in Vietnamese\n\nA substantial body of Vietnamese-language church history exists but remains poorly indexed and largely inaccessible to English-speaking researchers. **Nguyen Hong** authored *Lich su truyen giao o Viet Nam* (History of Evangelization in Vietnam), one of the foundational works. Parish histories, diocesan records, and seminary theses produced inside Vietnam contain granular data unavailable elsewhere but are rarely catalogued in Western academic databases.\n\n### Seminary-Based Research\n\nVietnam's major seminaries are active centers of theological education:\n\n- **Saint Sulpice Major Seminary, Hue** (est. 1740) -- the oldest in Vietnam\n- **Saint Joseph Major Seminary, Ho Chi Minh City** (est. 1860) -- currently trains approximately 300 seminarians\n- **Saint Joseph Major Seminary, Hanoi** (est. 1932)\n\nThe training follows an eight-year curriculum. Vietnam has one of the highest numbers of seminarians in Asia, with about 20 new priests ordained yearly in the Hanoi archdiocese alone.",
+        "vi": "### C\u00e1c nh\u00e0 s\u1eed h\u1ecdc gi\u00e1o h\u1ed9i vi\u1ebft b\u1eb1ng ti\u1ebfng Vi\u1ec7t\n\nNhi\u1ec1u t\u00e0i li\u1ec7u l\u1ecbch s\u1eed gi\u00e1o h\u1ed9i b\u1eb1ng ti\u1ebfng Vi\u1ec7t t\u1ed3n t\u1ea1i nh\u01b0ng kh\u00f3 ti\u1ebfp c\u1eadn v\u1edbi ng\u01b0\u1eddi nghi\u00ean c\u1ee9u n\u00f3i ti\u1ebfng Anh. **Nguy\u1ec5n H\u1ed3ng** vi\u1ebft *L\u1ecbch s\u1eed truy\u1ec1n gi\u00e1o \u1edf Vi\u1ec7t Nam*, m\u1ed9t trong nh\u1eefng c\u00f4ng tr\u00ecnh n\u1ec1n t\u1ea3ng."
+      }
+    },
+    {
+      "heading": {
+        "en": "Key Journals and Publications",
+        "vi": "C\u00e1c t\u1ea1p ch\u00ed v\u00e0 \u1ea5n ph\u1ea9m ch\u00ednh"
+      },
+      "content": {
+        "en": "### English-Language Journals\n\n- **Studies in World Christianity** (Edinburgh University Press, est. 1995)\n- **International Journal of Asian Christianity (IJAC)** (Brill) -- multidisciplinary journal particularly relevant for contemporary Vietnamese Christianity\n- **Journal of World Christianity** (Penn State University Press)\n- **International Journal for the Study of the Christian Church** -- has published Vietnam-specific articles\n\n### French-Language Journals\n\n- **Revue d'histoire des missions** -- historical journal of Catholic missions with archival articles on Indochina\n- **Persee.fr** -- French open-access platform hosting multiple articles on missionary activity in Tonkin, Annam, and Cochinchina\n- **Cairn.info** -- hosts recent French-language scholarship on Catholicism, Buddhism, and secular laws in Tonkin",
+        "vi": "### T\u1ea1p ch\u00ed ti\u1ebfng Anh\n\n- **Studies in World Christianity**, **IJAC** (Brill), **Journal of World Christianity** v\u00e0 nhi\u1ec1u t\u1ea1p ch\u00ed kh\u00e1c \u0111\u00e3 xu\u1ea5t b\u1ea3n nghi\u00ean c\u1ee9u v\u1ec1 Kit\u00f4 gi\u00e1o Vi\u1ec7t Nam.\n\n### T\u1ea1p ch\u00ed ti\u1ebfng Ph\u00e1p\n\n- **Persee.fr** v\u00e0 **Cairn.info** l\u00e0 n\u1ec1n t\u1ea3ng truy c\u1eadp m\u1edf quan tr\u1ecdng cho nghi\u00ean c\u1ee9u th\u1eddi thu\u1ed9c \u0111\u1ecba."
+      }
+    },
+    {
+      "heading": {
+        "en": "Research Centers and Institutions",
+        "vi": "Trung t\u00e2m nghi\u00ean c\u1ee9u v\u00e0 t\u1ed5 ch\u1ee9c"
+      },
+      "content": {
+        "en": "### IRFA (Institut de recherche France-Asie)\n\nFounded in 2019 by the Missions Etrangeres de Paris, IRFA is the single most important institutional resource for French Catholic missions in Asia. Holdings include 800 linear meters of unpublished archives in French, Latin, and ~30 Asian languages; 500 printed works in Central Vietnamese ethnic group languages; and 20,000 volumes.\n\n### Georgetown University\n\nGeorgetown's Berkley Center houses Peter Phan's work and hosts conferences on Asian Christianity.\n\n### SOAS, London\n\nSOAS's Centre of World Christianity supports research on Christianity in Southeast Asia, including work on Protestant Christianity among Hmong communities.\n\n### Other Institutions\n\n- **Cornell University** -- Keith Taylor's program; strong Vietnamese-language holdings\n- **University of Bonn** -- 2021 dissertation on Hmong Protestant religious life\n- **Loyola School of Theology, Philippines** -- trains Vietnamese Jesuits\n- **Santa Clara University** -- multiple recent dissertations on Vietnamese Catholic topics",
+        "vi": "### IRFA\n\nTh\u00e0nh l\u1eadp n\u0103m 2019 b\u1edfi MEP, IRFA l\u00e0 ngu\u1ed3n t\u00e0i nguy\u00ean t\u1ed5 ch\u1ee9c quan tr\u1ecdng nh\u1ea5t v\u1edbi 800 m\u00e9t d\u00e0i l\u01b0u tr\u1eef ch\u01b0a xu\u1ea5t b\u1ea3n.\n\n### C\u00e1c t\u1ed5 ch\u1ee9c kh\u00e1c\n\nGeorgetown, SOAS London, Cornell, \u0110\u1ea1i h\u1ecdc Bonn v\u00e0 Santa Clara \u0111\u1ec1u c\u00f3 ch\u01b0\u01a1ng tr\u00ecnh nghi\u00ean c\u1ee9u li\u00ean quan."
+      }
+    },
+    {
+      "heading": {
+        "en": "Primary Source Collections",
+        "vi": "C\u00e1c b\u1ed9 s\u01b0u t\u1eadp ngu\u1ed3n s\u01a1 c\u1ea5p"
+      },
+      "content": {
+        "en": "### MEP Archives\n\nThe MEP archives, now housed at IRFA in Paris, constitute the richest primary source collection for Vietnamese Christianity history. They contain correspondence, missionary letters, reports, financial records, and grammars spanning from the seventeenth through twentieth centuries.\n\n### Vatican Archives (Propaganda Fide)\n\nThe historical archives contain mission finances, reports from Vatican envoys, and the landmark 1659 *Instructio* --- the \"Magna Carta of the missions\" directing missionaries to develop indigenous clergy and adapt to local culture.\n\n### French Colonial Archives (ANOM)\n\nArchives nationales d'outre-mer in Aix-en-Provence hold repatriated colonial records providing the state perspective on church-colonial dynamics.\n\n### Alexandre de Rhodes' Writings\n\nTwo foundational texts: the **Dictionarium Annamiticum Lusitanum et Latinum** (1651) --- the first trilingual dictionary codifying chu Quoc ngu --- and the **Catechismus** (1651) in Vietnamese using the Quoc ngu script. These are among the most important primary sources for both early Vietnamese Christianity and the history of the Vietnamese language.",
+        "vi": "### L\u01b0u tr\u1eef MEP\n\nL\u01b0u tr\u1eef MEP t\u1ea1i IRFA Paris l\u00e0 b\u1ed9 s\u01b0u t\u1eadp ngu\u1ed3n s\u01a1 c\u1ea5p phong ph\u00fa nh\u1ea5t. L\u01b0u tr\u1eef Vatican v\u00e0 ANOM b\u1ed5 sung g\u00f3c nh\u00ecn t\u1eeb nh\u00e0 n\u01b0\u1edbc. C\u00e1c t\u00e1c ph\u1ea9m c\u1ee7a Alexandre de Rhodes l\u00e0 ngu\u1ed3n s\u01a1 c\u1ea5p quan tr\u1ecdng nh\u1ea5t cho giai \u0111o\u1ea1n \u0111\u1ea7u."
+      }
+    },
+    {
+      "heading": {
+        "en": "Dissertations and Recent Research",
+        "vi": "Lu\u1eadn v\u0103n v\u00e0 nghi\u00ean c\u1ee9u g\u1ea7n \u0111\u00e2y"
+      },
+      "content": {
+        "en": "### PhD Dissertations\n\n- **Le Hoang Phu** (NYU, 1972) -- *A Short History of the Evangelical Church of Vietnam (1911--1965)*. At 560 pages, this remains the most comprehensive English-language study of Vietnamese Protestantism.\n- **University of Bonn** (2021) -- Dissertation on Hmong Protestant religious life in the Central Highlands.\n- **Santa Clara University** -- Recent dissertations on Vietnamese Catholic Christological discipleship, death and afterlife among Vietnamese-American Catholics, and Catholic-Buddhist interfaith marriage.\n\n### Recent Journal Articles (2020--2026)\n\n- \"Protestantism among the Hmong People in Northern Vietnam\" (*Religions*, MDPI, 2024)\n- \"Hmong Christianisation, the Will to Improve and Neoliberalism in Vietnam's Highlands\" (*European Journal of East Asian Studies*, Brill, 2021)\n- \"Alternative Development Trajectories? Religion as a Vector of Mobility among the Hmong\" (*Journal of Rural Studies*, 2023)\n\nThe emerging trend is a significant increase in social-scientific research on ethnic minority Protestantism --- a contrast to the historically Catholic-dominated field.",
+        "vi": "### Lu\u1eadn v\u0103n ti\u1ebfn s\u0129\n\nLu\u1eadn v\u0103n c\u1ee7a **L\u00ea Ho\u00e0ng Ph\u1ee7** (NYU, 1972) v\u1eabn l\u00e0 nghi\u00ean c\u1ee9u to\u00e0n di\u1ec7n nh\u1ea5t b\u1eb1ng ti\u1ebfng Anh v\u1ec1 \u0111\u1ea1o Tin L\u00e0nh Vi\u1ec7t Nam. Xu h\u01b0\u1edbng g\u1ea7n \u0111\u00e2y l\u00e0 nghi\u00ean c\u1ee9u khoa h\u1ecdc x\u00e3 h\u1ed9i v\u1ec1 \u0111\u1ea1o Tin L\u00e0nh d\u00e2n t\u1ed9c thi\u1ec3u s\u1ed1 t\u0103ng \u0111\u00e1ng k\u1ec3."
+      }
+    },
+    {
+      "heading": {
+        "en": "Gaps in English-Language Access",
+        "vi": "Kho\u1ea3ng tr\u1ed1ng trong ti\u1ebfp c\u1eadn ti\u1ebfng Anh"
+      },
+      "content": {
+        "en": "### What Exists Only in Vietnamese\n\nNguyen Hong's foundational church history, parish histories, diocesan records, seminary theses, and Vietnamese Catholic periodicals remain unavailable in English.\n\n### What Exists Only in French\n\nTaboulet's *La Geste Francaise*, the bulk of MEP correspondence, and important articles on Persee.fr and Cairn.info have never been translated.\n\n### Structural Gaps\n\n- **Protestant scholarship is thin.** The CMA's 100+ year presence has produced remarkably little academic history beyond Le Hoang Phu's 1972 dissertation.\n- **Post-1975 church life is under-documented.** The period from reunification to present lacks comprehensive English-language treatment.\n- **Ethnic minority Christianity needs more work.** Christianity among highland groups beyond the Hmong remains under-studied.\n- **Vietnamese seminary research is inaccessible** to international databases.\n\n### Implications for Missions Research\n\nEnglish-speaking missions organizations are operating with an incomplete picture. Priority translation targets include Nguyen Hong's mission history, selected MEP materials, and recent Vietnamese-language seminary research.",
+        "vi": "### Nh\u1eefng g\u00ec ch\u1ec9 c\u00f3 b\u1eb1ng ti\u1ebfng Vi\u1ec7t ho\u1eb7c ti\u1ebfng Ph\u00e1p\n\nNhi\u1ec1u t\u00e0i li\u1ec7u n\u1ec1n t\u1ea3ng ch\u01b0a \u0111\u01b0\u1ee3c d\u1ecbch sang ti\u1ebfng Anh, t\u1ea1o ra b\u1ea5t l\u1ee3i c\u1ea5u tr\u00fac cho c\u00e1c t\u1ed5 ch\u1ee9c truy\u1ec1n gi\u00e1o n\u00f3i ti\u1ebfng Anh."
+      }
+    }
+  ]
+}
