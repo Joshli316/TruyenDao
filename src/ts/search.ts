@@ -155,7 +155,7 @@ export function initSearch(): void {
       const results = await search(q);
       resultsContainer.innerHTML = results.map(r => `
         <a href="#/research/${r.report.id}" class="search-result-item" onclick="document.getElementById('search-modal').classList.remove('open')">
-          <div class="title">Report ${r.report.id}: ${localized(r.report.title)}</div>
+          <div class="title">${t('common.report')} ${r.report.id}: ${localized(r.report.title)}</div>
           <div class="excerpt">${highlightTerms(r.excerpt, tokenize(q))}</div>
         </a>
       `).join('');

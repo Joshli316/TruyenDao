@@ -67,6 +67,8 @@ const strings: Translations = {
   'timeline.eyebrow': { en: 'Timeline', vi: 'Dòng thời gian' },
   'timeline.title': { en: '493 Years at a Glance', vi: '493 năm nhìn lại' },
   'timeline.cta': { en: 'View full timeline', vi: 'Xem toàn bộ dòng thời gian' },
+  'timeline.event.1651': { en: 'Chữ Quốc ngữ dictionary', vi: 'Từ điển chữ Quốc ngữ' },
+  'timeline.event.1988': { en: '117 Martyrs canonized', vi: '117 Thánh Tử Đạo được phong thánh' },
 
   // Timeline page
   'timeline.page.title': { en: '493 Years of Christianity in Vietnam', vi: '493 năm Kitô giáo tại Việt Nam' },
@@ -164,6 +166,17 @@ const strings: Translations = {
     en: 'The 117 Martyrs. The Gift of Letters. Two stories that define Vietnamese Christianity.',
     vi: '117 Thánh Tử Đạo. Ân Phẩm Chữ Viết. Hai câu chuyện định hình Kitô giáo Việt Nam.'
   },
+  'heritage.martyrs.title': { en: 'The 117 Saints', vi: '117 Thánh Tử Đạo' },
+  'heritage.martyrs.desc': {
+    en: 'The largest single-country group canonization in Catholic history. Walk through the persecution eras of Minh Mạng, Thiệu Trị, and Tự Đức. Discover the stories of courage that earned 117 Vietnamese, Spanish, and French believers their place among the saints.',
+    vi: 'Lần phong thánh đông nhất cho một quốc gia trong lịch sử Công giáo. Bước qua các thời kỳ bách hại của Minh Mạng, Thiệu Trị, và Tự Đức. Khám phá những câu chuyện can đảm đã đưa 117 tín hữu Việt Nam, Tây Ban Nha, và Pháp vào hàng ngũ các thánh.'
+  },
+  'heritage.script.title': { en: 'The Gift of Letters', vi: 'Ân Phẩm Chữ Viết' },
+  'heritage.script.desc': {
+    en: 'How Jesuit missionaries invented the Vietnamese alphabet. Follow the journey from Francisco de Pina\'s linguistic genius through Alexandre de Rhodes\' dictionary to 100 million people writing in a missionary-created script. The communists promoted it. The world forgot who made it.',
+    vi: 'Cách các nhà truyền giáo Dòng Tên sáng tạo bảng chữ cái Việt Nam. Hành trình từ thiên tài ngôn ngữ Francisco de Pina qua từ điển của Alexandre de Rhodes đến 100 triệu người viết bằng chữ do nhà truyền giáo sáng tạo. Chính quyền Cộng sản quảng bá nó. Thế giới quên ai đã tạo ra nó.'
+  },
+  'heritage.coming': { en: 'Coming in Phase 2', vi: 'Sắp có trong Giai đoạn 2' },
 
   // Personas
   'personas.title': { en: 'Historical Conversations', vi: 'Đối thoại lịch sử' },
@@ -171,6 +184,28 @@ const strings: Translations = {
     en: 'Converse with key figures from Vietnamese Christian history — AI-mediated, grounded in their actual writings.',
     vi: 'Trò chuyện với các nhân vật quan trọng trong lịch sử Kitô giáo Việt Nam — qua AI, dựa trên các tác phẩm thực tế của họ.'
   },
+  'personas.coming': { en: 'Coming in Phase 3', vi: 'Sắp có trong Giai đoạn 3' },
+  'personas.era.pioneers': { en: 'Missionary Pioneers', vi: 'Nhà Tiên Phong Truyền Giáo' },
+  'personas.era.saints': { en: 'Vietnamese Saints', vi: 'Thánh Nhân Việt Nam' },
+  'personas.era.modern': { en: 'Modern Voices', vi: 'Tiếng nói Hiện đại' },
+  'personas.rhodes.name': { en: 'Alexandre de Rhodes', vi: 'Alexandre de Rhodes' },
+  'personas.rhodes.dates': { en: '1591\u20131660', vi: '1591\u20131660' },
+  'personas.rhodes.desc': { en: 'Jesuit missionary, creator of ch\u1eef Qu\u1ed1c ng\u1eef dictionary', vi: 'Nhà truyền giáo Dòng Tên, tác giả từ điển chữ Quốc ngữ' },
+  'personas.thuan.name': { en: 'Nguy\u1ec5n V\u0103n Thu\u1eadn', vi: 'Nguyễn Văn Thuận' },
+  'personas.thuan.dates': { en: '1928\u20132002', vi: '1928\u20132002' },
+  'personas.thuan.desc': { en: 'Cardinal, 13 years imprisoned for faith', vi: 'Hồng y, 13 năm tù vì đức tin' },
+  'personas.andrew.name': { en: 'Andrew of Ph\u00fa Y\u00ean', vi: 'Anrê Phú Yên' },
+  'personas.andrew.dates': { en: '1625\u20131644', vi: '1625\u20131644' },
+  'personas.andrew.desc': { en: 'First Vietnamese martyr, killed at age 19', vi: 'Thánh tử đạo Việt Nam đầu tiên, bị giết ở tuổi 19' },
+  'personas.tranluc.name': { en: 'Tr\u1ea7n L\u1ee5c', vi: 'Trần Lục' },
+  'personas.tranluc.dates': { en: '1825\u20131899', vi: '1825\u20131899' },
+  'personas.tranluc.desc': { en: 'Builder of Ph\u00e1t Di\u1ec7m Cathedral', vi: 'Người xây dựng Nhà thờ Phát Diệm' },
+  'personas.jaffray.name': { en: 'Robert Jaffray', vi: 'Robert Jaffray' },
+  'personas.jaffray.dates': { en: '1873\u20131945', vi: '1873\u20131945' },
+  'personas.jaffray.desc': { en: 'CMA pioneer, brought Protestantism to Vietnam', vi: 'Nhà tiên phong CMA, mang đạo Tin Lành đến Việt Nam' },
+  'personas.hmong.name': { en: 'Hmong Elder', vi: 'Trưởng lão H\'Mông' },
+  'personas.hmong.dates': { en: 'Composite voice', vi: 'Tiếng nói tổng hợp' },
+  'personas.hmong.desc': { en: 'Representing the Central Highlands conversion story', vi: 'Đại diện câu chuyện cải đạo ở Tây Nguyên' },
 
   // About
   'about.title': { en: 'About TruyềnĐạo', vi: 'Giới thiệu TruyềnĐạo' },
@@ -205,6 +240,8 @@ const strings: Translations = {
   'common.back': { en: 'Back', vi: 'Quay lại' },
   'common.readmore': { en: 'Read more', vi: 'Đọc thêm' },
   'common.ai_translated': { en: 'AI-translated — review pending', vi: 'Bản dịch AI — Chờ xem xét' },
+  'common.report': { en: 'Report', vi: 'Báo cáo' },
+  'common.notfound': { en: 'Report not found.', vi: 'Không tìm thấy báo cáo.' },
 };
 
 let currentLang: Lang = (localStorage.getItem('truyendao-lang') as Lang) || detectBrowserLang();

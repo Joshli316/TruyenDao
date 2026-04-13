@@ -5,12 +5,12 @@ export function renderPersonasHub(): void {
   if (!app) return;
 
   const personas = [
-    { name: 'Alexandre de Rhodes', dates: '1591\u20131660', desc: 'Jesuit missionary, creator of ch\u1eef Qu\u1ed1c ng\u1eef dictionary', era: 'Missionary Pioneers' },
-    { name: 'Nguy\u1ec5n V\u0103n Thu\u1eadn', dates: '1928\u20132002', desc: 'Cardinal, 13 years imprisoned for faith', era: 'Modern Voices' },
-    { name: 'Andrew of Ph\u00fa Y\u00ean', dates: '1625\u20131644', desc: 'First Vietnamese martyr, killed at age 19', era: 'Vietnamese Saints' },
-    { name: 'Tr\u1ea7n L\u1ee5c', dates: '1825\u20131899', desc: 'Builder of Ph\u00e1t Di\u1ec7m Cathedral', era: 'Vietnamese Saints' },
-    { name: 'Robert Jaffray', dates: '1873\u20131945', desc: 'CMA pioneer, brought Protestantism to Vietnam', era: 'Missionary Pioneers' },
-    { name: 'Hmong Elder', dates: 'Composite voice', desc: 'Representing the Central Highlands conversion story', era: 'Modern Voices' },
+    { nameKey: 'personas.rhodes.name', datesKey: 'personas.rhodes.dates', descKey: 'personas.rhodes.desc', eraKey: 'personas.era.pioneers' },
+    { nameKey: 'personas.thuan.name', datesKey: 'personas.thuan.dates', descKey: 'personas.thuan.desc', eraKey: 'personas.era.modern' },
+    { nameKey: 'personas.andrew.name', datesKey: 'personas.andrew.dates', descKey: 'personas.andrew.desc', eraKey: 'personas.era.saints' },
+    { nameKey: 'personas.tranluc.name', datesKey: 'personas.tranluc.dates', descKey: 'personas.tranluc.desc', eraKey: 'personas.era.saints' },
+    { nameKey: 'personas.jaffray.name', datesKey: 'personas.jaffray.dates', descKey: 'personas.jaffray.desc', eraKey: 'personas.era.pioneers' },
+    { nameKey: 'personas.hmong.name', datesKey: 'personas.hmong.dates', descKey: 'personas.hmong.desc', eraKey: 'personas.era.modern' },
   ];
 
   app.innerHTML = `
@@ -22,12 +22,12 @@ export function renderPersonasHub(): void {
       <div class="report-grid">
         ${personas.map(p => `
           <div class="lacquer-card">
-            <div class="card-number">${p.era}</div>
-            <div class="card-title">${p.name}</div>
-            <div style="font-family: var(--font-mono); font-size: 12px; color: var(--text-tertiary); margin-bottom: var(--space-sm);">${p.dates}</div>
-            <div class="card-desc">${p.desc}</div>
+            <div class="card-number" data-i18n="${p.eraKey}">${t(p.eraKey)}</div>
+            <div class="card-title" data-i18n="${p.nameKey}">${t(p.nameKey)}</div>
+            <div style="font-family: var(--font-mono); font-size: 12px; color: var(--text-tertiary); margin-bottom: var(--space-sm);" data-i18n="${p.datesKey}">${t(p.datesKey)}</div>
+            <div class="card-desc" data-i18n="${p.descKey}">${t(p.descKey)}</div>
             <div style="margin-top: var(--space-md);">
-              <span class="btn-gold-ghost" style="opacity: 0.5; cursor: default; font-size: 12px; padding: 6px 12px;">Coming in Phase 3</span>
+              <span class="btn-gold-ghost" style="opacity: 0.5; cursor: default; font-size: 12px; padding: 6px 12px;" data-i18n="personas.coming">${t('personas.coming')}</span>
             </div>
           </div>
         `).join('')}

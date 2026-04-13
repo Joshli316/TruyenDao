@@ -64,7 +64,7 @@ export async function renderResearchList(): Promise<void> {
 
     grid.innerHTML = filtered.map(r => `
       <a href="#/research/${r.id}" class="lacquer-card${r.featured ? ' featured' : ''}">
-        <div class="card-number">Report ${r.id}</div>
+        <div class="card-number">${t('common.report')} ${r.id}</div>
         <div class="card-title">${localized(r.title)}</div>
         <div class="card-desc">${localized(r.summary).substring(0, 160)}...</div>
         <div class="card-meta">${r.readingTime} ${t('research.readingtime')} &middot; ${r.tags.join(', ')}</div>
@@ -98,7 +98,7 @@ export async function renderResearchDetail(): Promise<void> {
 
   const id = getRouteParam('id');
   if (!id) {
-    app.innerHTML = '<p style="padding: 120px 24px; color: var(--text-tertiary);">Report not found.</p>';
+    app.innerHTML = `<p style="padding: 120px 24px; color: var(--text-tertiary);">${t('common.notfound')}</p>`;
     return;
   }
 
@@ -108,7 +108,7 @@ export async function renderResearchDetail(): Promise<void> {
   try {
     report = await loadReport(id);
   } catch {
-    app.innerHTML = '<p style="padding: 120px 24px; color: var(--text-tertiary);">Report not found.</p>';
+    app.innerHTML = `<p style="padding: 120px 24px; color: var(--text-tertiary);">${t('common.notfound')}</p>`;
     return;
   }
 
@@ -157,7 +157,7 @@ export async function renderResearchDetail(): Promise<void> {
       </aside>
       <article class="report-detail" style="padding: 0;">
         <div class="report-meta">
-          <span>Report ${report.id}</span>
+          <span>${t('common.report')} ${report.id}</span>
           <span>${report.readingTime} ${t('research.readingtime')}</span>
           <span>${report.tags.join(', ')}</span>
         </div>

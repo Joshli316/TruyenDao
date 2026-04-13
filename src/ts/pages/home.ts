@@ -82,7 +82,7 @@ export function renderHome(): void {
         </a>
         <a href="#/research/timeline" class="timeline-dot">
           <span class="year">1651</span>
-          <span class="event">Chữ Quốc ngữ dictionary</span>
+          <span class="event" data-i18n="timeline.event.1651">${t('timeline.event.1651')}</span>
         </a>
         <a href="#/research/timeline" class="timeline-dot">
           <span class="year">1833</span>
@@ -90,7 +90,7 @@ export function renderHome(): void {
         </a>
         <a href="#/research/timeline" class="timeline-dot">
           <span class="year">1988</span>
-          <span class="event">117 Martyrs canonized</span>
+          <span class="event" data-i18n="timeline.event.1988">${t('timeline.event.1988')}</span>
         </a>
         <a href="#/research/timeline" class="timeline-dot">
           <span class="year">2016</span>
@@ -136,6 +136,8 @@ export function renderHome(): void {
         <div class="footer-links">
           <a href="#/about" data-i18n="footer.fc">${t('footer.fc')}</a>
           <a href="#" data-i18n="footer.github">${t('footer.github')}</a>
+          <a href="#" data-i18n="footer.notebooklm">${t('footer.notebooklm')}</a>
+          <a href="#" data-i18n="footer.source">${t('footer.source')}</a>
         </div>
       </div>
       <div class="footer-tagline" data-i18n="footer.tagline">${t('footer.tagline')}</div>

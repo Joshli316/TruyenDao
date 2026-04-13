@@ -105,6 +105,28 @@
 
   --transition-default: 200ms ease;
   --transition-slow: 400ms ease;
+
+  /* Type scale */
+  --text-xs: 12px;
+  --text-sm: 14px;
+  --text-base: 16px;
+  --text-lg: 18px;
+  --text-xl: 24px;
+  --text-2xl: 32px;
+  --text-3xl: 44px;
+  --text-4xl: 60px;
+  --text-5xl: 84px;
+
+  /* Weights */
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-bold: 700;
+
+  /* Line heights */
+  --leading-tight: 1.15;
+  --leading-snug: 1.35;
+  --leading-normal: 1.55;
+  --leading-relaxed: 1.75;
 }
 
 /* =========================================
@@ -827,6 +849,15 @@ a:hover {
 }
 
 /* =========================================
+   Heritage Grid
+   ========================================= */
+.heritage-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-lg);
+}
+
+/* =========================================
    Footer
    ========================================= */
 .footer {
@@ -1443,6 +1474,10 @@ select:focus-visible {
     padding-left: 0;
     padding: var(--space-xs) var(--space-sm);
   }
+
+  .heritage-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1508,5 +1543,89 @@ select:focus-visible {
 
   .footer-links {
     justify-content: center;
+  }
+}
+
+/* =========================================
+   Touch Targets — 44px minimum
+   ========================================= */
+@media (pointer: coarse) {
+  button, a, .chat-starter, .timeline-dot, .lacquer-card,
+  .report-filters button, .timeline-era-filters button,
+  .lang-toggle button, .mobile-nav a {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  .nav-links a {
+    padding: 10px 0;
+  }
+}
+
+/* =========================================
+   Print Styles
+   ========================================= */
+@media print {
+  body::before,
+  .nav,
+  .mobile-nav,
+  .search-modal,
+  .reading-progress,
+  .footer,
+  .hero-ctas,
+  .btn-cinnabar,
+  .btn-gold-ghost,
+  .lang-toggle,
+  .search-btn,
+  .mobile-menu-btn,
+  .chat-input-area,
+  .chat-starters {
+    display: none !important;
+  }
+
+  body {
+    background: white;
+    color: #1A1012;
+    font-size: 12pt;
+    line-height: 1.5;
+  }
+
+  h1, h2, h3, h4 {
+    color: #1A1012;
+    page-break-after: avoid;
+  }
+
+  .report-detail p,
+  .report-detail ul,
+  .report-detail ol {
+    color: #333;
+  }
+
+  .report-detail {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .report-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .report-toc {
+    display: none;
+  }
+
+  a {
+    color: #1A1012;
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+    font-size: 10pt;
+    color: #666;
+  }
+
+  a[href^="#"]::after {
+    content: "";
   }
 }

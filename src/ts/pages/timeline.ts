@@ -44,13 +44,13 @@ export async function renderTimeline(): Promise<void> {
     modern: t('era.modern'),
   };
 
-  const categories = ['all', 'missions', 'persecution', 'cultural', 'political', 'institutional'];
-  let activeCategory = 'all';
+  const filterOptions = ['all', ...eraOrder];
+  let activeFilter = 'all';
 
-  function renderEvents(category: string): string {
+  function renderEvents(filter: string): string {
     let filtered = events;
-    if (category !== 'all') {
-      filtered = events.filter(e => e.category === category);
+    if (filter !== 'all') {
+      filtered = events.filter(e => e.era === filter);
     }
 
     // Group by era
@@ -87,14 +87,10 @@ export async function renderTimeline(): Promise<void> {
       <p class="section-subtitle" data-i18n="timeline.page.subtitle">${t('timeline.page.subtitle')}</p>
 
       <div class="timeline-era-filters" id="timeline-filters">
-        ${categories.map(cat => {
-          const key = cat === 'all' ? 'timeline.filter.all' : `timeline.filter.${cat}`;
-          return `<button data-cat="${cat}" class="${cat === 'all' ? 'active' : ''}" data-i18n="${key}">${t(key)}</button>`;
+        ${filterOptions.map(opt => {
+          const label = opt === 'all' ? t('timeline.filter.all') : eraNames[opt];
+          return `<button data-cat="${opt}" class="${opt === 'all' ? 'active' : ''}">${label}</button>`;
         }).join('')}
-      </div>
-
-      <div style="display: flex; gap: var(--space-sm); flex-wrap: wrap; margin-bottom: var(--space-xl);">
-        ${eraOrder.map(era => `<a href="#era-${era}" style="font-size: 12px; font-family: var(--font-mono); color: var(--accent-gold); padding: 4px 12px; border: 1px solid var(--border-default); border-radius: 9999px; text-decoration: none; transition: all 200ms ease;" onmouseover="this.style.borderColor='var(--accent-gold)'" onmouseout="this.style.borderColor='var(--border-default)'">${eraNames[era]}</a>`).join('')}
       </div>
 
       <div class="timeline-vertical" id="timeline-events">
@@ -120,10 +116,10 @@ export async function renderTimeline(): Promise<void> {
     filtersEl.addEventListener('click', (e) => {
       const btn = (e.target as HTMLElement).closest('button');
       if (!btn) return;
-      activeCategory = btn.dataset.cat || 'all';
+      activeFilter = btn.dataset.cat || 'all';
       filtersEl.querySelectorAll('button').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
-      eventsEl.innerHTML = renderEvents(activeCategory);
+      eventsEl.innerHTML = renderEvents(activeFilter);
       observeEvents();
     });
   }
@@ -145,9 +141,9 @@ export async function renderTimeline(): Promise<void> {
 
   observeEvents();
 
-  // Handle deep links like #/timeline/1651
+  // Handle deep links like #/research/timeline?year=1651 or #/research/timeline/1651
   const hash = window.location.hash;
-  const yearMatch = hash.match(/\/timeline\/(\d+)/);
+  const yearMatch = hash.match(/[?&]year=(\d+)/) || hash.match(/\/timeline\/(\d+)/);
   if (yearMatch) {
     const targetYear = yearMatch[1];
     setTimeout(() => {
