@@ -1,5 +1,6 @@
 import { getLang } from '../i18n';
 import { setCleanup } from '../main';
+import { renderFooter } from '../shared/footer';
 
 /* =========================================
    Types
@@ -176,14 +177,15 @@ function renderFormStep(step: number, state: FormState): string {
       stepContent = `
         <label class="returnee-label">${loc({ en: 'Your name (optional)', vi: 'Tên của bạn (không bắt buộc)' })}</label>
         <input type="text" class="returnee-input" id="returnee-name" value="${escapeAttr(state.name)}"
-               placeholder="${loc({ en: 'Enter your name...', vi: 'Nhập tên...' })}" />
+               placeholder="${loc({ en: 'Enter your name...', vi: 'Nhập tên...' })}"
+               aria-label="${loc({ en: 'Your name', vi: 'Tên của bạn' })}" />
       `;
       break;
 
     case 2:
       stepContent = `
         <label class="returnee-label">${loc({ en: 'City you are returning to', vi: 'Thành phố bạn sẽ trở về' })}</label>
-        <select class="returnee-input" id="returnee-city">
+        <select class="returnee-input" id="returnee-city" aria-label="${loc({ en: 'City you are returning to', vi: 'Thành phố bạn sẽ trở về' })}">
           <option value="">${loc({ en: 'Select a city...', vi: 'Chọn thành phố...' })}</option>
           ${CITIES.map(c => `<option value="${c.value}" ${state.city === c.value ? 'selected' : ''}>${loc(c.label)}</option>`).join('')}
         </select>
@@ -745,21 +747,24 @@ function renderConnectForm(): string {
           <div class="returnee-form-field">
             <label class="returnee-label">${loc({ en: 'Name', vi: 'Tên' })}</label>
             <input type="text" class="returnee-input" id="connect-name"
-                   placeholder="${loc({ en: 'Your name', vi: 'Tên của bạn' })}" />
+                   placeholder="${loc({ en: 'Your name', vi: 'Tên của bạn' })}"
+                   aria-label="${loc({ en: 'Name', vi: 'Tên' })}" />
           </div>
           <div class="returnee-form-field">
             <label class="returnee-label">${loc({ en: 'Email', vi: 'Email' })}</label>
             <input type="email" class="returnee-input" id="connect-email"
-                   placeholder="${loc({ en: 'your.email@example.com', vi: 'email@example.com' })}" />
+                   placeholder="${loc({ en: 'your.email@example.com', vi: 'email@example.com' })}"
+                   aria-label="${loc({ en: 'Email', vi: 'Email' })}" />
           </div>
           <div class="returnee-form-field">
             <label class="returnee-label">${loc({ en: 'City in Vietnam', vi: 'Thành phố tại Việt Nam' })}</label>
             <input type="text" class="returnee-input" id="connect-city"
-                   placeholder="${loc({ en: 'Which city are you returning to?', vi: 'Bạn sẽ về thành phố nào?' })}" />
+                   placeholder="${loc({ en: 'Which city are you returning to?', vi: 'Bạn sẽ về thành phố nào?' })}"
+                   aria-label="${loc({ en: 'City in Vietnam', vi: 'Thành phố tại Việt Nam' })}" />
           </div>
           <div class="returnee-form-field">
             <label class="returnee-checkbox-option" style="cursor: pointer;">
-              <input type="checkbox" id="connect-consent" />
+              <input type="checkbox" id="connect-consent" aria-label="${loc({ en: 'Consent to share information', vi: 'Đồng ý chia sẻ thông tin' })}" />
               <span style="font-size: var(--text-sm);">
                 ${loc({
                   en: 'I consent to having my information shared with a partner pastor or mentor for the purpose of connecting me with a church community.',
@@ -821,7 +826,7 @@ function renderResults(churches: Church[], state: FormState): string {
    ========================================= */
 
 function escapeAttr(s: string): string {
-  return s.replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  return s.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 }
 
 /* =========================================
@@ -1106,8 +1111,8 @@ export async function renderReturnee(): Promise<void> {
   try {
     const mod = await import('../../data/churches-vietnam.json');
     churches = (mod.default || mod) as Church[];
-  } catch (e) {
-    console.warn('Failed to load churches-vietnam.json:', e);
+  } catch {
+    // Church data unavailable — continue without recommendations
   }
 
   // Language change listener
@@ -1129,15 +1134,7 @@ export async function renderReturnee(): Promise<void> {
         <div class="section" style="padding-top: calc(64px + var(--space-2xl));">
           ${renderResults(churches, state)}
         </div>
-        <footer class="footer">
-          <div class="footer-inner">
-            <div class="footer-mission">${loc({ en: 'AI can serve the Great Commission — not replace human connection, but extend it.', vi: 'AI có thể phục vụ Đại Mệnh Lệnh — không thay thế mối liên kết con người, mà mở rộng nó.' })}</div>
-            <div class="footer-links">
-              <a href="#/about">${loc({ en: 'About', vi: 'Giới thiệu' })}</a>
-            </div>
-          </div>
-          <div class="footer-tagline">${loc({ en: 'Powered by AI. Grounded in 493 years of history.', vi: 'Được hỗ trợ bởi AI. Dựa trên 493 năm lịch sử.' })}</div>
-        </footer>
+        ${renderFooter()}
       `;
       wireResultsEvents();
       return;
@@ -1150,15 +1147,7 @@ export async function renderReturnee(): Promise<void> {
         <div class="section" style="padding-top: calc(64px + var(--space-2xl));">
           ${renderStage1()}
         </div>
-        <footer class="footer">
-          <div class="footer-inner">
-            <div class="footer-mission">${loc({ en: 'AI can serve the Great Commission — not replace human connection, but extend it.', vi: 'AI có thể phục vụ Đại Mệnh Lệnh — không thay thế mối liên kết con người, mà mở rộng nó.' })}</div>
-            <div class="footer-links">
-              <a href="#/about">${loc({ en: 'About', vi: 'Giới thiệu' })}</a>
-            </div>
-          </div>
-          <div class="footer-tagline">${loc({ en: 'Powered by AI. Grounded in 493 years of history.', vi: 'Được hỗ trợ bởi AI. Dựa trên 493 năm lịch sử.' })}</div>
-        </footer>
+        ${renderFooter()}
       `;
 
       document.getElementById('returnee-start-btn')?.addEventListener('click', () => {
@@ -1177,15 +1166,7 @@ export async function renderReturnee(): Promise<void> {
         <div class="gold-divider"></div>
         ${renderFormStep(currentStep, state)}
       </div>
-      <footer class="footer">
-        <div class="footer-inner">
-          <div class="footer-mission">${loc({ en: 'AI can serve the Great Commission — not replace human connection, but extend it.', vi: 'AI có thể phục vụ Đại Mệnh Lệnh — không thay thế mối liên kết con người, mà mở rộng nó.' })}</div>
-          <div class="footer-links">
-            <a href="#/about">${loc({ en: 'About', vi: 'Giới thiệu' })}</a>
-          </div>
-        </div>
-        <div class="footer-tagline">${loc({ en: 'Powered by AI. Grounded in 493 years of history.', vi: 'Được hỗ trợ bởi AI. Dựa trên 493 năm lịch sử.' })}</div>
-      </footer>
+      ${renderFooter()}
     `;
 
     wireFormEvents();

@@ -1,8 +1,6 @@
-import { t, getLang } from '../i18n';
-
-function loc(obj: { en: string; vi: string }): string {
-  return obj[getLang()] || obj.en;
-}
+import { t } from '../i18n';
+import { localized } from '../data-loader';
+import { renderFooter } from '../shared/footer';
 
 export function renderToolsHub(): void {
   const app = document.getElementById('app');
@@ -29,18 +27,12 @@ export function renderToolsHub(): void {
       <div class="report-grid">
         ${tools.map(tool => `
           <a href="${tool.href}" class="lacquer-card" style="text-decoration: none;">
-            <div class="card-title">${loc(tool.title)}</div>
-            <div class="card-desc">${loc(tool.desc)}</div>
+            <div class="card-title">${localized(tool.title)}</div>
+            <div class="card-desc">${localized(tool.desc)}</div>
           </a>
         `).join('')}
       </div>
     </div>
-    <footer class="footer">
-      <div class="footer-inner">
-        <div class="footer-mission" data-i18n="footer.mission">${t('footer.mission')}</div>
-        <div class="footer-links"><a href="#/about" data-i18n="footer.fc">${t('footer.fc')}</a></div>
-      </div>
-      <div class="footer-tagline" data-i18n="footer.tagline">${t('footer.tagline')}</div>
-    </footer>
+    ${renderFooter()}
   `;
 }

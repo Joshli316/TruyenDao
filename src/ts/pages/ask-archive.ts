@@ -1,5 +1,6 @@
 import { t, getLang } from '../i18n';
 import { loadAllReports, localized, type ReportData } from '../data-loader';
+import { escapeHtml, formatResponse, extractSources } from '../shared/text-utils';
 
 interface Message {
   role: 'user' | 'assistant';
@@ -45,12 +46,12 @@ export async function renderAskArchive(): Promise<void> {
         </div>
       ` : ''}
 
-      <div class="chat-messages" id="chat-messages">
+      <div class="chat-messages" id="chat-messages" role="log" aria-live="polite">
         ${messages.map(m => renderMessage(m)).join('')}
       </div>
 
       <div class="chat-input-area">
-        <textarea class="chat-input" id="chat-input" rows="1" data-i18n-placeholder="ask.placeholder" placeholder="${t('ask.placeholder')}"></textarea>
+        <textarea class="chat-input" id="chat-input" rows="1" maxlength="5000" data-i18n-placeholder="ask.placeholder" placeholder="${t('ask.placeholder')}" aria-label="${t('ask.placeholder')}"></textarea>
         <button class="chat-send" id="chat-send" data-i18n="ask.send">${t('ask.send')}</button>
       </div>
     </div>
@@ -93,9 +94,13 @@ export async function renderAskArchive(): Promise<void> {
     messagesEl.scrollTop = messagesEl.scrollHeight;
   }
 
+  let isSubmitting = false;
+
   async function sendMessage(): Promise<void> {
     const text = inputEl.value.trim();
-    if (!text) return;
+    if (!text || isSubmitting) return;
+    isSubmitting = true;
+    sendBtn.setAttribute('disabled', 'true');
 
     // Remove starters
     document.getElementById('chat-starters')?.remove();
@@ -197,6 +202,9 @@ export async function renderAskArchive(): Promise<void> {
       const assistantMsg: Message = { role: 'assistant', content: fallback.content, sources: fallback.sources };
       messages.push(assistantMsg);
       saveMessages();
+    } finally {
+      isSubmitting = false;
+      sendBtn.removeAttribute('disabled');
     }
   }
 }
@@ -214,20 +222,7 @@ function renderMessage(msg: Message): string {
   `;
 }
 
-function formatResponse(text: string): string {
-  return text
-    .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
-    .replace(/\*(.+?)\*/g, '<em>$1</em>')
-    .replace(/\n\n/g, '</p><p>')
-    .replace(/\n/g, '<br>');
-}
-
-function escapeHtml(text: string): string {
-  return text
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;');
-}
+// escapeHtml, formatResponse, extractSources imported from shared/text-utils
 
 function findRelevantContext(query: string): string {
   const q = query.toLowerCase();
@@ -326,15 +321,7 @@ function generateLocalResponse(query: string, context: string): { content: strin
   };
 }
 
-function extractSources(text: string): string[] {
-  const matches = text.match(/Report\s+(\d{1,2})/gi) || [];
-  const ids = new Set<string>();
-  matches.forEach(m => {
-    const num = m.replace(/Report\s+/i, '').padStart(2, '0');
-    if (parseInt(num) >= 1 && parseInt(num) <= 12) ids.add(num);
-  });
-  return Array.from(ids);
-}
+// extractSources imported from shared/text-utils
 
 function saveMessages(): void {
   try {

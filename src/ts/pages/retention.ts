@@ -1,5 +1,6 @@
 import { t, getLang } from '../i18n';
 import { setCleanup } from '../main';
+import { renderFooter } from '../shared/footer';
 
 /* =========================================
    Types
@@ -506,15 +507,7 @@ function renderResultsHTML(result: RetentionResult, form: Record<string, string>
       </div>
     </div>
 
-    <footer class="footer">
-      <div class="footer-inner">
-        <div class="footer-mission" data-i18n="footer.mission">${t('footer.mission')}</div>
-        <div class="footer-links">
-          <a href="#/about" data-i18n="footer.fc">${t('footer.fc')}</a>
-        </div>
-      </div>
-      <div class="footer-tagline" data-i18n="footer.tagline">${t('footer.tagline')}</div>
-    </footer>
+    ${renderFooter()}
   `;
 }
 
@@ -691,17 +684,7 @@ export async function renderRetention(): Promise<void> {
     if (!app) return;
 
     if (currentView === 'form') {
-      app.innerHTML = renderFormHTML() + `
-        <footer class="footer">
-          <div class="footer-inner">
-            <div class="footer-mission" data-i18n="footer.mission">${t('footer.mission')}</div>
-            <div class="footer-links">
-              <a href="#/about" data-i18n="footer.fc">${t('footer.fc')}</a>
-            </div>
-          </div>
-          <div class="footer-tagline" data-i18n="footer.tagline">${t('footer.tagline')}</div>
-        </footer>
-      `;
+      app.innerHTML = renderFormHTML() + renderFooter();
       bindFormEvents();
     } else if (currentView === 'results' && lastResult) {
       app.innerHTML = renderResultsHTML(lastResult, lastForm);

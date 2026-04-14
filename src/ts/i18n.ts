@@ -254,7 +254,6 @@ function detectBrowserLang(): Lang {
 export function t(key: string): string {
   const entry = strings[key];
   if (!entry) {
-    console.warn(`Missing i18n key: ${key}`);
     return key;
   }
   return entry[currentLang];

@@ -1,6 +1,7 @@
 import { t, getLang } from '../i18n';
 import { loadAllReports, loadReport, localized, type ReportData } from '../data-loader';
 import { getRouteParam, setCleanup } from '../main';
+import { renderFooter } from '../shared/footer';
 
 export async function renderResearchList(): Promise<void> {
   const app = document.getElementById('app');
@@ -19,15 +20,7 @@ export async function renderResearchList(): Promise<void> {
         <div class="skeleton" style="height: 200px;"></div>
       </div>
     </div>
-    <footer class="footer">
-      <div class="footer-inner">
-        <div class="footer-mission" data-i18n="footer.mission">${t('footer.mission')}</div>
-        <div class="footer-links">
-          <a href="#/about" data-i18n="footer.fc">${t('footer.fc')}</a>
-        </div>
-      </div>
-      <div class="footer-tagline" data-i18n="footer.tagline">${t('footer.tagline')}</div>
-    </footer>
+    ${renderFooter()}
   `;
 
   const reports = await loadAllReports();
@@ -126,11 +119,6 @@ export async function renderResearchDetail(): Promise<void> {
   };
   window.addEventListener('scroll', onScroll);
 
-  setCleanup(() => {
-    window.removeEventListener('scroll', onScroll);
-    progressBar.remove();
-  });
-
   // Determine prev/next
   const num = parseInt(id);
   const prevId = num > 1 ? String(num - 1).padStart(2, '0') : null;
@@ -171,19 +159,11 @@ export async function renderResearchDetail(): Promise<void> {
         </div>
       </article>
     </div>
-    <footer class="footer">
-      <div class="footer-inner">
-        <div class="footer-mission" data-i18n="footer.mission">${t('footer.mission')}</div>
-        <div class="footer-links">
-          <a href="#/about" data-i18n="footer.fc">${t('footer.fc')}</a>
-        </div>
-      </div>
-      <div class="footer-tagline" data-i18n="footer.tagline">${t('footer.tagline')}</div>
-    </footer>
+    ${renderFooter()}
   `;
 
   // Active TOC highlighting on scroll
-  const observer = new IntersectionObserver((entries) => {
+  const tocObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         const idx = entry.target.id.replace('section-', '');
@@ -196,7 +176,13 @@ export async function renderResearchDetail(): Promise<void> {
 
   report.sections.forEach((_, i) => {
     const el = document.getElementById(`section-${i}`);
-    if (el) observer.observe(el);
+    if (el) tocObserver.observe(el);
+  });
+
+  setCleanup(() => {
+    window.removeEventListener('scroll', onScroll);
+    progressBar.remove();
+    tocObserver.disconnect();
   });
 }
 

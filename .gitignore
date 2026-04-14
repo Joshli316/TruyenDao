@@ -6,3 +6,8 @@ dist/
 .DS_Store
 verify/
 test-results/
+.wrangler/
+.vscode/
+.idea/
+*.pem
+*.key

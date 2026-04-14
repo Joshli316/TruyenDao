@@ -1,5 +1,6 @@
 import { t, getLang } from '../i18n';
 import { getRouteParam } from '../main';
+import { renderFooter } from '../shared/footer';
 
 /* =========================================
    Types
@@ -526,15 +527,7 @@ export function renderTraining(): void {
       </div>
     </div>
 
-    <footer class="footer">
-      <div class="footer-inner">
-        <div class="footer-mission" data-i18n="footer.mission">${t('footer.mission')}</div>
-        <div class="footer-links">
-          <a href="#/about" data-i18n="footer.fc">${t('footer.fc')}</a>
-        </div>
-      </div>
-      <div class="footer-tagline" data-i18n="footer.tagline">${t('footer.tagline')}</div>
-    </footer>
+    ${renderFooter()}
   `;
 }
 
@@ -628,15 +621,7 @@ export function renderTrainingModule(): void {
       </div>
     </div>
 
-    <footer class="footer">
-      <div class="footer-inner">
-        <div class="footer-mission" data-i18n="footer.mission">${t('footer.mission')}</div>
-        <div class="footer-links">
-          <a href="#/about" data-i18n="footer.fc">${t('footer.fc')}</a>
-        </div>
-      </div>
-      <div class="footer-tagline" data-i18n="footer.tagline">${t('footer.tagline')}</div>
-    </footer>
+    ${renderFooter()}
   `;
 
   // Attach quiz logic

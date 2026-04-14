@@ -2,11 +2,38 @@ export interface Env {
   ANTHROPIC_API_KEY: string;
 }
 
-const CORS_HEADERS = {
-  'Access-Control-Allow-Origin': '*',
-  'Access-Control-Allow-Methods': 'POST, OPTIONS',
-  'Access-Control-Allow-Headers': 'Content-Type',
-};
+const ALLOWED_ORIGINS = [
+  'https://truyendao.pages.dev',
+  'http://localhost:3000',
+  'http://localhost:5173',
+];
+
+function getCorsHeaders(request: Request): Record<string, string> {
+  const origin = request.headers.get('Origin') || '';
+  const allowedOrigin = ALLOWED_ORIGINS.includes(origin) ? origin : ALLOWED_ORIGINS[0];
+  return {
+    'Access-Control-Allow-Origin': allowedOrigin,
+    'Access-Control-Allow-Methods': 'POST, OPTIONS',
+    'Access-Control-Allow-Headers': 'Content-Type',
+  };
+}
+
+// Simple in-memory rate limiter: 30 requests per minute per IP
+const rateLimitMap = new Map<string, { count: number; resetAt: number }>();
+const RATE_LIMIT = 30;
+const RATE_WINDOW_MS = 60_000;
+
+function checkRateLimit(ip: string): boolean {
+  const now = Date.now();
+  const entry = rateLimitMap.get(ip);
+  if (!entry || now > entry.resetAt) {
+    rateLimitMap.set(ip, { count: 1, resetAt: now + RATE_WINDOW_MS });
+    return true;
+  }
+  if (entry.count >= RATE_LIMIT) return false;
+  entry.count++;
+  return true;
+}
 
 const SYSTEM_PROMPT = `You are the TruyềnĐạo Archive Assistant — an AI expert on the history and current state of Christianity in Vietnam. You have deep knowledge from 12 research reports covering:
 
@@ -33,20 +60,45 @@ Rules:
 
 export default {
   async fetch(request: Request, env: Env): Promise<Response> {
+    const CORS_HEADERS = getCorsHeaders(request);
+
     if (request.method === 'OPTIONS') {
       return new Response(null, { headers: CORS_HEADERS });
     }
 
     const url = new URL(request.url);
 
-    if (url.pathname === '/api/ask' && request.method === 'POST') {
+    if ((url.pathname === '/api/ask' || url.pathname === '/api/persona') && request.method === 'POST') {
+      // Rate limiting
+      const clientIp = request.headers.get('CF-Connecting-IP') || 'unknown';
+      if (!checkRateLimit(clientIp)) {
+        return new Response(JSON.stringify({ error: 'Rate limit exceeded. Please wait a moment.' }), {
+          status: 429,
+          headers: { ...CORS_HEADERS, 'Content-Type': 'application/json', 'Retry-After': '60' },
+        });
+      }
+
       try {
-        const { message, context, history, lang } = await request.json() as {
-          message: string;
-          context: string;
-          history: { role: string; content: string }[];
-          lang: string;
-        };
+        const body = await request.json() as Record<string, unknown>;
+        const message = String(body.message || '');
+        const context = String(body.context || '');
+        const history = Array.isArray(body.history) ? body.history as { role: string; content: string }[] : [];
+        const lang = body.lang === 'vi' ? 'vi' : 'en';
+        const systemPrompt = body.systemPrompt ? String(body.systemPrompt) : '';
+
+        // Input validation
+        if (!message || message.length > 10000) {
+          return new Response(JSON.stringify({ error: 'Message is required and must be under 10,000 characters' }), {
+            status: 400,
+            headers: { ...CORS_HEADERS, 'Content-Type': 'application/json' },
+          });
+        }
+        if (history.length > 20) {
+          return new Response(JSON.stringify({ error: 'History too long' }), {
+            status: 400,
+            headers: { ...CORS_HEADERS, 'Content-Type': 'application/json' },
+          });
+        }
 
         const messages = [
           ...(history || []).map((m: { role: string; content: string }) => ({
@@ -61,6 +113,11 @@ export default {
           },
         ];
 
+        // Use persona system prompt for /api/persona, archive prompt for /api/ask
+        const activeSystemPrompt = url.pathname === '/api/persona' && systemPrompt
+          ? systemPrompt + (lang === 'vi' ? '\n\nRespond in Vietnamese.' : '')
+          : SYSTEM_PROMPT + (lang === 'vi' ? '\n\nRespond in Vietnamese.' : '');
+
         const response = await fetch('https://api.anthropic.com/v1/messages', {
           method: 'POST',
           headers: {
@@ -71,7 +128,7 @@ export default {
           body: JSON.stringify({
             model: 'claude-sonnet-4-20250514',
             max_tokens: 1024,
-            system: SYSTEM_PROMPT + (lang === 'vi' ? '\n\nRespond in Vietnamese.' : ''),
+            system: activeSystemPrompt,
             messages,
             stream: true,
           }),
@@ -133,6 +190,9 @@ export default {
       }
     }
 
-    return new Response('Not Found', { status: 404, headers: CORS_HEADERS });
+    return new Response(JSON.stringify({ error: 'Not Found' }), {
+      status: 404,
+      headers: { ...CORS_HEADERS, 'Content-Type': 'application/json' },
+    });
   },
 };

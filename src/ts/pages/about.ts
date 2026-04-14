@@ -1,4 +1,5 @@
 import { t } from '../i18n';
+import { renderFooter } from '../shared/footer';
 
 export function renderAbout(): void {
   const app = document.getElementById('app');
@@ -15,15 +16,6 @@ export function renderAbout(): void {
       </div>
     </div>
 
-    <footer class="footer">
-      <div class="footer-inner">
-        <div class="footer-mission" data-i18n="footer.mission">${t('footer.mission')}</div>
-        <div class="footer-links">
-          <a href="#/about" data-i18n="footer.fc">${t('footer.fc')}</a>
-          <a href="#" data-i18n="footer.github">${t('footer.github')}</a>
-        </div>
-      </div>
-      <div class="footer-tagline" data-i18n="footer.tagline">${t('footer.tagline')}</div>
-    </footer>
+    ${renderFooter()}
   `;
 }

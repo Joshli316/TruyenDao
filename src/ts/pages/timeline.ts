@@ -1,5 +1,7 @@
 import { t, getLang } from '../i18n';
+import { localized } from '../data-loader';
 import { setCleanup } from '../main';
+import { renderFooter } from '../shared/footer';
 
 interface TimelineEvent {
   year: number;
@@ -29,7 +31,6 @@ export async function renderTimeline(): Promise<void> {
   const events: TimelineEvent[] = mod.default;
 
   const lang = getLang();
-  const loc = (obj: { en: string; vi: string }) => obj[lang] || obj.en;
 
   // Get unique eras in order
   const eraOrder = ['early', 'jesuit', 'mep', 'persecution', 'colonial', 'partition', 'communist', 'modern'];
@@ -68,12 +69,12 @@ export async function renderTimeline(): Promise<void> {
       }
 
       html += `
-        <div class="timeline-event cat-${event.category}" data-year="${event.year}">
-          <div class="event-year">${event.year}</div>
-          <div class="event-title">${loc(event.title)}</div>
-          <div class="event-desc">${loc(event.description)}</div>
-          <div class="event-era">${eraNames[event.era] || event.era}</div>
-        </div>
+        <li class="timeline-event cat-${event.category}" data-year="${event.year}">
+          <time class="event-year" datetime="${event.year}">${event.year}</time>
+          <h4 class="event-title">${localized(event.title)}</h4>
+          <p class="event-desc">${localized(event.description)}</p>
+          <span class="event-era">${eraNames[event.era] || event.era}</span>
+        </li>
       `;
     });
 
@@ -93,20 +94,12 @@ export async function renderTimeline(): Promise<void> {
         }).join('')}
       </div>
 
-      <div class="timeline-vertical" id="timeline-events">
+      <ol class="timeline-vertical" id="timeline-events" role="list" aria-label="Timeline events">
         ${renderEvents('all')}
-      </div>
+      </ol>
     </div>
 
-    <footer class="footer">
-      <div class="footer-inner">
-        <div class="footer-mission" data-i18n="footer.mission">${t('footer.mission')}</div>
-        <div class="footer-links">
-          <a href="#/about" data-i18n="footer.fc">${t('footer.fc')}</a>
-        </div>
-      </div>
-      <div class="footer-tagline" data-i18n="footer.tagline">${t('footer.tagline')}</div>
-    </footer>
+    ${renderFooter()}
   `;
 
   // Filter buttons
@@ -125,8 +118,11 @@ export async function renderTimeline(): Promise<void> {
   }
 
   // Scroll-triggered animation
+  let currentObserver: IntersectionObserver | null = null;
+
   function observeEvents(): void {
-    const observer = new IntersectionObserver((entries) => {
+    if (currentObserver) currentObserver.disconnect();
+    currentObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('visible');
@@ -135,11 +131,15 @@ export async function renderTimeline(): Promise<void> {
     }, { rootMargin: '0px 0px -50px 0px' });
 
     document.querySelectorAll('.timeline-event').forEach(el => {
-      observer.observe(el);
+      currentObserver!.observe(el);
     });
   }
 
   observeEvents();
+
+  setCleanup(() => {
+    if (currentObserver) currentObserver.disconnect();
+  });
 
   // Handle deep links like #/research/timeline?year=1651 or #/research/timeline/1651
   const hash = window.location.hash;

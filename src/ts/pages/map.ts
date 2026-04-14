@@ -1,5 +1,6 @@
 import { t, getLang } from '../i18n';
 import { setCleanup } from '../main';
+import { renderFooter } from '../shared/footer';
 
 declare const L: any;
 
@@ -185,15 +186,7 @@ export async function renderMap(): Promise<void> {
       </div>
     </div>
 
-    <footer class="footer">
-      <div class="footer-inner">
-        <div class="footer-mission" data-i18n="footer.mission">${t('footer.mission')}</div>
-        <div class="footer-links">
-          <a href="#/about" data-i18n="footer.fc">${t('footer.fc')}</a>
-        </div>
-      </div>
-      <div class="footer-tagline" data-i18n="footer.tagline">${t('footer.tagline')}</div>
-    </footer>
+    ${renderFooter()}
 
     <style>
       #map-timeline-slider {

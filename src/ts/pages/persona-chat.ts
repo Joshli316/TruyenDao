@@ -1,5 +1,6 @@
 import { t, getLang } from '../i18n';
 import { getRouteParam } from '../main';
+import { escapeHtml, formatResponse } from '../shared/text-utils';
 
 interface LocalizedString {
   en: string;
@@ -25,20 +26,7 @@ function localized(obj: LocalizedString): string {
   return obj[getLang()];
 }
 
-function escapeHtml(text: string): string {
-  return text
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;');
-}
-
-function formatResponse(text: string): string {
-  return text
-    .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
-    .replace(/\*(.+?)\*/g, '<em>$1</em>')
-    .replace(/\n\n/g, '</p><p>')
-    .replace(/\n/g, '<br>');
-}
+// escapeHtml, formatResponse imported from shared/text-utils
 
 function renderMessage(msg: Message): string {
   return `
@@ -110,12 +98,12 @@ export async function renderPersonaChat(): Promise<void> {
         </div>
       ` : ''}
 
-      <div class="chat-messages" id="chat-messages">
+      <div class="chat-messages" id="chat-messages" role="log" aria-live="polite">
         ${messages.map(m => renderMessage(m)).join('')}
       </div>
 
       <div class="chat-input-area">
-        <textarea class="chat-input" id="chat-input" rows="1" placeholder="${lang === 'vi' ? 'Nhập câu hỏi của bạn...' : 'Type your question...'}"></textarea>
+        <textarea class="chat-input" id="chat-input" rows="1" maxlength="5000" placeholder="${lang === 'vi' ? 'Nhập câu hỏi của bạn...' : 'Type your question...'}" aria-label="${lang === 'vi' ? 'Nhập câu hỏi của bạn' : 'Type your question'}"></textarea>
         <button class="chat-send" id="chat-send">${t('ask.send')}</button>
       </div>
     </div>
@@ -172,9 +160,13 @@ export async function renderPersonaChat(): Promise<void> {
     return `I am ${name}. Unfortunately, the connection to my era is temporarily interrupted. Please try again, or explore my story in the research reports.`;
   }
 
+  let isSubmitting = false;
+
   async function sendMessage(): Promise<void> {
     const text = inputEl.value.trim();
-    if (!text) return;
+    if (!text || isSubmitting) return;
+    isSubmitting = true;
+    sendBtn.setAttribute('disabled', 'true');
 
     // Remove starters
     document.getElementById('chat-starters')?.remove();
@@ -252,6 +244,9 @@ export async function renderPersonaChat(): Promise<void> {
       const assistantMsg: Message = { role: 'assistant', content: fallback };
       messages.push(assistantMsg);
       saveMessages();
+    } finally {
+      isSubmitting = false;
+      sendBtn.removeAttribute('disabled');
     }
   }
 }

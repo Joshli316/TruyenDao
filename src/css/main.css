@@ -445,8 +445,8 @@ a:hover {
 .hero {
   min-height: 85vh;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space-2xl);
+  grid-template-columns: 1.5fr 1fr;
+  gap: var(--space-3xl);
   max-width: 1440px;
   margin: 0 auto;
   padding: calc(64px + var(--space-3xl)) var(--space-lg) var(--space-2xl);
@@ -539,10 +539,56 @@ a:hover {
   border-color: var(--accent-gold-hover);
 }
 
-/* Hero stats panel — lacquer panel */
+/* Large CTA variant */
+.btn-cinnabar-lg {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--accent-cinnabar);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 600;
+  padding: 16px 32px;
+  border: none;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  text-decoration: none;
+  transition: background var(--transition-default);
+}
+
+.btn-cinnabar-lg:hover {
+  background: var(--accent-cinnabar-hover);
+  color: var(--text-primary);
+  transform: translateY(-1px);
+}
+
+/* Tertiary button */
+.btn-tertiary {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  color: var(--accent-gold);
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color var(--transition-default);
+}
+
+.btn-tertiary:hover {
+  color: var(--text-primary);
+}
+
+/* Hero stats panel — lacquer panel (sharp edges for contrast) */
 .hero-panel {
   background: var(--bg-surface);
   border: 1px solid var(--border-default);
+  border-radius: 0;
   padding: var(--space-xl);
   position: relative;
 }
@@ -565,6 +611,17 @@ a:hover {
 
 .hero-stat {
   text-align: center;
+}
+
+.hero-stat:first-child {
+  grid-column: 1 / -1;
+  padding: var(--space-md);
+  background: rgba(155, 35, 53, 0.1);
+  border-left: 3px solid var(--accent-cinnabar);
+}
+
+.hero-stat:first-child .number {
+  font-size: 48px;
 }
 
 .hero-stat .number {
@@ -919,6 +976,30 @@ a:hover {
   gap: var(--space-lg);
 }
 
+.lacquer-card.featured {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--space-lg);
+  border-left: 3px solid var(--accent-cinnabar);
+}
+
+@media (max-width: 768px) {
+  .lacquer-card.featured {
+    grid-column: auto;
+    grid-template-columns: 1fr;
+  }
+}
+
+.lacquer-card.featured .card-title {
+  font-size: 22px;
+}
+
+.lacquer-card.featured .card-number {
+  color: var(--accent-cinnabar);
+  font-weight: 700;
+}
+
 .report-filters {
   display: flex;
   gap: var(--space-sm);
@@ -1137,6 +1218,8 @@ a:hover {
 .timeline-vertical {
   position: relative;
   padding-left: var(--space-xl);
+  list-style: none;
+  margin: 0;
 }
 
 .timeline-vertical::before {
@@ -1327,6 +1410,12 @@ a:hover {
 
 .chat-send:hover {
   background: var(--accent-cinnabar-hover);
+}
+
+.chat-send:disabled,
+.chat-send[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
 .chat-starters {

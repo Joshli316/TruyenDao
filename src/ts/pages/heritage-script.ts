@@ -1,5 +1,6 @@
 import { t, getLang } from '../i18n';
 import { setCleanup } from '../main';
+import { renderFooter } from '../shared/footer';
 
 interface BiText {
   en: string;
@@ -514,16 +515,7 @@ export async function renderScript(): Promise<void> {
       ${chaptersHtml}
     </div>
 
-    <footer class="footer">
-      <div class="footer-inner">
-        <div class="footer-mission" data-i18n="footer.mission">${t('footer.mission')}</div>
-        <div class="footer-links">
-          <a href="#/heritage">${lang === 'vi' ? 'Di s\u1ea3n' : 'Heritage'}</a>
-          <a href="#/about" data-i18n="footer.fc">${t('footer.fc')}</a>
-        </div>
-      </div>
-      <div class="footer-tagline" data-i18n="footer.tagline">${t('footer.tagline')}</div>
-    </footer>
+    ${renderFooter()}
   `;
 
   // Scrollytelling: observe chapters and fade them in

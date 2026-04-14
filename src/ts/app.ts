@@ -1,58 +1,41 @@
 import { registerRoute, initApp } from './main';
 import { renderHome } from './pages/home';
-import { renderResearchList, renderResearchDetail } from './pages/research';
-import { renderTimeline } from './pages/timeline';
-import { renderAskArchive } from './pages/ask-archive';
-import { renderMap } from './pages/map';
-import { renderNetwork } from './pages/network';
-import { renderGaps } from './pages/gaps';
-import { renderComparator } from './pages/comparator';
-import { renderToolsHub } from './pages/tools-hub';
-import { renderReturnee } from './pages/returnee';
-import { renderTraining, renderTrainingModule } from './pages/training';
-import { renderRetention } from './pages/retention';
-import { renderHeritage } from './pages/heritage';
-import { renderMartyrs } from './pages/heritage-martyrs';
-import { renderScript } from './pages/heritage-script';
-import { renderPersonasHub } from './pages/personas';
-import { renderPersonaChat } from './pages/persona-chat';
-import { renderAbout } from './pages/about';
 import { initSearch } from './search';
 
-// Home
+// Home — eagerly loaded (landing page)
 registerRoute('/', renderHome);
 
-// Research
-registerRoute('/research', renderResearchList);
-registerRoute('/research/timeline', renderTimeline);
-registerRoute('/research/map', renderMap);
-registerRoute('/research/network', renderNetwork);
-registerRoute('/research/gaps', renderGaps);
-registerRoute('/research/comparator', renderComparator);
-registerRoute('/research/ask', renderAskArchive);
-registerRoute('/research/:id', renderResearchDetail);
+// Research — lazily loaded
+registerRoute('/research', () => import('./pages/research').then(m => m.renderResearchList()));
+registerRoute('/research/timeline', () => import('./pages/timeline').then(m => m.renderTimeline()));
+registerRoute('/research/map', () => import('./pages/map').then(m => m.renderMap()));
+registerRoute('/research/network', () => import('./pages/network').then(m => m.renderNetwork()));
+registerRoute('/research/gaps', () => import('./pages/gaps').then(m => m.renderGaps()));
+registerRoute('/research/comparator', () => import('./pages/comparator').then(m => m.renderComparator()));
+registerRoute('/research/ask', () => import('./pages/ask-archive').then(m => m.renderAskArchive()));
+registerRoute('/research/:id', () => import('./pages/research').then(m => m.renderResearchDetail()));
 
-// Tools
-registerRoute('/tools', renderToolsHub);
-registerRoute('/tools/ask', renderAskArchive);
-registerRoute('/tools/returnee', renderReturnee);
-registerRoute('/tools/training', renderTraining);
-registerRoute('/tools/training/:moduleId', renderTrainingModule);
-registerRoute('/tools/retention', renderRetention);
-registerRoute('/tools/map', renderMap);
-registerRoute('/tools/network', renderNetwork);
+// Tools — lazily loaded
+registerRoute('/tools', () => import('./pages/tools-hub').then(m => m.renderToolsHub()));
+registerRoute('/tools/ask', () => import('./pages/ask-archive').then(m => m.renderAskArchive()));
+registerRoute('/tools/returnee', () => import('./pages/returnee').then(m => m.renderReturnee()));
+registerRoute('/tools/training', () => import('./pages/training').then(m => m.renderTraining()));
+registerRoute('/tools/training/:moduleId', () => import('./pages/training').then(m => m.renderTrainingModule()));
+registerRoute('/tools/retention', () => import('./pages/retention').then(m => m.renderRetention()));
+registerRoute('/tools/map', () => import('./pages/map').then(m => m.renderMap()));
+registerRoute('/tools/network', () => import('./pages/network').then(m => m.renderNetwork()));
 
-// Heritage
-registerRoute('/heritage', renderHeritage);
-registerRoute('/heritage/martyrs', renderMartyrs);
-registerRoute('/heritage/script', renderScript);
+// Heritage — lazily loaded
+registerRoute('/heritage', () => import('./pages/heritage').then(m => m.renderHeritage()));
+registerRoute('/heritage/martyrs', () => import('./pages/heritage-martyrs').then(m => m.renderMartyrs()));
+registerRoute('/heritage/script', () => import('./pages/heritage-script').then(m => m.renderScript()));
 
-// Personas
-registerRoute('/personas', renderPersonasHub);
-registerRoute('/personas/:id', renderPersonaChat);
+// Personas — lazily loaded
+registerRoute('/personas', () => import('./pages/personas').then(m => m.renderPersonasHub()));
+registerRoute('/personas/:id', () => import('./pages/persona-chat').then(m => m.renderPersonaChat()));
 
-// About
-registerRoute('/about', renderAbout);
+// About — lazily loaded
+registerRoute('/about', () => import('./pages/about').then(m => m.renderAbout()));
 
 // Initialize
 initApp();

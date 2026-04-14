@@ -1,4 +1,5 @@
 import { t, getLang } from '../i18n';
+import { renderFooter } from '../shared/footer';
 
 interface LocalizedString {
   en: string;
@@ -64,14 +65,6 @@ export async function renderPersonasHub(): Promise<void> {
         `).join('')}
       </div>
     </div>
-    <footer class="footer">
-      <div class="footer-inner">
-        <div class="footer-mission" data-i18n="footer.mission">${t('footer.mission')}</div>
-        <div class="footer-links">
-          <a href="#/about" data-i18n="footer.fc">${t('footer.fc')}</a>
-        </div>
-      </div>
-      <div class="footer-tagline" data-i18n="footer.tagline">${t('footer.tagline')}</div>
-    </footer>
+    ${renderFooter()}
   `;
 }

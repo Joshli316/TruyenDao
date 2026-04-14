@@ -1,8 +1,5 @@
-import { getLang } from '../i18n';
-
-function loc(obj: { en: string; vi: string }): string {
-  return obj[getLang()] || obj.en;
-}
+import { localized } from '../data-loader';
+import { renderFooter } from '../shared/footer';
 
 interface Source {
   title: string;
@@ -167,7 +164,7 @@ export function renderComparator(): void {
     const filtered = searchQuery
       ? sources.filter(s => {
           const q = searchQuery.toLowerCase();
-          return loc(s.topic).toLowerCase().includes(q) ||
+          return localized(s.topic).toLowerCase().includes(q) ||
             [...s.en, ...s.vi, ...s.fr].some(src => src.title.toLowerCase().includes(q) || src.author.toLowerCase().includes(q));
         })
       : sources;
@@ -176,7 +173,7 @@ export function renderComparator(): void {
       const renderCol = (items: Source[], langLabel: string): string => {
         if (items.length === 0) {
           return `<div style="padding:var(--space-md);color:var(--accent-gold);font-size:13px;font-style:italic;border:1px dashed var(--border-gold);text-align:center;">
-            ${loc({ en: `No ${langLabel} sources — translation needed`, vi: `Không có nguồn ${langLabel} — cần dịch thuật` })}
+            ${localized({ en: `No ${langLabel} sources — translation needed`, vi: `Không có nguồn ${langLabel} — cần dịch thuật` })}
           </div>`;
         }
         return items.map(s => `
@@ -189,7 +186,7 @@ export function renderComparator(): void {
 
       return `
         <div class="lacquer-card" style="margin-bottom:var(--space-lg);">
-          <div class="card-title" style="margin-bottom:var(--space-md);">${loc(entry.topic)}</div>
+          <div class="card-title" style="margin-bottom:var(--space-md);">${localized(entry.topic)}</div>
           <div class="comparator-columns">
             <div class="comparator-col">
               <div style="font-family:var(--font-mono);font-size:11px;color:var(--accent-gold);margin-bottom:var(--space-sm);">ENGLISH (${entry.en.length})</div>
@@ -197,11 +194,11 @@ export function renderComparator(): void {
             </div>
             <div class="comparator-col">
               <div style="font-family:var(--font-mono);font-size:11px;color:var(--accent-cinnabar);margin-bottom:var(--space-sm);">TIẾNG VIỆT (${entry.vi.length})</div>
-              ${renderCol(entry.vi, loc({ en: 'Vietnamese', vi: 'tiếng Việt' }))}
+              ${renderCol(entry.vi, localized({ en: 'Vietnamese', vi: 'tiếng Việt' }))}
             </div>
             <div class="comparator-col">
               <div style="font-family:var(--font-mono);font-size:11px;color:var(--info);margin-bottom:var(--space-sm);">FRANÇAIS (${entry.fr.length})</div>
-              ${renderCol(entry.fr, loc({ en: 'French', vi: 'tiếng Pháp' }))}
+              ${renderCol(entry.fr, localized({ en: 'French', vi: 'tiếng Pháp' }))}
             </div>
           </div>
         </div>
@@ -211,9 +208,9 @@ export function renderComparator(): void {
 
   app.innerHTML = `
     <div class="section" style="padding-top: calc(64px + var(--space-2xl));">
-      <div class="section-eyebrow">${loc({ en: 'Research', vi: 'Nghiên cứu' })}</div>
-      <h1>${loc({ en: 'Trilingual Comparator', vi: 'Công cụ so sánh ba ngôn ngữ' })}</h1>
-      <p class="section-subtitle">${loc({ en: 'Search a topic and see sources in English, Vietnamese, AND French side by side. The first tool to bridge all three.', vi: 'Tìm kiếm một chủ đề và xem nguồn bằng tiếng Anh, tiếng Việt, VÀ tiếng Pháp cạnh nhau. Công cụ đầu tiên kết nối cả ba.' })}</p>
+      <div class="section-eyebrow">${localized({ en: 'Research', vi: 'Nghiên cứu' })}</div>
+      <h1>${localized({ en: 'Trilingual Comparator', vi: 'Công cụ so sánh ba ngôn ngữ' })}</h1>
+      <p class="section-subtitle">${localized({ en: 'Search a topic and see sources in English, Vietnamese, AND French side by side. The first tool to bridge all three.', vi: 'Tìm kiếm một chủ đề và xem nguồn bằng tiếng Anh, tiếng Việt, VÀ tiếng Pháp cạnh nhau. Công cụ đầu tiên kết nối cả ba.' })}</p>
 
       <div style="display:flex;gap:var(--space-lg);margin-bottom:var(--space-xl);flex-wrap:wrap;">
         <div style="font-family:var(--font-mono);font-size:13px;">
@@ -225,18 +222,12 @@ export function renderComparator(): void {
         </div>
       </div>
 
-      <input type="text" class="search-page-input" id="comp-search" placeholder="${loc({ en: 'Search topics, authors, titles...', vi: 'Tìm kiếm chủ đề, tác giả, tiêu đề...' })}">
+      <input type="text" class="search-page-input" id="comp-search" placeholder="${localized({ en: 'Search topics, authors, titles...', vi: 'Tìm kiếm chủ đề, tác giả, tiêu đề...' })}">
 
       <div id="comp-grid">${renderSources()}</div>
     </div>
 
-    <footer class="footer">
-      <div class="footer-inner">
-        <div class="footer-mission">${loc({ en: 'AI can serve the Great Commission — not replace human connection, but extend it.', vi: 'AI có thể phục vụ Đại Mệnh Lệnh — không thay thế mối liên kết con người, mà mở rộng nó.' })}</div>
-        <div class="footer-links"><a href="#/about">${loc({ en: 'About', vi: 'Giới thiệu' })}</a></div>
-      </div>
-      <div class="footer-tagline">${loc({ en: 'Powered by AI. Grounded in 493 years of history.', vi: 'Được hỗ trợ bởi AI. Dựa trên 493 năm lịch sử.' })}</div>
-    </footer>
+    ${renderFooter()}
 
     <style>
       .comparator-columns { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: var(--space-md); }

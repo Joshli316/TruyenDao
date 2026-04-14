@@ -31,6 +31,7 @@
   }
   </script>
 
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://unpkg.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://unpkg.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://*.basemaps.cartocdn.com https://*.tile.openstreetmap.org; connect-src 'self' https://api.anthropic.com;">
   <meta name="theme-color" content="#12090B">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%2312090B' width='100' height='100' rx='4'/><text y='72' x='50' text-anchor='middle' font-size='60' fill='%239B2335' font-family='serif'>傳</text></svg>">
   <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'><rect fill='%2312090B' width='180' height='180' rx='8'/><text y='130' x='90' text-anchor='middle' font-size='110' fill='%239B2335' font-family='serif'>傳</text></svg>">
@@ -39,8 +40,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=JetBrains+Mono:wght@400;500&family=Noto+Serif:wght@400;500;600;700&display=swap">
-  <script type="module" crossorigin src="/assets/index-Cfd0x656.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-B7pT-YlX.css">
+  <script type="module" crossorigin src="/assets/index-V08dmV5o.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-BFoz0-LC.css">
 </head>
 <body>
   <a href="#app" class="skip-to-content" style="position:absolute;left:-9999px;top:0;z-index:999;padding:8px 16px;background:var(--accent-cinnabar);color:var(--text-primary);font-weight:600;text-decoration:none;" onfocus="this.style.left='0'" onblur="this.style.left='-9999px'">Skip to content</a>
@@ -82,10 +83,10 @@
   </div>
 
   <!-- Search Modal -->
-  <div id="search-modal" class="search-modal">
+  <div id="search-modal" class="search-modal" role="dialog" aria-modal="true" aria-label="Search">
     <div class="search-box">
-      <input type="text" class="search-input" data-i18n-placeholder="search.placeholder" placeholder="Search reports, tools, timeline...">
-      <div class="search-results" id="search-results"></div>
+      <input type="text" class="search-input" data-i18n-placeholder="search.placeholder" placeholder="Search reports, tools, timeline..." aria-label="Search reports, tools, and timeline" maxlength="500">
+      <div class="search-results" id="search-results" role="listbox"></div>
       <div class="search-hint" data-i18n="search.hint">Press Cmd+K to search</div>
     </div>
   </div>
