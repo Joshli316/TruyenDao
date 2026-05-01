@@ -1,9 +1,12 @@
 import { t } from '../i18n';
 import { renderFooter } from '../shared/footer';
+import { setPageMeta } from '../shared/page-meta';
 
 export function renderNotFound(): void {
   const app = document.getElementById('app');
   if (!app) return;
+  // 404 canonical points to root, not the bad URL
+  setPageMeta({ titleKey: 'meta.notfound.title', route: '#/' });
   app.innerHTML = `
     <div class="not-found">
       <div class="not-found-inner">

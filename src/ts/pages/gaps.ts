@@ -1,5 +1,6 @@
 import { localized } from '../data-loader';
 import { renderFooter } from '../shared/footer';
+import { setPageMeta } from '../shared/page-meta';
 
 interface Gap {
   id: string;
@@ -13,6 +14,7 @@ interface Gap {
 export async function renderGaps(): Promise<void> {
   const app = document.getElementById('app');
   if (!app) return;
+  setPageMeta({ titleKey: 'meta.gaps.title', descKey: 'meta.gaps.description' });
 
   app.innerHTML = `<div class="section" style="padding-top: calc(64px + var(--space-2xl));"><div class="skeleton" style="height: 400px;"></div></div>`;
 

@@ -1,6 +1,7 @@
 import { t, getLang } from '../i18n';
 import { setCleanup } from '../main';
 import { renderFooter } from '../shared/footer';
+import { setPageMeta } from '../shared/page-meta';
 
 declare const L: any;
 
@@ -64,6 +65,7 @@ const PAGE_TITLE = { en: 'Animated Spread Map', vi: 'Bản đồ lan tỏa độ
 export async function renderMap(): Promise<void> {
   const app = document.getElementById('app');
   if (!app) return;
+  setPageMeta({ titleKey: 'meta.map.title', descKey: 'meta.map.description' });
 
   const lang = getLang();
   const loc = (obj: { en: string; vi: string }) => obj[lang] || obj.en;

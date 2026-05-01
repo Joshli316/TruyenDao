@@ -255,6 +255,100 @@ const strings: Translations = {
   'theme.dark': { en: 'Dark', vi: 'Tối' },
   'theme.light': { en: 'Light', vi: 'Sáng' },
 
+  // Per-route SEO meta (titles short, descriptions <160 chars)
+  'meta.default.description': {
+    en: 'Bilingual (EN/VI), AI-powered research platform connecting 493 years of Christianity in Vietnam to today\'s student ministry.',
+    vi: 'Nền tảng nghiên cứu song ngữ (EN/VI) hỗ trợ AI, kết nối 493 năm Kitô giáo Việt Nam với mục vụ sinh viên ngày nay.',
+  },
+  'meta.home.title': { en: 'Vietnam Missions Research Platform', vi: 'Nền tảng nghiên cứu truyền giáo Việt Nam' },
+  'meta.home.description': {
+    en: 'Bilingual, AI-powered research connecting 493 years of Christianity in Vietnam — from 1533 first contact to today\'s 8-10M believers.',
+    vi: 'Nghiên cứu song ngữ, hỗ trợ AI, kết nối 493 năm Kitô giáo Việt Nam — từ tiếp xúc đầu tiên 1533 đến 8-10 triệu tín hữu hôm nay.',
+  },
+  'meta.research.title': { en: 'Research Reports', vi: 'Báo cáo nghiên cứu' },
+  'meta.research.description': {
+    en: '12 bilingual reports on Christianity in Vietnam — from the 1533 first contact to contemporary scholarship and AI-enabled research.',
+    vi: '12 báo cáo song ngữ về Kitô giáo Việt Nam — từ tiếp xúc đầu tiên 1533 đến học thuật đương đại và nghiên cứu hỗ trợ AI.',
+  },
+  'meta.timeline.title': { en: '493-Year Timeline', vi: 'Dòng thời gian 493 năm' },
+  'meta.timeline.description': {
+    en: '64 events tracing 493 years of Christianity in Vietnam — from 1533 Portuguese contact to today\'s growing church.',
+    vi: '64 sự kiện qua 493 năm Kitô giáo Việt Nam — từ tiếp xúc Bồ Đào Nha 1533 đến giáo hội đang phát triển hôm nay.',
+  },
+  'meta.ask.title': { en: 'Ask the Archive', vi: 'Hỏi Kho Tư Liệu' },
+  'meta.ask.description': {
+    en: 'Ask anything about Christianity in Vietnam. AI answers cite sources from 12 research reports.',
+    vi: 'Hỏi bất cứ điều gì về Kitô giáo Việt Nam. AI trích nguồn từ 12 báo cáo nghiên cứu.',
+  },
+  'meta.map.title': { en: 'Christianity Spread Map', vi: 'Bản đồ lan tỏa Kitô giáo' },
+  'meta.map.description': {
+    en: 'Animated geographic map showing how Christianity spread across Vietnam from 1533 to today.',
+    vi: 'Bản đồ động cho thấy Kitô giáo lan tỏa khắp Việt Nam từ 1533 đến nay.',
+  },
+  'meta.network.title': { en: 'Mission Network', vi: 'Mạng lưới truyền giáo' },
+  'meta.network.description': {
+    en: 'Network graph of missionary orders, denominations, and Vietnamese church bodies — Catholic and Protestant.',
+    vi: 'Đồ thị mạng lưới các dòng truyền giáo, hệ phái, và giáo hội Việt Nam — Công giáo và Tin Lành.',
+  },
+  'meta.gaps.title': { en: 'Research Gaps', vi: 'Khoảng trống nghiên cứu' },
+  'meta.gaps.description': {
+    en: 'Open research questions in Vietnamese Christian studies — claim a topic and contribute.',
+    vi: 'Các câu hỏi nghiên cứu còn bỏ ngỏ trong Kitô giáo học Việt Nam — chọn chủ đề để đóng góp.',
+  },
+  'meta.comparator.title': { en: 'Asia Trilogy Comparator', vi: 'So sánh Bộ ba châu Á' },
+  'meta.comparator.description': {
+    en: 'Side-by-side comparison of Christianity in China, Japan, and Vietnam — history, demographics, current state.',
+    vi: 'So sánh song song Kitô giáo tại Trung Quốc, Nhật Bản, và Việt Nam — lịch sử, dân số, hiện trạng.',
+  },
+  'meta.tools.title': { en: 'Ministry Tools', vi: 'Công cụ mục vụ' },
+  'meta.tools.description': {
+    en: 'Practical tools for missionaries, pastors, returnees, and volunteers — built on 12 research reports.',
+    vi: 'Công cụ thực tiễn cho nhà truyền giáo, mục sư, người trở về, và tình nguyện viên — dựa trên 12 báo cáo.',
+  },
+  'meta.returnee.title': { en: 'Returnee Preparation Kit', vi: 'Bộ chuẩn bị người trở về' },
+  'meta.returnee.description': {
+    en: 'Step-by-step kit preparing Vietnamese international students returning home — faith retention, family, work.',
+    vi: 'Hướng dẫn từng bước cho sinh viên Việt Nam quốc tế trở về quê — đức tin, gia đình, công việc.',
+  },
+  'meta.training.title': { en: 'Volunteer Training Modules', vi: 'Mô-đun đào tạo tình nguyện viên' },
+  'meta.training.description': {
+    en: 'Training modules for volunteers serving Vietnamese international students and the diaspora pipeline.',
+    vi: 'Mô-đun đào tạo tình nguyện viên phục vụ sinh viên Việt Nam quốc tế và đường dẫn cộng đồng hải ngoại.',
+  },
+  'meta.retention.title': { en: 'Faith Retention Calculator', vi: 'Tính toán gìn giữ đức tin' },
+  'meta.retention.description': {
+    en: 'Estimate faith retention probability for returnees based on research-backed factors — community, mentorship, family.',
+    vi: 'Ước tính khả năng gìn giữ đức tin của người trở về theo các yếu tố nghiên cứu — cộng đồng, cố vấn, gia đình.',
+  },
+  'meta.heritage.title': { en: 'Vietnamese Christian Heritage', vi: 'Di sản Kitô giáo Việt Nam' },
+  'meta.heritage.description': {
+    en: 'The 117 Martyrs and the chữ Quốc ngữ story — two heritage experiences that define Vietnamese Christianity.',
+    vi: '117 Thánh Tử Đạo và câu chuyện chữ Quốc ngữ — hai trải nghiệm di sản định hình Kitô giáo Việt Nam.',
+  },
+  'meta.martyrs.title': { en: '117 Vietnamese Martyrs', vi: '117 Thánh Tử Đạo Việt Nam' },
+  'meta.martyrs.description': {
+    en: 'The 117 Vietnamese Martyrs canonized in 1988 — the largest single-country group canonization in Catholic history.',
+    vi: '117 Thánh Tử Đạo Việt Nam được phong thánh năm 1988 — phong thánh lớn nhất cho một quốc gia trong lịch sử Công giáo.',
+  },
+  'meta.script.title': { en: 'Chữ Quốc Ngữ — The Gift of Letters', vi: 'Chữ Quốc ngữ — Ân Phẩm Chữ Viết' },
+  'meta.script.description': {
+    en: 'How Jesuit missionaries invented the Vietnamese alphabet — used by 100M+ people today.',
+    vi: 'Cách các nhà truyền giáo Dòng Tên sáng tạo bảng chữ cái Việt Nam — hơn 100 triệu người dùng ngày nay.',
+  },
+  'meta.personas.title': { en: 'Historical Conversations', vi: 'Đối thoại lịch sử' },
+  'meta.personas.description': {
+    en: 'AI-mediated conversations with key figures from Vietnamese Christian history, grounded in their actual writings.',
+    vi: 'Đối thoại qua AI với các nhân vật quan trọng trong lịch sử Kitô giáo Việt Nam, dựa trên tác phẩm thực tế.',
+  },
+  'meta.persona.title': { en: 'Talk to a Historical Figure', vi: 'Trò chuyện với nhân vật lịch sử' },
+  'meta.about.title': { en: 'About TruyềnĐạo', vi: 'Giới thiệu TruyềnĐạo' },
+  'meta.about.description': {
+    en: 'TruyềnĐạo applies AI to international student ministry and the Vietnamese diaspora pipeline — third in the Asia trilogy.',
+    vi: 'TruyềnĐạo ứng dụng AI vào mục vụ sinh viên quốc tế và đường dẫn cộng đồng Việt Nam — phần ba của Bộ ba châu Á.',
+  },
+  'meta.report.prefix': { en: 'Report', vi: 'Báo cáo' },
+  'meta.notfound.title': { en: 'Page not found', vi: 'Không tìm thấy trang' },
+
   // Not found
   'notfound.title': { en: 'Page not found', vi: 'Không tìm thấy trang' },
   'notfound.subtitle': {

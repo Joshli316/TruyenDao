@@ -1,5 +1,6 @@
 import { setLang, getLang, t } from './i18n';
 import { initTheme } from './theme';
+import { reapplyPageMeta } from './shared/page-meta';
 
 type Route = {
   path: string;
@@ -165,6 +166,7 @@ function updateLangButtons(): void {
 window.addEventListener('langchange', () => {
   updateLangButtons();
   handleRoute();
+  reapplyPageMeta();
 });
 
 export function initApp(): void {

@@ -1,10 +1,12 @@
 import { t } from '../i18n';
 import { localized } from '../data-loader';
 import { renderFooter } from '../shared/footer';
+import { setPageMeta } from '../shared/page-meta';
 
 export function renderToolsHub(): void {
   const app = document.getElementById('app');
   if (!app) return;
+  setPageMeta({ titleKey: 'meta.tools.title', descKey: 'meta.tools.description' });
 
   const tools = [
     { title: { en: 'Ask the Archive', vi: 'Hỏi Kho Tư Liệu' }, desc: { en: 'AI-powered Q&A grounded in 12 research reports on Vietnamese Christianity.', vi: 'Hỏi đáp AI dựa trên 12 báo cáo nghiên cứu về Kitô giáo Việt Nam.' }, href: '#/research/ask' },

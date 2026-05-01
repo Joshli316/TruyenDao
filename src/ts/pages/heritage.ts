@@ -1,9 +1,11 @@
 import { t } from '../i18n';
 import { renderFooter } from '../shared/footer';
+import { setPageMeta } from '../shared/page-meta';
 
 export function renderHeritage(): void {
   const app = document.getElementById('app');
   if (!app) return;
+  setPageMeta({ titleKey: 'meta.heritage.title', descKey: 'meta.heritage.description' });
 
   app.innerHTML = `
     <div class="section" style="padding-top: calc(64px + var(--space-2xl));">

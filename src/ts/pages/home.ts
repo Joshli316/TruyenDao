@@ -1,9 +1,11 @@
 import { t } from '../i18n';
 import { renderFooter } from '../shared/footer';
+import { setPageMeta } from '../shared/page-meta';
 
 export function renderHome(): void {
   const app = document.getElementById('app');
   if (!app) return;
+  setPageMeta({ titleKey: 'meta.home.title', descKey: 'meta.home.description', route: '#/' });
 
   app.innerHTML = `
     <!-- Hero — Asymmetric Split -->

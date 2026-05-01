@@ -2,6 +2,7 @@ import { t, getLang } from '../i18n';
 import { localized } from '../data-loader';
 import { setCleanup } from '../main';
 import { renderFooter } from '../shared/footer';
+import { setPageMeta } from '../shared/page-meta';
 
 interface TimelineEvent {
   year: number;
@@ -28,6 +29,7 @@ function setStoredView(v: View): void {
 export async function renderTimeline(): Promise<void> {
   const app = document.getElementById('app');
   if (!app) return;
+  setPageMeta({ titleKey: 'meta.timeline.title', descKey: 'meta.timeline.description', route: '#/research/timeline' });
 
   // Show loading
   app.innerHTML = `

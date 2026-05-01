@@ -1,6 +1,7 @@
 import { t, getLang } from '../i18n';
 import { setCleanup } from '../main';
 import { renderFooter } from '../shared/footer';
+import { setPageMeta } from '../shared/page-meta';
 
 interface BiText {
   en: string;
@@ -170,6 +171,7 @@ const scriptComparison = [
 export async function renderScript(): Promise<void> {
   const app = document.getElementById('app');
   if (!app) return;
+  setPageMeta({ titleKey: 'meta.script.title', descKey: 'meta.script.description' });
 
   const lang = getLang();
   const loc = (obj: { en: string; vi: string }) => obj[lang] || obj.en;

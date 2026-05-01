@@ -105,6 +105,13 @@
   <script>
     (function() {
       try {
+        // Clean-URL → hash bootstrap: if a crawler or shared link hits /research/timeline,
+        // CF Pages serves index.html via _redirects; map the path back into the hash router.
+        var p = window.location.pathname;
+        if (p && p !== '/' && p !== '/index.html' && !window.location.hash) {
+          window.location.replace('/#' + p + window.location.search);
+          return;
+        }
         var l = localStorage.getItem('truyendao-lang');
         if (l === 'vi') document.documentElement.lang = 'vi';
         var theme = localStorage.getItem('truyendao-theme');

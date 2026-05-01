@@ -1,5 +1,6 @@
 import { localized } from '../data-loader';
 import { renderFooter } from '../shared/footer';
+import { setPageMeta } from '../shared/page-meta';
 
 interface Source {
   title: string;
@@ -148,6 +149,7 @@ const sources: TopicEntry[] = [
 export function renderComparator(): void {
   const app = document.getElementById('app');
   if (!app) return;
+  setPageMeta({ titleKey: 'meta.comparator.title', descKey: 'meta.comparator.description' });
 
   const totalEn = sources.reduce((a, s) => a + s.en.length, 0);
   const totalVi = sources.reduce((a, s) => a + s.vi.length, 0);

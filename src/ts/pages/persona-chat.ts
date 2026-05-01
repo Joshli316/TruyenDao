@@ -1,6 +1,7 @@
 import { t, getLang } from '../i18n';
 import { getRouteParam } from '../main';
 import { escapeHtml, formatResponse } from '../shared/text-utils';
+import { setPageMeta } from '../shared/page-meta';
 
 interface LocalizedString {
   en: string;
@@ -39,6 +40,7 @@ function renderMessage(msg: Message): string {
 export async function renderPersonaChat(): Promise<void> {
   const app = document.getElementById('app');
   if (!app) return;
+  setPageMeta({ titleKey: 'meta.persona.title', descKey: 'meta.personas.description' });
 
   const personaId = getRouteParam('id');
   if (!personaId) {

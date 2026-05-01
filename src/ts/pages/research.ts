@@ -2,10 +2,12 @@ import { t, getLang } from '../i18n';
 import { loadAllReports, loadReport, localized, type ReportData } from '../data-loader';
 import { getRouteParam, setCleanup } from '../main';
 import { renderFooter } from '../shared/footer';
+import { setPageMeta } from '../shared/page-meta';
 
 export async function renderResearchList(): Promise<void> {
   const app = document.getElementById('app');
   if (!app) return;
+  setPageMeta({ titleKey: 'meta.research.title', descKey: 'meta.research.description' });
 
   app.innerHTML = `
     <div class="section" style="padding-top: calc(64px + var(--space-2xl));">
@@ -104,6 +106,22 @@ export async function renderResearchDetail(): Promise<void> {
     app.innerHTML = `<p style="padding: 120px 24px; color: var(--text-tertiary);">${t('common.notfound')}</p>`;
     return;
   }
+
+  // Per-route SEO: report-specific title + description
+  const reportUrl = `https://truyendao.pages.dev/research/${report.id}`;
+  document.title = `${t('meta.report.prefix')} ${report.id}: ${localized(report.title)} — TruyềnĐạo 傳道`;
+  const summary160 = localized(report.summary).substring(0, 160);
+  const set = (sel: string, value: string, prop: 'content' | 'href') => {
+    const el = document.querySelector(sel) as HTMLMetaElement | HTMLLinkElement | null;
+    if (el) (el as any)[prop] = value;
+  };
+  set('meta[name="description"]', summary160, 'content');
+  set('meta[property="og:title"]', document.title, 'content');
+  set('meta[property="og:description"]', summary160, 'content');
+  set('meta[property="og:url"]', reportUrl, 'content');
+  set('meta[name="twitter:title"]', document.title, 'content');
+  set('meta[name="twitter:description"]', summary160, 'content');
+  set('link[rel="canonical"]', reportUrl, 'href');
 
   // Progress bar
   const progressBar = document.createElement('div');

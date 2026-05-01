@@ -1,6 +1,7 @@
 import { t, getLang } from '../i18n';
 import { setCleanup } from '../main';
 import { renderFooter } from '../shared/footer';
+import { setPageMeta } from '../shared/page-meta';
 
 declare const d3: any;
 
@@ -84,6 +85,7 @@ function loadD3(): Promise<void> {
 export async function renderNetwork(): Promise<void> {
   const app = document.getElementById('app');
   if (!app) return;
+  setPageMeta({ titleKey: 'meta.network.title', descKey: 'meta.network.description' });
 
   const lang = getLang();
   const loc = (obj: BilingualText) => obj[lang] || obj.en;

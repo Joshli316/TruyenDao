@@ -2,6 +2,7 @@ import { t, getLang } from '../i18n';
 import { loadAllReports, localized, type ReportData } from '../data-loader';
 import { escapeHtml, formatResponse, extractSources } from '../shared/text-utils';
 import { retrieveChunks, topReportIds, clearIndexCache } from '../shared/rag-index';
+import { setPageMeta } from '../shared/page-meta';
 
 interface Message {
   role: 'user' | 'assistant';
@@ -15,6 +16,7 @@ let reports: ReportData[] = [];
 export async function renderAskArchive(): Promise<void> {
   const app = document.getElementById('app');
   if (!app) return;
+  setPageMeta({ titleKey: 'meta.ask.title', descKey: 'meta.ask.description' });
 
   // Load reports for RAG context (chunked index built on first query)
   reports = await loadAllReports();

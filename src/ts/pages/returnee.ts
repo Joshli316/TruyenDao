@@ -1,6 +1,7 @@
 import { getLang } from '../i18n';
 import { setCleanup } from '../main';
 import { renderFooter } from '../shared/footer';
+import { setPageMeta } from '../shared/page-meta';
 
 /* =========================================
    Types
@@ -1102,6 +1103,7 @@ function getReturneeStyles(): string {
 export async function renderReturnee(): Promise<void> {
   const app = document.getElementById('app');
   if (!app) return;
+  setPageMeta({ titleKey: 'meta.returnee.title', descKey: 'meta.returnee.description' });
 
   let state = loadState();
   let currentStep = 1;

@@ -1,6 +1,7 @@
 import { t, getLang } from '../i18n';
 import { setCleanup } from '../main';
 import { renderFooter } from '../shared/footer';
+import { setPageMeta } from '../shared/page-meta';
 
 /* =========================================
    Types
@@ -669,6 +670,7 @@ function injectStyles(): HTMLStyleElement {
 export async function renderRetention(): Promise<void> {
   const app = document.getElementById('app');
   if (!app) return;
+  setPageMeta({ titleKey: 'meta.retention.title', descKey: 'meta.retention.description' });
 
   const styleEl = injectStyles();
 

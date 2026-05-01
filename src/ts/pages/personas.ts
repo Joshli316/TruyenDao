@@ -1,5 +1,6 @@
 import { t, getLang } from '../i18n';
 import { renderFooter } from '../shared/footer';
+import { setPageMeta } from '../shared/page-meta';
 
 interface LocalizedString {
   en: string;
@@ -23,6 +24,7 @@ function localized(obj: LocalizedString): string {
 export async function renderPersonasHub(): Promise<void> {
   const app = document.getElementById('app');
   if (!app) return;
+  setPageMeta({ titleKey: 'meta.personas.title', descKey: 'meta.personas.description' });
 
   // Show loading state
   app.innerHTML = `

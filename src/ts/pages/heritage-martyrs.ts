@@ -1,6 +1,7 @@
 import { t, getLang } from '../i18n';
 import { setCleanup } from '../main';
 import { renderFooter } from '../shared/footer';
+import { setPageMeta } from '../shared/page-meta';
 
 interface BiText {
   en: string;
@@ -96,6 +97,7 @@ const chapters: Chapter[] = [
 export async function renderMartyrs(): Promise<void> {
   const app = document.getElementById('app');
   if (!app) return;
+  setPageMeta({ titleKey: 'meta.martyrs.title', descKey: 'meta.martyrs.description' });
 
   const lang = getLang();
   const loc = (obj: { en: string; vi: string }) => obj[lang] || obj.en;

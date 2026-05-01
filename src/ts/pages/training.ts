@@ -1,6 +1,7 @@
 import { t, getLang } from '../i18n';
 import { getRouteParam } from '../main';
 import { renderFooter } from '../shared/footer';
+import { setPageMeta } from '../shared/page-meta';
 
 /* =========================================
    Types
@@ -462,6 +463,7 @@ const MODULES: TrainingModule[] = [
 export function renderTraining(): void {
   const app = document.getElementById('app');
   if (!app) return;
+  setPageMeta({ titleKey: 'meta.training.title', descKey: 'meta.training.description' });
 
   const lang = getLang();
   const progress = loadProgress();
@@ -538,6 +540,7 @@ export function renderTraining(): void {
 export function renderTrainingModule(): void {
   const app = document.getElementById('app');
   if (!app) return;
+  setPageMeta({ titleKey: 'meta.training.title', descKey: 'meta.training.description' });
 
   const moduleId = getRouteParam('moduleId');
   const mod = MODULES.find(m => m.id === moduleId);
