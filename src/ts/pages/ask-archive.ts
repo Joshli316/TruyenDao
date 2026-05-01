@@ -1,6 +1,7 @@
 import { t, getLang } from '../i18n';
 import { loadAllReports, localized, type ReportData } from '../data-loader';
 import { escapeHtml, formatResponse, extractSources } from '../shared/text-utils';
+import { retrieveChunks, topReportIds, clearIndexCache } from '../shared/rag-index';
 
 interface Message {
   role: 'user' | 'assistant';
@@ -15,8 +16,9 @@ export async function renderAskArchive(): Promise<void> {
   const app = document.getElementById('app');
   if (!app) return;
 
-  // Load reports for RAG context
+  // Load reports for RAG context (chunked index built on first query)
   reports = await loadAllReports();
+  clearIndexCache(); // rebuild on each render so a language switch picks up new localized text
 
   // Restore session messages
   try {
@@ -225,26 +227,11 @@ function renderMessage(msg: Message): string {
 // escapeHtml, formatResponse, extractSources imported from shared/text-utils
 
 function findRelevantContext(query: string): string {
-  const q = query.toLowerCase();
-  const scored = reports.map(r => {
-    const text = (localized(r.title) + ' ' + localized(r.summary) + ' ' +
-      r.sections.map(s => localized(s.heading)).join(' ')).toLowerCase();
-    const words = q.split(/\s+/);
-    const score = words.reduce((acc, w) => acc + (text.includes(w) ? 1 : 0), 0);
-    return { report: r, score };
-  });
-
-  scored.sort((a, b) => b.score - a.score);
-  const top = scored.slice(0, 3).filter(s => s.score > 0);
-
-  return top.map(({ report }) => {
-    const title = localized(report.title);
-    const summary = localized(report.summary);
-    const sections = report.sections.map(s =>
-      `### ${localized(s.heading)}\n${localized(s.content).substring(0, 500)}`
-    ).join('\n\n');
-    return `## Report ${report.id}: ${title}\n${summary}\n\n${sections}`;
-  }).join('\n\n---\n\n');
+  const chunks = retrieveChunks(query, reports, 6);
+  if (chunks.length === 0) return '';
+  return chunks
+    .map(c => `## Report ${c.reportId}: ${c.reportTitle}\n### ${c.heading}\n${c.text}`)
+    .join('\n\n---\n\n');
 }
 
 function generateLocalResponse(query: string, context: string): { content: string; sources: string[] } {
@@ -284,21 +271,16 @@ function generateLocalResponse(query: string, context: string): { content: strin
     }
   }
 
-  // Generic response when no specific match
-  const topReports = reports
-    .map(r => {
-      const text = (localized(r.title) + ' ' + localized(r.summary)).toLowerCase();
-      const words = q.split(/\s+/);
-      const score = words.reduce((acc, w) => acc + (text.includes(w) ? 1 : 0), 0);
-      return { report: r, score };
-    })
-    .filter(s => s.score > 0)
-    .sort((a, b) => b.score - a.score)
-    .slice(0, 2);
+  // Generic response — use the chunked RAG index to find the best report matches
+  const chunks = retrieveChunks(query, reports, 6);
+  const ids = topReportIds(chunks, 2);
+  const topReports = ids
+    .map(id => reports.find(r => r.id === id))
+    .filter((r): r is ReportData => Boolean(r));
 
   if (topReports.length > 0) {
     const reportLabel = lang === 'vi' ? 'Báo cáo' : 'Report';
-    const summaries = topReports.map(({ report }) =>
+    const summaries = topReports.map(report =>
       `**${reportLabel} ${report.id}: ${localized(report.title)}** — ${localized(report.summary).substring(0, 200)}...`
     ).join('\n\n');
     const intro = lang === 'vi'
@@ -309,7 +291,7 @@ function generateLocalResponse(query: string, context: string): { content: strin
       : 'Click the report links below to read the full analysis.';
     return {
       content: `${intro}\n\n${summaries}\n\n${cta}`,
-      sources: topReports.map(r => r.report.id),
+      sources: topReports.map(r => r.id),
     };
   }
 

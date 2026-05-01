@@ -82,6 +82,13 @@ const strings: Translations = {
   'timeline.filter.cultural': { en: 'Cultural', vi: 'Văn hóa' },
   'timeline.filter.political': { en: 'Political', vi: 'Chính trị' },
   'timeline.filter.institutional': { en: 'Institutional', vi: 'Thể chế' },
+  'timeline.view.vertical': { en: 'Vertical', vi: 'Dọc' },
+  'timeline.view.horizontal': { en: 'Horizontal', vi: 'Ngang' },
+  'timeline.view.label': { en: 'View', vi: 'Hiển thị' },
+  'timeline.expand': { en: 'Show details', vi: 'Xem chi tiết' },
+  'timeline.collapse': { en: 'Hide details', vi: 'Ẩn chi tiết' },
+  'timeline.significance': { en: 'Significance', vi: 'Mức độ quan trọng' },
+  'timeline.category': { en: 'Category', vi: 'Phân loại' },
 
   // Timeline eras
   'era.early': { en: 'Early Contact', vi: 'Tiếp xúc đầu tiên' },
@@ -242,6 +249,20 @@ const strings: Translations = {
   'common.ai_translated': { en: 'AI-translated — review pending', vi: 'Bản dịch AI — Chờ xem xét' },
   'common.report': { en: 'Report', vi: 'Báo cáo' },
   'common.notfound': { en: 'Report not found.', vi: 'Không tìm thấy báo cáo.' },
+
+  // Theme
+  'theme.toggle': { en: 'Toggle light/dark mode', vi: 'Chuyển đổi chế độ sáng/tối' },
+  'theme.dark': { en: 'Dark', vi: 'Tối' },
+  'theme.light': { en: 'Light', vi: 'Sáng' },
+
+  // Not found
+  'notfound.title': { en: 'Page not found', vi: 'Không tìm thấy trang' },
+  'notfound.subtitle': {
+    en: 'The page you were looking for is either missing or has moved. Try the homepage or browse the research archive.',
+    vi: 'Trang bạn đang tìm không tồn tại hoặc đã được di chuyển. Hãy thử trang chủ hoặc duyệt kho nghiên cứu.',
+  },
+  'notfound.home': { en: 'Go home', vi: 'Về trang chủ' },
+  'notfound.research': { en: 'Browse research', vi: 'Xem nghiên cứu' },
 };
 
 let currentLang: Lang = (localStorage.getItem('truyendao-lang') as Lang) || detectBrowserLang();

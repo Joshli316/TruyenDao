@@ -1,4 +1,5 @@
 import { setLang, getLang, t } from './i18n';
+import { initTheme } from './theme';
 
 type Route = {
   path: string;
@@ -64,9 +65,11 @@ function handleRoute(): void {
 
   if (route) {
     route.render();
-  } else {
+  } else if (hash === '/' || hash === '') {
     const home = routes.find(r => r.path === '/');
     if (home) home.render();
+  } else {
+    import('./pages/not-found').then(m => m.renderNotFound());
   }
 
   window.scrollTo(0, 0);
@@ -166,6 +169,7 @@ window.addEventListener('langchange', () => {
 
 export function initApp(): void {
   initNav();
+  initTheme();
   window.addEventListener('hashchange', handleRoute);
   handleRoute();
 }
