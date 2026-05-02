@@ -75,7 +75,7 @@ function loadD3(): Promise<void> {
       return;
     }
     const script = document.createElement('script');
-    script.src = 'https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js';
+    script.src = 'https://unpkg.com/d3@7/dist/d3.min.js';
     script.onload = () => resolve();
     script.onerror = () => reject(new Error('Failed to load D3.js'));
     document.head.appendChild(script);
